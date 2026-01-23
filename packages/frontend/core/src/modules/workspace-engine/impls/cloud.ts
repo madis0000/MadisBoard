@@ -13,7 +13,10 @@ import type {
   DocStorage,
   ListedBlobRecord,
 } from '@madisboard/nbstore';
-import { CloudBlobStorage, StaticCloudDocStorage } from '@madisboard/nbstore/cloud';
+import {
+  CloudBlobStorage,
+  StaticCloudDocStorage,
+} from '@madisboard/nbstore/cloud';
 import {
   IndexedDBBlobStorage,
   IndexedDBBlobSyncStorage,

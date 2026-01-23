@@ -1,6 +1,15 @@
-import { Avatar, IconButton, Loading, Menu, notify } from '@madisboard/component';
+import {
+  Avatar,
+  IconButton,
+  Loading,
+  Menu,
+  notify,
+} from '@madisboard/component';
 import { Pagination } from '@madisboard/component/setting-components';
-import { type AuthAccountInfo, AuthService } from '@madisboard/core/modules/cloud';
+import {
+  type AuthAccountInfo,
+  AuthService,
+} from '@madisboard/core/modules/cloud';
 import {
   type Member,
   WorkspaceMembersService,

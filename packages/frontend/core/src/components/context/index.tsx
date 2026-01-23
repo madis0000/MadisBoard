@@ -1,4 +1,7 @@
-import { ConfirmModalProvider, PromptModalProvider } from '@madisboard/component';
+import {
+  ConfirmModalProvider,
+  PromptModalProvider,
+} from '@madisboard/component';
 import { ProviderComposer } from '@madisboard/component/provider-composer';
 import { ThemeProvider } from '@madisboard/core/components/theme-provider';
 import type { createStore } from 'jotai';

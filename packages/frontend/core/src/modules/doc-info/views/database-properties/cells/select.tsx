@@ -1,7 +1,10 @@
 /* eslint-disable rxjs/finnish */
 
 import { PropertyValue } from '@madisboard/component';
-import { type TagLike, TagsInlineEditor } from '@madisboard/core/components/tags';
+import {
+  type TagLike,
+  TagsInlineEditor,
+} from '@madisboard/core/components/tags';
 import { TagService } from '@madisboard/core/modules/tag';
 import {
   affineLabelToDatabaseTagColor,

@@ -1,5 +1,8 @@
 import { Button, Loading } from '@madisboard/component';
-import { Pagination, SettingRow } from '@madisboard/component/setting-components';
+import {
+  Pagination,
+  SettingRow,
+} from '@madisboard/component/setting-components';
 import { WorkspaceInvoicesService } from '@madisboard/core/modules/cloud';
 import { UrlService } from '@madisboard/core/modules/url';
 import { UserFriendlyError } from '@madisboard/error';

@@ -1,4 +1,8 @@
-import { PropertyName, PropertyRoot, PropertyValue } from '@madisboard/component';
+import {
+  PropertyName,
+  PropertyRoot,
+  PropertyValue,
+} from '@madisboard/component';
 import { DocsService } from '@madisboard/core/modules/doc';
 import { i18nTime, useI18n } from '@madisboard/i18n';
 import { DateTimeIcon } from '@blocksuite/icons/rc';

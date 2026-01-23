@@ -16,7 +16,10 @@ import type {
   DatabaseValueCell,
 } from '@madisboard/core/modules/doc-info/types';
 import { DocIntegrationPropertiesTable } from '@madisboard/core/modules/integration';
-import { ViewService, WorkbenchService } from '@madisboard/core/modules/workbench';
+import {
+  ViewService,
+  WorkbenchService,
+} from '@madisboard/core/modules/workbench';
 import { WorkspacePropertyService } from '@madisboard/core/modules/workspace-property';
 import type { AffineDNDData } from '@madisboard/core/types/dnd';
 import { useI18n } from '@madisboard/i18n';

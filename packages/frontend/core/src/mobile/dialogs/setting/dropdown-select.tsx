@@ -1,4 +1,8 @@
-import { type MenuProps, MobileMenu, MobileMenuItem } from '@madisboard/component';
+import {
+  type MenuProps,
+  MobileMenu,
+  MobileMenuItem,
+} from '@madisboard/component';
 import { ArrowDownSmallIcon } from '@blocksuite/icons/rc';
 import clsx from 'clsx';
 import {

@@ -1,4 +1,10 @@
-import { Button, ConfirmModal, Input, Modal, notify } from '@madisboard/component';
+import {
+  Button,
+  ConfirmModal,
+  Input,
+  Modal,
+  notify,
+} from '@madisboard/component';
 import { SettingRow } from '@madisboard/component/setting-components';
 import { useEnableCloud } from '@madisboard/core/components/hooks/affine/use-enable-cloud';
 import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';

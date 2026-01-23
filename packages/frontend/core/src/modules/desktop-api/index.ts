@@ -13,4 +13,7 @@ export function configureDesktopApiModule(framework: Framework) {
 }
 
 export { DesktopApiService } from './service/desktop-api';
-export type { ClientEvents, TabViewsMetaSchema } from '@madisboard/electron-api';
+export type {
+  ClientEvents,
+  TabViewsMetaSchema,
+} from '@madisboard/electron-api';

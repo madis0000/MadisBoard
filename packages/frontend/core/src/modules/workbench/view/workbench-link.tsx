@@ -1,6 +1,9 @@
 import { useDraggable } from '@madisboard/component';
 import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
-import type { AffineDNDData, AffineDNDEntity } from '@madisboard/core/types/dnd';
+import type {
+  AffineDNDData,
+  AffineDNDEntity,
+} from '@madisboard/core/types/dnd';
 import { inferOpenMode as inferOpenAt } from '@madisboard/core/utils';
 import { useLiveData, useServices } from '@toeverything/infra';
 import { type To } from 'history';

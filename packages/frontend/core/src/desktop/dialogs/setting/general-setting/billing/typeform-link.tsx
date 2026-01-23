@@ -1,7 +1,10 @@
 import { SettingRow } from '@madisboard/component/setting-components';
 import { Button } from '@madisboard/component/ui/button';
 import { getUpgradeQuestionnaireLink } from '@madisboard/core/components/hooks/affine/use-subscription-notify';
-import { AuthService, SubscriptionService } from '@madisboard/core/modules/cloud';
+import {
+  AuthService,
+  SubscriptionService,
+} from '@madisboard/core/modules/cloud';
 import { SubscriptionPlan, SubscriptionRecurring } from '@madisboard/graphql';
 import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';

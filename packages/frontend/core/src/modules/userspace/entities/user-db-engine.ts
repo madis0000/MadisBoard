@@ -3,7 +3,10 @@ import {
   IndexedDBDocStorage,
   IndexedDBDocSyncStorage,
 } from '@madisboard/nbstore/idb';
-import { SqliteDocStorage, SqliteDocSyncStorage } from '@madisboard/nbstore/sqlite';
+import {
+  SqliteDocStorage,
+  SqliteDocSyncStorage,
+} from '@madisboard/nbstore/sqlite';
 import type { StoreClient } from '@madisboard/nbstore/worker/client';
 import { Entity } from '@toeverything/infra';
 

@@ -1,8 +1,15 @@
-import { Button, type ButtonProps, useConfirmModal } from '@madisboard/component';
+import {
+  Button,
+  type ButtonProps,
+  useConfirmModal,
+} from '@madisboard/component';
 import { useDowngradeNotify } from '@madisboard/core/components/affine/subscription-landing/notify';
 import { getDowngradeQuestionnaireLink } from '@madisboard/core/components/hooks/affine/use-subscription-notify';
 import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
-import { AuthService, SubscriptionService } from '@madisboard/core/modules/cloud';
+import {
+  AuthService,
+  SubscriptionService,
+} from '@madisboard/core/modules/cloud';
 import { SubscriptionPlan } from '@madisboard/graphql';
 import { useI18n } from '@madisboard/i18n';
 import { track } from '@madisboard/track';

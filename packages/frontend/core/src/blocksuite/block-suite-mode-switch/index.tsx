@@ -1,7 +1,10 @@
 import { RadioGroup, type RadioItem } from '@madisboard/component';
 import { registerAffineCommand } from '@madisboard/core/commands';
 import { EditorService } from '@madisboard/core/modules/editor';
-import { ViewService, WorkbenchService } from '@madisboard/core/modules/workbench';
+import {
+  ViewService,
+  WorkbenchService,
+} from '@madisboard/core/modules/workbench';
 import { useI18n } from '@madisboard/i18n';
 import { track } from '@madisboard/track';
 import type { DocMode } from '@blocksuite/affine/model';

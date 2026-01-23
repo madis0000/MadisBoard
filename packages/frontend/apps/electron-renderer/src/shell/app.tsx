@@ -9,7 +9,10 @@ import {
   configureAppTabsHeaderModule,
 } from '@madisboard/core/modules/app-tabs-header';
 import { configureDesktopApiModule } from '@madisboard/core/modules/desktop-api';
-import { configureI18nModule, I18nProvider } from '@madisboard/core/modules/i18n';
+import {
+  configureI18nModule,
+  I18nProvider,
+} from '@madisboard/core/modules/i18n';
 import { configureStorageModule } from '@madisboard/core/modules/storage';
 import { configureAppThemeModule } from '@madisboard/core/modules/theme';
 import { Framework, FrameworkRoot } from '@toeverything/infra';

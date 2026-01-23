@@ -1,5 +1,8 @@
 import { toggleGeneralAIOnboarding } from '@madisboard/core/components/affine/ai-onboarding/apis';
-import type { AuthAccountInfo, AuthService } from '@madisboard/core/modules/cloud';
+import type {
+  AuthAccountInfo,
+  AuthService,
+} from '@madisboard/core/modules/cloud';
 import type { GlobalDialogService } from '@madisboard/core/modules/dialogs';
 import {
   type AddContextFileInput,

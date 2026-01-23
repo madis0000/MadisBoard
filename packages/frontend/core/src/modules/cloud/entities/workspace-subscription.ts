@@ -1,4 +1,7 @@
-import type { SubscriptionQuery, SubscriptionRecurring } from '@madisboard/graphql';
+import type {
+  SubscriptionQuery,
+  SubscriptionRecurring,
+} from '@madisboard/graphql';
 import { SubscriptionPlan } from '@madisboard/graphql';
 import {
   catchErrorInto,

@@ -5,7 +5,10 @@ import {
 } from '@madisboard/core/components/page-list/tags';
 import { CreateOrEditTag } from '@madisboard/core/components/page-list/tags/create-tag';
 import type { TagMeta } from '@madisboard/core/components/page-list/types';
-import { TagService, useDeleteTagConfirmModal } from '@madisboard/core/modules/tag';
+import {
+  TagService,
+  useDeleteTagConfirmModal,
+} from '@madisboard/core/modules/tag';
 import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useState } from 'react';

@@ -1,6 +1,9 @@
 import { ScrollableContainer } from '@madisboard/component';
 import { MenuItem } from '@madisboard/component/ui/menu';
-import { AuthService, DefaultServerService } from '@madisboard/core/modules/cloud';
+import {
+  AuthService,
+  DefaultServerService,
+} from '@madisboard/core/modules/cloud';
 import { GlobalDialogService } from '@madisboard/core/modules/dialogs';
 import { type WorkspaceMetadata } from '@madisboard/core/modules/workspace';
 import { ServerFeature } from '@madisboard/graphql';

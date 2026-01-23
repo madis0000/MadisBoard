@@ -1,7 +1,10 @@
 import { ThemeProvider } from '@madisboard/core/components/theme-provider';
 import { configureElectronStateStorageImpls } from '@madisboard/core/desktop/storage';
 import { configureDesktopApiModule } from '@madisboard/core/modules/desktop-api';
-import { configureI18nModule, I18nProvider } from '@madisboard/core/modules/i18n';
+import {
+  configureI18nModule,
+  I18nProvider,
+} from '@madisboard/core/modules/i18n';
 import { configureStorageModule } from '@madisboard/core/modules/storage';
 import { configureEssentialThemeModule } from '@madisboard/core/modules/theme';
 import { appInfo } from '@madisboard/electron-api';

@@ -1,6 +1,9 @@
 import { Button, ErrorMessage, notify, Skeleton } from '@madisboard/component';
 import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
-import { AccessTokenService, ServerService } from '@madisboard/core/modules/cloud';
+import {
+  AccessTokenService,
+  ServerService,
+} from '@madisboard/core/modules/cloud';
 import { WorkspaceService } from '@madisboard/core/modules/workspace';
 import { UserFriendlyError } from '@madisboard/error';
 import { useI18n } from '@madisboard/i18n';

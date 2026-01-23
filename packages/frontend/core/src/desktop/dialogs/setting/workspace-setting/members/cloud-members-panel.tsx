@@ -1,4 +1,9 @@
-import { Button, Loading, notify, useConfirmModal } from '@madisboard/component';
+import {
+  Button,
+  Loading,
+  notify,
+  useConfirmModal,
+} from '@madisboard/component';
 import {
   InviteTeamMemberModal,
   type InviteTeamMemberModalProps,

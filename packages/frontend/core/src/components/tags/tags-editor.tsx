@@ -7,7 +7,10 @@ import {
   RowInput,
   Scrollable,
 } from '@madisboard/component';
-import { TagService, useDeleteTagConfirmModal } from '@madisboard/core/modules/tag';
+import {
+  TagService,
+  useDeleteTagConfirmModal,
+} from '@madisboard/core/modules/tag';
 import { useI18n } from '@madisboard/i18n';
 import { DoneIcon, MoreHorizontalIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';

@@ -1,5 +1,9 @@
 import { IconButton, Menu, observeResize } from '@madisboard/component';
-import type { PDF, PDFMeta, PDFRendererState } from '@madisboard/core/modules/pdf';
+import type {
+  PDF,
+  PDFMeta,
+  PDFRendererState,
+} from '@madisboard/core/modules/pdf';
 import { PDFService, PDFStatus } from '@madisboard/core/modules/pdf';
 import { cacheBitmap } from '@madisboard/core/modules/pdf/cache/bitmap-cache';
 import {

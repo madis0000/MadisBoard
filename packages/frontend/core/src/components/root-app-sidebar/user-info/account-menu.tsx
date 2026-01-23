@@ -1,5 +1,8 @@
 import { MenuItem } from '@madisboard/component';
-import { ServerService, UserFeatureService } from '@madisboard/core/modules/cloud';
+import {
+  ServerService,
+  UserFeatureService,
+} from '@madisboard/core/modules/cloud';
 import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
 import { useI18n } from '@madisboard/i18n';
 import { track } from '@madisboard/track';

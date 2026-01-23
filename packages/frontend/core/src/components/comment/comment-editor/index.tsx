@@ -1,5 +1,8 @@
 import { IconButton, notify, toast } from '@madisboard/component';
-import { LitDocEditor, type PageEditor } from '@madisboard/core/blocksuite/editors';
+import {
+  LitDocEditor,
+  type PageEditor,
+} from '@madisboard/core/blocksuite/editors';
 import { SnapshotHelper } from '@madisboard/core/modules/comment/services/snapshot-helper';
 import type { CommentAttachment } from '@madisboard/core/modules/comment/types';
 import { PeekViewService } from '@madisboard/core/modules/peek-view';

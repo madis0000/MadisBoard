@@ -1,4 +1,7 @@
-import { type MenuSubProps, useMobileMenuController } from '@madisboard/component';
+import {
+  type MenuSubProps,
+  useMobileMenuController,
+} from '@madisboard/component';
 import { TagService } from '@madisboard/core/modules/tag';
 import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';

@@ -3,7 +3,10 @@ import {
   notify,
   useConfirmModal,
 } from '@madisboard/component';
-import { AuthService, DefaultServerService } from '@madisboard/core/modules/cloud';
+import {
+  AuthService,
+  DefaultServerService,
+} from '@madisboard/core/modules/cloud';
 import { UserFriendlyError } from '@madisboard/error';
 import { ServerFeature } from '@madisboard/graphql';
 import { useI18n } from '@madisboard/i18n';

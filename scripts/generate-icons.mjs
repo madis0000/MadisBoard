@@ -19,7 +19,8 @@ function createPNG(width, height, color = BG_COLOR) {
     for (let x = 0; x < width; x++) {
       const offset = y * (width * 4 + 1) + 1 + x * 4;
       // Create a simple centered circle/square pattern
-      const cx = width / 2, cy = height / 2;
+      const cx = width / 2,
+        cy = height / 2;
       const dist = Math.sqrt((x - cx) ** 2 + (y - cy) ** 2);
       const radius = Math.min(width, height) * 0.4;
       if (dist < radius) {
@@ -74,14 +75,14 @@ function createPNG(width, height, color = BG_COLOR) {
 
 // CRC32 implementation
 function crc32(buf) {
-  let crc = 0xFFFFFFFF;
+  let crc = 0xffffffff;
   for (let i = 0; i < buf.length; i++) {
     crc ^= buf[i];
     for (let j = 0; j < 8; j++) {
-      crc = (crc >>> 1) ^ (crc & 1 ? 0xEDB88320 : 0);
+      crc = (crc >>> 1) ^ (crc & 1 ? 0xedb88320 : 0);
     }
   }
-  return (crc ^ 0xFFFFFFFF) >>> 0;
+  return (crc ^ 0xffffffff) >>> 0;
 }
 
 function createICO(pngBuffers) {
@@ -122,7 +123,10 @@ function writeIcon(filePath, buffer) {
 }
 
 // Generate all required icons
-const ROOT = join(dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1')), '..');
+const ROOT = join(
+  dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1')),
+  '..'
+);
 
 console.log('Generating MadisBoard placeholder icons...\n');
 
@@ -138,16 +142,25 @@ writeIcon(join(webIconDir, 'apple-touch-icon.png'), createPNG(180, 180));
 
 // Create favicon.ico (multi-size)
 const icoSizes = [16, 32, 48];
-const icoPngs = icoSizes.map(size => ({ width: size, buffer: createPNG(size, size) }));
+const icoPngs = icoSizes.map(size => ({
+  width: size,
+  buffer: createPNG(size, size),
+}));
 writeIcon(join(webIconDir, 'favicon.ico'), createICO(icoPngs));
 
 // Electron icons
-const electronIconDir = join(ROOT, 'packages/frontend/apps/electron/resources/icons');
+const electronIconDir = join(
+  ROOT,
+  'packages/frontend/apps/electron/resources/icons'
+);
 console.log('\nElectron icons:');
 
 const buildTypes = ['stable', 'beta', 'canary', 'internal'];
 for (const bt of buildTypes) {
-  writeIcon(join(electronIconDir, `icon_${bt}_512x512.png`), createPNG(512, 512));
+  writeIcon(
+    join(electronIconDir, `icon_${bt}_512x512.png`),
+    createPNG(512, 512)
+  );
   writeIcon(join(electronIconDir, `icon_${bt}_64x64.png`), createPNG(64, 64));
 
   // ICO files
@@ -170,8 +183,14 @@ for (const bt of buildTypes) {
 writeIcon(join(electronIconDir, 'tray-icon.png'), createPNG(22, 22));
 
 // DMG background (540x380 is standard)
-writeIcon(join(electronIconDir, 'dmg-background.png'), createPNG(540, 380, BG_COLOR));
-writeIcon(join(electronIconDir, 'dmg-background@2x.png'), createPNG(1080, 760, BG_COLOR));
+writeIcon(
+  join(electronIconDir, 'dmg-background.png'),
+  createPNG(540, 380, BG_COLOR)
+);
+writeIcon(
+  join(electronIconDir, 'dmg-background@2x.png'),
+  createPNG(1080, 760, BG_COLOR)
+);
 
 console.log('\nDone! All placeholder icons generated.');
 console.log('Replace these with proper branded icons when ready.');

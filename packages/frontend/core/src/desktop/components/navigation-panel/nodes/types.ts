@@ -1,4 +1,7 @@
-import type { DropTargetDropEvent, DropTargetOptions } from '@madisboard/component';
+import type {
+  DropTargetDropEvent,
+  DropTargetOptions,
+} from '@madisboard/component';
 import type { AffineDNDData } from '@madisboard/core/types/dnd';
 
 import type { NavigationPanelTreeNodeDropEffect } from '../tree';

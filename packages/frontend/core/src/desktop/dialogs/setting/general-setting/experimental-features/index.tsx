@@ -1,4 +1,10 @@
-import { Button, Checkbox, Loading, Switch, Tooltip } from '@madisboard/component';
+import {
+  Button,
+  Checkbox,
+  Loading,
+  Switch,
+  Tooltip,
+} from '@madisboard/component';
 import { SettingHeader } from '@madisboard/component/setting-components';
 import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
 import {

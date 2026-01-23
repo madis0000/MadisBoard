@@ -1,4 +1,8 @@
-import { RadioGroup, type RadioItem, type RadioProps } from '@madisboard/component';
+import {
+  RadioGroup,
+  type RadioItem,
+  type RadioProps,
+} from '@madisboard/component';
 import clsx from 'clsx';
 import { useMemo } from 'react';
 

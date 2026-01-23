@@ -1,5 +1,8 @@
 import type { WorkspaceServerService } from '@madisboard/core/modules/cloud';
-import { getWorkspaceInfoQuery, leaveWorkspaceMutation } from '@madisboard/graphql';
+import {
+  getWorkspaceInfoQuery,
+  leaveWorkspaceMutation,
+} from '@madisboard/graphql';
 import { Store } from '@toeverything/infra';
 
 import type { WorkspaceLocalState } from '../../workspace';

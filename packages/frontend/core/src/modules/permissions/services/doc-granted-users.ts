@@ -1,4 +1,7 @@
-import { DocRole, type GetPageGrantedUsersListQuery } from '@madisboard/graphql';
+import {
+  DocRole,
+  type GetPageGrantedUsersListQuery,
+} from '@madisboard/graphql';
 import {
   catchErrorInto,
   effect,

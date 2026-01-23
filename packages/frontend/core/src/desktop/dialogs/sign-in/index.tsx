@@ -1,5 +1,8 @@
 import { Modal } from '@madisboard/component';
-import { SignInPanel, type SignInStep } from '@madisboard/core/components/sign-in';
+import {
+  SignInPanel,
+  type SignInStep,
+} from '@madisboard/core/components/sign-in';
 import type { AuthSessionStatus } from '@madisboard/core/modules/cloud/entities/session';
 import type {
   DialogComponentProps,

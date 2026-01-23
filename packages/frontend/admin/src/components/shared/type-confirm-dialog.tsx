@@ -1,4 +1,7 @@
-import { Button, type ButtonProps } from '@madisboard/admin/components/ui/button';
+import {
+  Button,
+  type ButtonProps,
+} from '@madisboard/admin/components/ui/button';
 import {
   Dialog,
   DialogContent,

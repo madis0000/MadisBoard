@@ -1,5 +1,8 @@
 import { generateSubscriptionCallbackLink } from '@madisboard/core/components/hooks/affine/use-subscription-notify';
-import { AuthService, SubscriptionService } from '@madisboard/core/modules/cloud';
+import {
+  AuthService,
+  SubscriptionService,
+} from '@madisboard/core/modules/cloud';
 import { UrlService } from '@madisboard/core/modules/url';
 import { SubscriptionPlan, SubscriptionRecurring } from '@madisboard/graphql';
 import { useFramework } from '@toeverything/infra';

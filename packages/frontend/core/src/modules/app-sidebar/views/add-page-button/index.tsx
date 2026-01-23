@@ -1,4 +1,10 @@
-import { Button, IconButton, Menu, MenuItem, MenuSub } from '@madisboard/component';
+import {
+  Button,
+  IconButton,
+  Menu,
+  MenuItem,
+  MenuSub,
+} from '@madisboard/component';
 import { usePageHelper } from '@madisboard/core/blocksuite/block-suite-page-list/utils';
 import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
 import { DocsService } from '@madisboard/core/modules/doc';

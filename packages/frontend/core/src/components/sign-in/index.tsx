@@ -1,4 +1,7 @@
-import { DefaultServerService, type Server } from '@madisboard/core/modules/cloud';
+import {
+  DefaultServerService,
+  type Server,
+} from '@madisboard/core/modules/cloud';
 import type { AuthSessionStatus } from '@madisboard/core/modules/cloud/entities/session';
 import { FrameworkScope, useService } from '@toeverything/infra';
 import { useState } from 'react';

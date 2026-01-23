@@ -1,4 +1,7 @@
-import { ServerService, SubscriptionService } from '@madisboard/core/modules/cloud';
+import {
+  ServerService,
+  SubscriptionService,
+} from '@madisboard/core/modules/cloud';
 import { SubscriptionPlan } from '@madisboard/graphql';
 import { useLiveData, useServices } from '@toeverything/infra';
 import clsx from 'clsx';

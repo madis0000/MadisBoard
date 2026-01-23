@@ -10,7 +10,10 @@ import {
   AIToolsConfigService,
 } from '@madisboard/core/modules/ai-button';
 import { AIModelService } from '@madisboard/core/modules/ai-button/services/models';
-import { ServerService, SubscriptionService } from '@madisboard/core/modules/cloud';
+import {
+  ServerService,
+  SubscriptionService,
+} from '@madisboard/core/modules/cloud';
 import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
 import { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
 import { PeekViewService } from '@madisboard/core/modules/peek-view';

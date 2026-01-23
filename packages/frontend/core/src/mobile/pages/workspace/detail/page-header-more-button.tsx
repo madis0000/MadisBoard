@@ -1,4 +1,9 @@
-import { IconButton, notify, toast, useConfirmModal } from '@madisboard/component';
+import {
+  IconButton,
+  notify,
+  toast,
+  useConfirmModal,
+} from '@madisboard/component';
 import {
   MenuSeparator,
   MenuSub,

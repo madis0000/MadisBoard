@@ -1,4 +1,7 @@
-import type { GetWorkspacePageByIdQuery, PublicDocMode } from '@madisboard/graphql';
+import type {
+  GetWorkspacePageByIdQuery,
+  PublicDocMode,
+} from '@madisboard/graphql';
 import {
   catchErrorInto,
   effect,

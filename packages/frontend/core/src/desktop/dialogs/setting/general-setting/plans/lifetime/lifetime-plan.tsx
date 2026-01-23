@@ -1,5 +1,8 @@
 import { Button } from '@madisboard/component';
-import { AuthService, SubscriptionService } from '@madisboard/core/modules/cloud';
+import {
+  AuthService,
+  SubscriptionService,
+} from '@madisboard/core/modules/cloud';
 import { SubscriptionPlan, SubscriptionRecurring } from '@madisboard/graphql';
 import { Trans, useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';

@@ -1,4 +1,9 @@
-import { IconButton, MenuItem, MenuSeparator, toast } from '@madisboard/component';
+import {
+  IconButton,
+  MenuItem,
+  MenuSeparator,
+  toast,
+} from '@madisboard/component';
 import { usePageHelper } from '@madisboard/core/blocksuite/block-suite-page-list/utils';
 import { IsFavoriteIcon } from '@madisboard/core/components/pure/icons';
 import { DocsService } from '@madisboard/core/modules/doc';

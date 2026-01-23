@@ -1,7 +1,11 @@
 import { shallowEqual } from '@madisboard/component';
 import { DebugLogger } from '@madisboard/debug';
 import { ServerDeploymentType } from '@madisboard/graphql';
-import { flushTelemetry, setTelemetryContext, tracker } from '@madisboard/track';
+import {
+  flushTelemetry,
+  setTelemetryContext,
+  tracker,
+} from '@madisboard/track';
 import { LiveData, OnEvent, Service } from '@toeverything/infra';
 
 import type { AuthAccountInfo, Server, ServersService } from '../../cloud';

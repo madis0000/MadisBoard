@@ -1,4 +1,7 @@
-import type { ConfirmModalProps, ElementOrFactory } from '@madisboard/component';
+import type {
+  ConfirmModalProps,
+  ElementOrFactory,
+} from '@madisboard/component';
 import {
   AffinePageReference,
   AffineSharedPageReference,

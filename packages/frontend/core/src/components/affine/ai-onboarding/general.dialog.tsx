@@ -1,6 +1,9 @@
 import { Button, IconButton, Modal } from '@madisboard/component';
 import { useBlurRoot } from '@madisboard/core/components/hooks/use-blur-root';
-import { AuthService, SubscriptionService } from '@madisboard/core/modules/cloud';
+import {
+  AuthService,
+  SubscriptionService,
+} from '@madisboard/core/modules/cloud';
 import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
 import { Trans, useI18n } from '@madisboard/i18n';
 import { track } from '@madisboard/track';
