@@ -1,5 +1,5 @@
-import { DebugLogger } from '@affine/debug';
-import type { WorkspaceQuotaQuery } from '@affine/graphql';
+import { DebugLogger } from '@madisboard/debug';
+import type { WorkspaceQuotaQuery } from '@madisboard/graphql';
 import {
   catchErrorInto,
   effect,

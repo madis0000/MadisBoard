@@ -1,13 +1,13 @@
-import { Button, ErrorMessage, Skeleton } from '@affine/component';
-import { SettingRow } from '@affine/component/setting-components';
+import { Button, ErrorMessage, Skeleton } from '@madisboard/component';
+import { SettingRow } from '@madisboard/component/setting-components';
 import {
   ServerService,
   SubscriptionService,
   UserCopilotQuotaService,
-} from '@affine/core/modules/cloud';
-import { SubscriptionPlan } from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/core/modules/cloud';
+import { SubscriptionPlan } from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { useLiveData, useService } from '@toeverything/infra';
 import { cssVar } from '@toeverything/theme';
 import { useCallback, useEffect } from 'react';

@@ -1,15 +1,15 @@
 {
-  "name": "@affine/electron",
+  "name": "@madisboard/electron",
   "private": true,
   "version": "0.26.0",
   "main": "./dist/main.js",
-  "author": "toeverything",
+  "author": "madis0000",
   "repository": {
-    "url": "https://github.com/toeverything/AFFiNE",
+    "url": "https://github.com/madis0000/MadisBoard",
     "type": "git"
   },
-  "description": "AFFiNE Desktop App",
-  "homepage": "https://github.com/toeverything/AFFiNE",
+  "description": "MadisBoard Desktop App",
+  "homepage": "https://github.com/madis0000/MadisBoard",
   "exports": {
     "./helper/exposed": "./src/helper/exposed.ts",
     "./main/exposed": "./src/main/exposed.ts",
@@ -32,10 +32,6 @@
     "make-nsis": "node ./scripts/make-nsis.ts"
   },
   "devDependencies": {
-    "@affine-tools/utils": "workspace:*",
-    "@affine/i18n": "workspace:*",
-    "@affine/native": "workspace:*",
-    "@affine/nbstore": "workspace:*",
     "@electron-forge/cli": "^7.10.2",
     "@electron-forge/core": "^7.10.2",
     "@electron-forge/core-utils": "^7.10.2",
@@ -47,6 +43,10 @@
     "@electron-forge/plugin-auto-unpack-natives": "^7.10.2",
     "@electron-forge/plugin-fuses": "^7.10.2",
     "@electron-forge/shared-types": "^7.10.2",
+    "@madisboard-tools/utils": "workspace:*",
+    "@madisboard/i18n": "workspace:*",
+    "@madisboard/native": "workspace:*",
+    "@madisboard/nbstore": "workspace:*",
     "@pengx17/electron-forge-maker-appimage": "^1.2.1",
     "@sentry/electron": "^7.0.0",
     "@sentry/esbuild-plugin": "^3.0.0",

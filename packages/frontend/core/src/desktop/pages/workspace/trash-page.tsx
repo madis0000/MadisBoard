@@ -1,15 +1,15 @@
-import { toast, useConfirmModal } from '@affine/component';
+import { toast, useConfirmModal } from '@madisboard/component';
 import {
   createDocExplorerContext,
   DocExplorerContext,
-} from '@affine/core/components/explorer/context';
-import { DocsExplorer } from '@affine/core/components/explorer/docs-view/docs-list';
-import { useBlockSuiteMetaHelper } from '@affine/core/components/hooks/affine/use-block-suite-meta-helper';
-import { Header } from '@affine/core/components/pure/header';
-import { CollectionRulesService } from '@affine/core/modules/collection-rules';
-import { GlobalContextService } from '@affine/core/modules/global-context';
-import { WorkspacePermissionService } from '@affine/core/modules/permissions';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/components/explorer/context';
+import { DocsExplorer } from '@madisboard/core/components/explorer/docs-view/docs-list';
+import { useBlockSuiteMetaHelper } from '@madisboard/core/components/hooks/affine/use-block-suite-meta-helper';
+import { Header } from '@madisboard/core/components/pure/header';
+import { CollectionRulesService } from '@madisboard/core/modules/collection-rules';
+import { GlobalContextService } from '@madisboard/core/modules/global-context';
+import { WorkspacePermissionService } from '@madisboard/core/modules/permissions';
+import { useI18n } from '@madisboard/i18n';
 import { DeleteIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useEffect, useState } from 'react';

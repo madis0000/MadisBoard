@@ -1,9 +1,9 @@
 import {
   AuthPageContainer,
   type User,
-} from '@affine/component/auth-components';
-import type { GetInviteInfoQuery } from '@affine/graphql';
-import { Trans, useI18n } from '@affine/i18n';
+} from '@madisboard/component/auth-components';
+import type { GetInviteInfoQuery } from '@madisboard/graphql';
+import { Trans, useI18n } from '@madisboard/i18n';
 
 import { Avatar } from '../../ui/avatar';
 import * as styles from './styles.css';

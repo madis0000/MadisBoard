@@ -1,12 +1,12 @@
-import { Button } from '@affine/component';
-import { SettingRow } from '@affine/component/setting-components';
-import { SubscriptionService } from '@affine/core/modules/cloud';
+import { Button } from '@madisboard/component';
+import { SettingRow } from '@madisboard/component/setting-components';
+import { SubscriptionService } from '@madisboard/core/modules/cloud';
 import {
   SubscriptionPlan,
   SubscriptionRecurring,
   SubscriptionStatus,
-} from '@affine/graphql';
-import { type I18nString, i18nTime, Trans, useI18n } from '@affine/i18n';
+} from '@madisboard/graphql';
+import { type I18nString, i18nTime, Trans, useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useEffect } from 'react';
 

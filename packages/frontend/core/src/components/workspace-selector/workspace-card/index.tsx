@@ -1,15 +1,15 @@
-import { Button, notify, Skeleton, Tooltip } from '@affine/component';
-import { Loading } from '@affine/component/ui/loading';
-import { useSystemOnline } from '@affine/core/components/hooks/use-system-online';
-import { useWorkspace } from '@affine/core/components/hooks/use-workspace';
-import { useWorkspaceInfo } from '@affine/core/components/hooks/use-workspace-info';
+import { Button, notify, Skeleton, Tooltip } from '@madisboard/component';
+import { Loading } from '@madisboard/component/ui/loading';
+import { useSystemOnline } from '@madisboard/core/components/hooks/use-system-online';
+import { useWorkspace } from '@madisboard/core/components/hooks/use-workspace';
+import { useWorkspaceInfo } from '@madisboard/core/components/hooks/use-workspace-info';
 import {
   type WorkspaceMetadata,
   type WorkspaceProfileInfo,
   WorkspacesService,
-} from '@affine/core/modules/workspace';
-import { UNTITLED_WORKSPACE_NAME } from '@affine/env/constant';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/workspace';
+import { UNTITLED_WORKSPACE_NAME } from '@madisboard/env/constant';
+import { useI18n } from '@madisboard/i18n';
 import {
   ArrowDownSmallIcon,
   CloudWorkspaceIcon,

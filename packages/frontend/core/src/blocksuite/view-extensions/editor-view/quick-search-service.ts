@@ -1,14 +1,14 @@
-import { DocsService } from '@affine/core/modules/doc';
+import { DocsService } from '@madisboard/core/modules/doc';
 import {
   CreationQuickSearchSession,
   DocsQuickSearchSession,
   LinksQuickSearchSession,
   QuickSearchService,
   RecentDocsQuickSearchSession,
-} from '@affine/core/modules/quicksearch';
-import { ExternalLinksQuickSearchSession } from '@affine/core/modules/quicksearch/impls/external-links';
-import { JournalsQuickSearchSession } from '@affine/core/modules/quicksearch/impls/journals';
-import { track } from '@affine/track';
+} from '@madisboard/core/modules/quicksearch';
+import { ExternalLinksQuickSearchSession } from '@madisboard/core/modules/quicksearch/impls/external-links';
+import { JournalsQuickSearchSession } from '@madisboard/core/modules/quicksearch/impls/journals';
+import { track } from '@madisboard/track';
 import {
   BookmarkSlashMenuConfigIdentifier,
   insertLinkByQuickSearchCommand,

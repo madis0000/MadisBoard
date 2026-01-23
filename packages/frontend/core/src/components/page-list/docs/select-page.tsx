@@ -1,10 +1,10 @@
-import { IconButton, Menu } from '@affine/component';
+import { IconButton, Menu } from '@madisboard/component';
 import {
   CollectionRulesService,
   type FilterParams,
-} from '@affine/core/modules/collection-rules';
-import { ShareDocsListService } from '@affine/core/modules/share-doc';
-import { Trans, useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/collection-rules';
+import { ShareDocsListService } from '@madisboard/core/modules/share-doc';
+import { Trans, useI18n } from '@madisboard/i18n';
 import { FilterIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@toeverything/infra';
 import { memo, type ReactNode, useCallback, useEffect, useState } from 'react';

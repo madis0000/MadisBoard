@@ -1,5 +1,5 @@
-import { type CreateCheckoutSessionInput } from '@affine/graphql';
-import { tracker } from '@affine/track';
+import { type CreateCheckoutSessionInput } from '@madisboard/graphql';
+import { tracker } from '@madisboard/track';
 import { OnEvent, Service } from '@toeverything/infra';
 
 import { Subscription } from '../entities/subscription';

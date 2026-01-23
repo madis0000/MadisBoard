@@ -1,10 +1,10 @@
-import type { MenuItemProps } from '@affine/component';
-import { Menu, MenuItem, usePromptModal } from '@affine/component';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { CompatibleFavoriteItemsAdapter } from '@affine/core/modules/favorite';
-import { WorkbenchService } from '@affine/core/modules/workbench';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+import type { MenuItemProps } from '@madisboard/component';
+import { Menu, MenuItem, usePromptModal } from '@madisboard/component';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { CompatibleFavoriteItemsAdapter } from '@madisboard/core/modules/favorite';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import {
   DeleteIcon,
   EditIcon,

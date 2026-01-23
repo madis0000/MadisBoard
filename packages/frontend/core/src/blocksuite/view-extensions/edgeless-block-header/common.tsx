@@ -1,8 +1,8 @@
-import { IconButton } from '@affine/component';
-import { useSharingUrl } from '@affine/core/components/hooks/affine/use-share-url';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
+import { IconButton } from '@madisboard/component';
+import { useSharingUrl } from '@madisboard/core/components/hooks/affine/use-share-url';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
 import { type DocMode } from '@blocksuite/affine/model';
 import { InformationIcon, LinkIcon } from '@blocksuite/icons/rc';
 import { useService } from '@toeverything/infra';

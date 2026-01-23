@@ -1,12 +1,12 @@
-import { getStoreManager } from '@affine/core/blocksuite/manager/store';
-import { AffineContext } from '@affine/core/components/context';
-import { AppFallback } from '@affine/core/mobile/components/app-fallback';
-import { configureMobileModules } from '@affine/core/mobile/modules';
-import { HapticProvider } from '@affine/core/mobile/modules/haptics';
-import { NavigationGestureProvider } from '@affine/core/mobile/modules/navigation-gesture';
-import { VirtualKeyboardProvider } from '@affine/core/mobile/modules/virtual-keyboard';
-import { router } from '@affine/core/mobile/router';
-import { configureCommonModules } from '@affine/core/modules';
+import { getStoreManager } from '@madisboard/core/blocksuite/manager/store';
+import { AffineContext } from '@madisboard/core/components/context';
+import { AppFallback } from '@madisboard/core/mobile/components/app-fallback';
+import { configureMobileModules } from '@madisboard/core/mobile/modules';
+import { HapticProvider } from '@madisboard/core/mobile/modules/haptics';
+import { NavigationGestureProvider } from '@madisboard/core/mobile/modules/navigation-gesture';
+import { VirtualKeyboardProvider } from '@madisboard/core/mobile/modules/virtual-keyboard';
+import { router } from '@madisboard/core/mobile/router';
+import { configureCommonModules } from '@madisboard/core/modules';
 import {
   AuthProvider,
   AuthService,
@@ -16,36 +16,36 @@ import {
   ServersService,
   SubscriptionService,
   ValidatorProvider,
-} from '@affine/core/modules/cloud';
-import { DocsService } from '@affine/core/modules/doc';
-import { FeatureFlagService } from '@affine/core/modules/feature-flag';
-import { GlobalContextService } from '@affine/core/modules/global-context';
-import { I18nProvider } from '@affine/core/modules/i18n';
-import { LifecycleService } from '@affine/core/modules/lifecycle';
-import { NativePaywallProvider } from '@affine/core/modules/paywall';
+} from '@madisboard/core/modules/cloud';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
+import { GlobalContextService } from '@madisboard/core/modules/global-context';
+import { I18nProvider } from '@madisboard/core/modules/i18n';
+import { LifecycleService } from '@madisboard/core/modules/lifecycle';
+import { NativePaywallProvider } from '@madisboard/core/modules/paywall';
 import {
   configureLocalStorageStateStorageImpls,
   NbstoreProvider,
-} from '@affine/core/modules/storage';
-import { PopupWindowProvider } from '@affine/core/modules/url';
-import { ClientSchemeProvider } from '@affine/core/modules/url/providers/client-schema';
+} from '@madisboard/core/modules/storage';
+import { PopupWindowProvider } from '@madisboard/core/modules/url';
+import { ClientSchemeProvider } from '@madisboard/core/modules/url/providers/client-schema';
 import {
   configureBrowserWorkbenchModule,
   WorkbenchService,
-} from '@affine/core/modules/workbench';
+} from '@madisboard/core/modules/workbench';
 import {
   getAFFiNEWorkspaceSchema,
   WorkspacesService,
-} from '@affine/core/modules/workspace';
-import { configureBrowserWorkspaceFlavours } from '@affine/core/modules/workspace-engine';
-import { getWorkerUrl } from '@affine/env/worker';
+} from '@madisboard/core/modules/workspace';
+import { configureBrowserWorkspaceFlavours } from '@madisboard/core/modules/workspace-engine';
+import { getWorkerUrl } from '@madisboard/env/worker';
 import {
   refreshSubscriptionMutation,
   requestApplySubscriptionMutation,
-} from '@affine/graphql';
-import { I18n } from '@affine/i18n';
-import { StoreManagerClient } from '@affine/nbstore/worker/client';
-import { setTelemetryTransport } from '@affine/track';
+} from '@madisboard/graphql';
+import { I18n } from '@madisboard/i18n';
+import { StoreManagerClient } from '@madisboard/nbstore/worker/client';
+import { setTelemetryTransport } from '@madisboard/track';
 import { Container } from '@blocksuite/affine/global/di';
 import {
   docLinkBaseURLMiddleware,

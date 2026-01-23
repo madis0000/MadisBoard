@@ -1,11 +1,11 @@
-import { DesktopApiService } from '@affine/core/modules/desktop-api';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import type { SettingTab } from '@affine/core/modules/dialogs/constant';
-import { DocsService } from '@affine/core/modules/doc';
-import { JournalService } from '@affine/core/modules/journal';
-import { LifecycleService } from '@affine/core/modules/lifecycle';
-import { WorkbenchService } from '@affine/core/modules/workbench';
-import { apis, events } from '@affine/electron-api';
+import { DesktopApiService } from '@madisboard/core/modules/desktop-api';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import type { SettingTab } from '@madisboard/core/modules/dialogs/constant';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { JournalService } from '@madisboard/core/modules/journal';
+import { LifecycleService } from '@madisboard/core/modules/lifecycle';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
+import { apis, events } from '@madisboard/electron-api';
 import type { FrameworkProvider } from '@toeverything/infra';
 
 import { setupRecordingEvents } from './recording';

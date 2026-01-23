@@ -1,10 +1,10 @@
-import type { InlineEditProps } from '@affine/component';
-import { InlineEdit } from '@affine/component';
-import { useGuard } from '@affine/core/components/guard';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { DocService, DocsService } from '@affine/core/modules/doc';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { track } from '@affine/track';
+import type { InlineEditProps } from '@madisboard/component';
+import { InlineEdit } from '@madisboard/component';
+import { useGuard } from '@madisboard/core/components/guard';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { DocService, DocsService } from '@madisboard/core/modules/doc';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { track } from '@madisboard/track';
 import { useLiveData, useService } from '@toeverything/infra';
 import clsx from 'clsx';
 import type { HTMLAttributes } from 'react';

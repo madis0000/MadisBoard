@@ -1,2 +1,2 @@
-import '@affine/core/bootstrap/browser';
+import '@madisboard/core/bootstrap/browser';
 import './proxy';

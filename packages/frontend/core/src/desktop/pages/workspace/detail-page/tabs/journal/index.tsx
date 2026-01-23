@@ -1,4 +1,4 @@
-import type { DateCell } from '@affine/component';
+import type { DateCell } from '@madisboard/component';
 import {
   DatePicker,
   IconButton,
@@ -7,24 +7,24 @@ import {
   MenuSeparator,
   Scrollable,
   useConfirmModal,
-} from '@affine/component';
-import { Guard } from '@affine/core/components/guard';
-import { MoveToTrash } from '@affine/core/components/page-list';
-import { WorkspaceServerService } from '@affine/core/modules/cloud';
+} from '@madisboard/component';
+import { Guard } from '@madisboard/core/components/guard';
+import { MoveToTrash } from '@madisboard/core/components/page-list';
+import { WorkspaceServerService } from '@madisboard/core/modules/cloud';
 import {
   type DocRecord,
   DocService,
   DocsService,
-} from '@affine/core/modules/doc';
-import { DocDisplayMetaService } from '@affine/core/modules/doc-display-meta';
-import { IntegrationService } from '@affine/core/modules/integration';
-import { JournalService } from '@affine/core/modules/journal';
+} from '@madisboard/core/modules/doc';
+import { DocDisplayMetaService } from '@madisboard/core/modules/doc-display-meta';
+import { IntegrationService } from '@madisboard/core/modules/integration';
+import { JournalService } from '@madisboard/core/modules/journal';
 import {
   ViewService,
   WorkbenchLink,
   WorkbenchService,
-} from '@affine/core/modules/workbench';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/workbench';
+import { useI18n } from '@madisboard/i18n';
 import { CalendarXmarkIcon, EditIcon } from '@blocksuite/icons/rc';
 import {
   useLiveData,

@@ -1,11 +1,11 @@
-import { Button, notify } from '@affine/component';
-import { SettingRow } from '@affine/component/setting-components';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { useMutation } from '@affine/core/components/hooks/use-mutation';
-import { UrlService } from '@affine/core/modules/url';
-import { UserFriendlyError } from '@affine/error';
-import { createCustomerPortalMutation } from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
+import { Button, notify } from '@madisboard/component';
+import { SettingRow } from '@madisboard/component/setting-components';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { useMutation } from '@madisboard/core/components/hooks/use-mutation';
+import { UrlService } from '@madisboard/core/modules/url';
+import { UserFriendlyError } from '@madisboard/error';
+import { createCustomerPortalMutation } from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
 import { useService } from '@toeverything/infra';
 
 import * as styles from './styles.css';

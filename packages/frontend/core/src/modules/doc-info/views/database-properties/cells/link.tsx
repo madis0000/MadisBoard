@@ -1,8 +1,8 @@
-import { PropertyValue } from '@affine/component';
-import { AffinePageReference } from '@affine/core/components/affine/reference-link';
-import { ConfigModal } from '@affine/core/components/mobile';
-import { resolveLinkToDoc } from '@affine/core/modules/navigation';
-import { useI18n } from '@affine/i18n';
+import { PropertyValue } from '@madisboard/component';
+import { AffinePageReference } from '@madisboard/core/components/affine/reference-link';
+import { ConfigModal } from '@madisboard/core/components/mobile';
+import { resolveLinkToDoc } from '@madisboard/core/modules/navigation';
+import { useI18n } from '@madisboard/i18n';
 import { LinkIcon } from '@blocksuite/icons/rc';
 import type { LiveData } from '@toeverything/infra';
 import { useLiveData } from '@toeverything/infra';

@@ -22,8 +22,8 @@ export default {
   docs: {},
 
   async viteFinal(config, _options) {
-    const { getBuildConfig } = await import('@affine-tools/utils/build-config');
-    const { Package } = await import('@affine-tools/utils/workspace');
+    const { getBuildConfig } = await import('@madisboard-tools/utils/build-config');
+    const { Package } = await import('@madisboard-tools/utils/workspace');
 
     return mergeConfig(config, {
       plugins: [
@@ -52,7 +52,7 @@ export default {
         }),
       ],
       define: Object.entries(
-        getBuildConfig(new Package('@affine/web'), {
+        getBuildConfig(new Package('@madisboard/web'), {
           mode: 'development',
           channel: 'canary',
         })

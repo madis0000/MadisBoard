@@ -5,23 +5,23 @@ import {
   MenuSeparator,
   MenuSub,
   notify,
-} from '@affine/component';
-import { usePageHelper } from '@affine/core/blocksuite/block-suite-page-list/utils';
+} from '@madisboard/component';
+import { usePageHelper } from '@madisboard/core/blocksuite/block-suite-page-list/utils';
 import type {
   NavigationPanelTreeNodeIcon,
   NodeOperation,
-} from '@affine/core/desktop/components/navigation-panel';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { CompatibleFavoriteItemsAdapter } from '@affine/core/modules/favorite';
-import { FeatureFlagService } from '@affine/core/modules/feature-flag';
-import { NavigationPanelService } from '@affine/core/modules/navigation-panel';
+} from '@madisboard/core/desktop/components/navigation-panel';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { CompatibleFavoriteItemsAdapter } from '@madisboard/core/modules/favorite';
+import { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
+import { NavigationPanelService } from '@madisboard/core/modules/navigation-panel';
 import {
   type FolderNode,
   OrganizeService,
-} from '@affine/core/modules/organize';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+} from '@madisboard/core/modules/organize';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import {
   DeleteIcon,
   FolderIcon,

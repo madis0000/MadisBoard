@@ -3,7 +3,7 @@ import {
   removeAvatarMutation,
   updateUserProfileMutation,
   uploadAvatarMutation,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 import { Store } from '@toeverything/infra';
 
 import type { GlobalState } from '../../storage';

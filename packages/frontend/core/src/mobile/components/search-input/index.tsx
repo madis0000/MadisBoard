@@ -1,4 +1,4 @@
-import { useAutoFocus } from '@affine/component';
+import { useAutoFocus } from '@madisboard/component';
 import { getFigmaSquircleSvgPath } from '@blocksuite/affine/shared/utils';
 import { SearchIcon } from '@blocksuite/icons/rc';
 import clsx from 'clsx';

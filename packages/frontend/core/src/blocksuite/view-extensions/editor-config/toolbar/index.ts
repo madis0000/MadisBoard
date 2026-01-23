@@ -1,14 +1,14 @@
-import { notify } from '@affine/component';
+import { notify } from '@madisboard/component';
 import {
   generateUrl,
   type UseSharingUrl,
-} from '@affine/core/components/hooks/affine/use-share-url';
-import { WorkspaceServerService } from '@affine/core/modules/cloud';
-import { EditorService } from '@affine/core/modules/editor';
-import type { EditorSettingExt } from '@affine/core/modules/editor-setting/entities/editor-setting';
-import { copyLinkToBlockStdScopeClipboard } from '@affine/core/utils/clipboard';
-import { I18n, i18nTime } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/core/components/hooks/affine/use-share-url';
+import { WorkspaceServerService } from '@madisboard/core/modules/cloud';
+import { EditorService } from '@madisboard/core/modules/editor';
+import type { EditorSettingExt } from '@madisboard/core/modules/editor-setting/entities/editor-setting';
+import { copyLinkToBlockStdScopeClipboard } from '@madisboard/core/utils/clipboard';
+import { I18n, i18nTime } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { BookmarkBlockComponent } from '@blocksuite/affine/blocks/bookmark';
 import {
   EmbedFigmaBlockComponent,

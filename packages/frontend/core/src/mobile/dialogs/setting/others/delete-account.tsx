@@ -1,10 +1,10 @@
-import { ConfirmModal, notify, useConfirmModal } from '@affine/component';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { AuthService } from '@affine/core/modules/cloud';
-import { WorkspacesService } from '@affine/core/modules/workspace';
-import { UserFriendlyError } from '@affine/error';
-import { Trans, useI18n } from '@affine/i18n';
-import track from '@affine/track';
+import { ConfirmModal, notify, useConfirmModal } from '@madisboard/component';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { AuthService } from '@madisboard/core/modules/cloud';
+import { WorkspacesService } from '@madisboard/core/modules/workspace';
+import { UserFriendlyError } from '@madisboard/error';
+import { Trans, useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useState } from 'react';

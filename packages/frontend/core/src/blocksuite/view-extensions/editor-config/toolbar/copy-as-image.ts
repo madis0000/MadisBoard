@@ -1,8 +1,8 @@
-import { notify } from '@affine/component';
-import { isMindmapChild, isMindMapRoot } from '@affine/core/blocksuite/ai';
-import { EditorService } from '@affine/core/modules/editor';
-import { apis } from '@affine/electron-api';
-import { I18n } from '@affine/i18n';
+import { notify } from '@madisboard/component';
+import { isMindmapChild, isMindMapRoot } from '@madisboard/core/blocksuite/ai';
+import { EditorService } from '@madisboard/core/modules/editor';
+import { apis } from '@madisboard/electron-api';
+import { I18n } from '@madisboard/i18n';
 import type { MenuContext } from '@blocksuite/affine/components/toolbar';
 import { Bound, getCommonBound } from '@blocksuite/affine/global/gfx';
 import type { BlockStdScope } from '@blocksuite/affine/std';

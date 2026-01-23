@@ -28,7 +28,7 @@ const config: PlaywrightTestConfig = {
   reporter: process.env.CI ? 'github' : 'list',
   webServer: [
     {
-      command: 'yarn run -T affine dev -p @affine/web',
+      command: 'yarn run -T affine dev -p @madisboard/web',
       stdout: 'ignore',
       stderr: 'ignore',
       timeout: 120 * 1000,
@@ -39,7 +39,7 @@ const config: PlaywrightTestConfig = {
       url: 'http://localhost:8080',
     },
     {
-      command: 'yarn run -T affine dev -p @affine/server',
+      command: 'yarn run -T affine dev -p @madisboard/server',
       timeout: 120 * 1000,
       reuseExistingServer: !process.env.CI,
       stdout: 'ignore',

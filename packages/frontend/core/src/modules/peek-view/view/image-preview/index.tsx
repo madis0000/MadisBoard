@@ -1,6 +1,6 @@
-import { Divider, Loading, toast } from '@affine/component';
-import { Button, IconButton } from '@affine/component/ui/button';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
+import { Divider, Loading, toast } from '@madisboard/component';
+import { Button, IconButton } from '@madisboard/component/ui/button';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
 import type { ImageBlockModel } from '@blocksuite/affine/model';
 import type { BlockModel, Workspace } from '@blocksuite/affine/store';
 import {

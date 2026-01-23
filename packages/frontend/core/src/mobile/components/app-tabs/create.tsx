@@ -1,10 +1,10 @@
-import { usePageHelper } from '@affine/core/blocksuite/block-suite-page-list/utils';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { DocsService } from '@affine/core/modules/doc';
-import { TemplateDocService } from '@affine/core/modules/template-doc';
-import { WorkbenchService } from '@affine/core/modules/workbench';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import track from '@affine/track';
+import { usePageHelper } from '@madisboard/core/blocksuite/block-suite-page-list/utils';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { TemplateDocService } from '@madisboard/core/modules/template-doc';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import track from '@madisboard/track';
 import { EditIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 

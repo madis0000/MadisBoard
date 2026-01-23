@@ -1,7 +1,7 @@
-import { ErrorMessage, Skeleton } from '@affine/component';
-import { SettingRow } from '@affine/component/setting-components';
-import { WorkspaceQuotaService } from '@affine/core/modules/quota';
-import { useI18n } from '@affine/i18n';
+import { ErrorMessage, Skeleton } from '@madisboard/component';
+import { SettingRow } from '@madisboard/component/setting-components';
+import { WorkspaceQuotaService } from '@madisboard/core/modules/quota';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import { useEffect } from 'react';

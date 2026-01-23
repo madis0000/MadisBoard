@@ -1,13 +1,13 @@
-import { Button, type ButtonProps } from '@affine/component';
-import { generateSubscriptionCallbackLink } from '@affine/core/components/hooks/affine/use-subscription-notify';
-import { AuthService } from '@affine/core/modules/cloud';
+import { Button, type ButtonProps } from '@madisboard/component';
+import { generateSubscriptionCallbackLink } from '@madisboard/core/components/hooks/affine/use-subscription-notify';
+import { AuthService } from '@madisboard/core/modules/cloud';
 import {
   SubscriptionPlan,
   SubscriptionRecurring,
   SubscriptionVariant,
-} from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+} from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import { useService } from '@toeverything/infra';
 import { useCallback, useMemo } from 'react';
 

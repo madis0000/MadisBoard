@@ -1,5 +1,5 @@
-import { Button, IconButton } from '@affine/component';
-import { useI18n } from '@affine/i18n';
+import { Button, IconButton } from '@madisboard/component';
+import { useI18n } from '@madisboard/i18n';
 import { ToggleRightIcon } from '@blocksuite/icons/rc';
 import { useLiveData } from '@toeverything/infra';
 import clsx from 'clsx';

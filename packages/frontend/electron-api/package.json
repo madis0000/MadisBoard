@@ -1,5 +1,5 @@
 {
-  "name": "@affine/electron-api",
+  "name": "@madisboard/electron-api",
   "version": "0.26.0",
   "type": "module",
   "private": true,
@@ -12,6 +12,6 @@
     "async-call-rpc": "^6.4.2"
   },
   "devDependencies": {
-    "@affine/electron": "workspace:*"
+    "@madisboard/electron": "workspace:*"
   }
 }

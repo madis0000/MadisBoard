@@ -4,14 +4,14 @@ import {
   MenuTrigger,
   notify,
   Tooltip,
-} from '@affine/component';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { DocGrantedUsersService } from '@affine/core/modules/permissions';
-import { ShareInfoService } from '@affine/core/modules/share-doc';
-import { UserFriendlyError } from '@affine/error';
-import { DocRole } from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/component';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { DocGrantedUsersService } from '@madisboard/core/modules/permissions';
+import { ShareInfoService } from '@madisboard/core/modules/share-doc';
+import { UserFriendlyError } from '@madisboard/error';
+import { DocRole } from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { InformationIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import clsx from 'clsx';

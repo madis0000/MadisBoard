@@ -1,16 +1,16 @@
-import { notify } from '@affine/component';
-import { SettingRow } from '@affine/component/setting-components';
+import { notify } from '@madisboard/component';
+import { SettingRow } from '@madisboard/component/setting-components';
 import {
   Button,
   type ButtonProps,
   IconButton,
-} from '@affine/component/ui/button';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { SubscriptionService } from '@affine/core/modules/cloud';
-import { UrlService } from '@affine/core/modules/url';
-import { UserFriendlyError } from '@affine/error';
-import { createCustomerPortalMutation } from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/component/ui/button';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { SubscriptionService } from '@madisboard/core/modules/cloud';
+import { UrlService } from '@madisboard/core/modules/url';
+import { UserFriendlyError } from '@madisboard/error';
+import { createCustomerPortalMutation } from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
 import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useEffect, useState } from 'react';

@@ -7,7 +7,7 @@ import {
   waitForEditorLoad,
 } from '@affine-test/kit/utils/page-logic';
 import { clickSideBarSettingButton } from '@affine-test/kit/utils/sidebar';
-import { Package } from '@affine-tools/utils/workspace';
+import { Package } from '@madisboard-tools/utils/workspace';
 import { faker } from '@faker-js/faker';
 import { hash } from '@node-rs/argon2';
 import type { BrowserContext, Cookie, Page } from '@playwright/test';
@@ -54,7 +54,7 @@ const cloudUserSchema = z.object({
   password: z.string(),
 });
 
-const server = new Package('@affine/server');
+const server = new Package('@madisboard/server');
 const require = createRequire(server.srcPath.join('index.ts').toFileUrl());
 
 export const runPrisma = async <T>(

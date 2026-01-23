@@ -1,11 +1,11 @@
-import { Button } from '@affine/component/ui/button';
-import { notify } from '@affine/component/ui/notification';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { AuthService, ServerService } from '@affine/core/modules/cloud';
-import { UrlService } from '@affine/core/modules/url';
-import { UserFriendlyError } from '@affine/error';
-import { OAuthProviderType } from '@affine/graphql';
-import track from '@affine/track';
+import { Button } from '@madisboard/component/ui/button';
+import { notify } from '@madisboard/component/ui/notification';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { AuthService, ServerService } from '@madisboard/core/modules/cloud';
+import { UrlService } from '@madisboard/core/modules/url';
+import { UserFriendlyError } from '@madisboard/error';
+import { OAuthProviderType } from '@madisboard/graphql';
+import track from '@madisboard/track';
 import {
   AppleIcon,
   GithubIcon,

@@ -1,5 +1,5 @@
 {
-  "name": "@affine/debug",
+  "name": "@madisboard/debug",
   "private": true,
   "type": "module",
   "exports": {

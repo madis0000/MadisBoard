@@ -1,10 +1,10 @@
-import { usePageHelper } from '@affine/core/blocksuite/block-suite-page-list/utils';
-import { NavigationPanelTreeRoot } from '@affine/core/desktop/components/navigation-panel';
-import type { FavoriteSupportTypeUnion } from '@affine/core/modules/favorite';
-import { FavoriteService } from '@affine/core/modules/favorite';
-import { NavigationPanelService } from '@affine/core/modules/navigation-panel';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
+import { usePageHelper } from '@madisboard/core/blocksuite/block-suite-page-list/utils';
+import { NavigationPanelTreeRoot } from '@madisboard/core/desktop/components/navigation-panel';
+import type { FavoriteSupportTypeUnion } from '@madisboard/core/modules/favorite';
+import { FavoriteService } from '@madisboard/core/modules/favorite';
+import { NavigationPanelService } from '@madisboard/core/modules/navigation-panel';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useServices } from '@toeverything/infra';
 import { useCallback, useMemo } from 'react';
 

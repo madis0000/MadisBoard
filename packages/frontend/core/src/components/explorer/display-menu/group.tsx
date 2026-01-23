@@ -1,8 +1,8 @@
-import { Divider, MenuItem } from '@affine/component';
-import type { GroupByParams } from '@affine/core/modules/collection-rules/types';
-import { WorkspacePropertyService } from '@affine/core/modules/workspace-property';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+import { Divider, MenuItem } from '@madisboard/component';
+import type { GroupByParams } from '@madisboard/core/modules/collection-rules/types';
+import { WorkspacePropertyService } from '@madisboard/core/modules/workspace-property';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import { DoneIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { cssVarV2 } from '@toeverything/theme/v2';

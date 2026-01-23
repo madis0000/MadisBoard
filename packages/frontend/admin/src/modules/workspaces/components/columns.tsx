@@ -2,7 +2,7 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from '@affine/admin/components/ui/avatar';
+} from '@madisboard/admin/components/ui/avatar';
 import { AccountIcon, LinkIcon } from '@blocksuite/icons/rc';
 import type { ColumnDef } from '@tanstack/react-table';
 import { cssVarV2 } from '@toeverything/theme/v2';

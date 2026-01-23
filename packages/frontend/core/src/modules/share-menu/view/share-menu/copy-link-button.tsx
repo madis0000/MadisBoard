@@ -1,10 +1,10 @@
-import { Button, Menu, MenuItem, MenuTrigger } from '@affine/component';
+import { Button, Menu, MenuItem, MenuTrigger } from '@madisboard/component';
 import {
   getSelectedNodes,
   useSharingUrl,
-} from '@affine/core/components/hooks/affine/use-share-url';
-import { EditorService } from '@affine/core/modules/editor';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/components/hooks/affine/use-share-url';
+import { EditorService } from '@madisboard/core/modules/editor';
+import { useI18n } from '@madisboard/i18n';
 import type { DocMode } from '@blocksuite/affine/model';
 import { BlockIcon, EdgelessIcon, PageIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';

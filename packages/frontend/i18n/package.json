@@ -1,5 +1,5 @@
 {
-  "name": "@affine/i18n",
+  "name": "@madisboard/i18n",
   "version": "0.26.0",
   "description": "",
   "type": "module",
@@ -15,10 +15,10 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/toeverything/AFFiNE.git"
+    "url": "git+https://github.com/madis0000/MadisBoard.git"
   },
   "dependencies": {
-    "@affine/debug": "workspace:*",
+    "@madisboard/debug": "workspace:*",
     "@magic-works/i18n-codegen": "^0.6.1",
     "dayjs": "^1.11.13",
     "i18next": "^25.0.0",
@@ -26,8 +26,8 @@
     "react-i18next": "^15.2.0"
   },
   "devDependencies": {
-    "@affine-tools/cli": "workspace:*",
-    "@affine-tools/utils": "workspace:*",
+    "@madisboard-tools/cli": "workspace:*",
+    "@madisboard-tools/utils": "workspace:*",
     "glob": "^11.0.0",
     "vitest": "^3.2.4"
   }

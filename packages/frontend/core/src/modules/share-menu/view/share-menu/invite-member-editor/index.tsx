@@ -1,5 +1,5 @@
-import { Input } from '@affine/component';
-import { useI18n } from '@affine/i18n';
+import { Input } from '@madisboard/component';
+import { useI18n } from '@madisboard/i18n';
 import { SearchIcon } from '@blocksuite/icons/rc';
 import { cssVar } from '@toeverything/theme';
 

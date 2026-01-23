@@ -1,4 +1,4 @@
-import { Avatar, Popover, uniReactRoot } from '@affine/component';
+import { Avatar, Popover, uniReactRoot } from '@madisboard/component';
 import {
   type Cell,
   type CellRenderProps,

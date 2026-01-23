@@ -4,19 +4,19 @@ import {
   MenuSeparator,
   toast,
   useConfirmModal,
-} from '@affine/component';
-import { usePageHelper } from '@affine/core/blocksuite/block-suite-page-list/utils';
-import { IsFavoriteIcon } from '@affine/core/components/pure/icons';
-import type { NodeOperation } from '@affine/core/desktop/components/navigation-panel';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { DocsService } from '@affine/core/modules/doc';
-import { FavoriteService } from '@affine/core/modules/favorite';
-import { GlobalCacheService } from '@affine/core/modules/storage';
-import { TagService } from '@affine/core/modules/tag';
-import { WorkbenchService } from '@affine/core/modules/workbench';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/component';
+import { usePageHelper } from '@madisboard/core/blocksuite/block-suite-page-list/utils';
+import { IsFavoriteIcon } from '@madisboard/core/components/pure/icons';
+import type { NodeOperation } from '@madisboard/core/desktop/components/navigation-panel';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { FavoriteService } from '@madisboard/core/modules/favorite';
+import { GlobalCacheService } from '@madisboard/core/modules/storage';
+import { TagService } from '@madisboard/core/modules/tag';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import {
   DeleteIcon,
   FolderIcon,

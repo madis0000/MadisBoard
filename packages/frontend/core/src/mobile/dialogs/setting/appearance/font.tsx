@@ -1,9 +1,9 @@
-import { getBaseFontStyleOptions } from '@affine/core/desktop/dialogs/setting/general-setting/editor/general';
+import { getBaseFontStyleOptions } from '@madisboard/core/desktop/dialogs/setting/general-setting/editor/general';
 import {
   EditorSettingService,
   type FontFamily,
-} from '@affine/core/modules/editor-setting';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/editor-setting';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useMemo } from 'react';
 

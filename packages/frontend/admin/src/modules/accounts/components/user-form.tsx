@@ -1,8 +1,8 @@
-import { Button } from '@affine/admin/components/ui/button';
-import { Input } from '@affine/admin/components/ui/input';
-import { Label } from '@affine/admin/components/ui/label';
-import { Separator } from '@affine/admin/components/ui/separator';
-import type { FeatureType } from '@affine/graphql';
+import { Button } from '@madisboard/admin/components/ui/button';
+import { Input } from '@madisboard/admin/components/ui/input';
+import { Label } from '@madisboard/admin/components/ui/label';
+import { Separator } from '@madisboard/admin/components/ui/separator';
+import type { FeatureType } from '@madisboard/graphql';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import { ChevronRightIcon } from 'lucide-react';
 import type { ChangeEvent } from 'react';

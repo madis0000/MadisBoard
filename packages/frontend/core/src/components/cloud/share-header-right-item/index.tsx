@@ -1,4 +1,4 @@
-import { AuthService } from '@affine/core/modules/cloud';
+import { AuthService } from '@madisboard/core/modules/cloud';
 import type { DocMode } from '@blocksuite/affine/model';
 import { useLiveData, useService } from '@toeverything/infra';
 

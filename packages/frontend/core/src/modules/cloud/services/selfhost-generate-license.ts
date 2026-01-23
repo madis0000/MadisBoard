@@ -1,4 +1,4 @@
-import { type UserFriendlyError } from '@affine/error';
+import { type UserFriendlyError } from '@madisboard/error';
 import {
   catchErrorInto,
   effect,

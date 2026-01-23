@@ -1,19 +1,19 @@
-import { Button } from '@affine/component';
-import { AuthHeader } from '@affine/component/auth-components';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { useWorkspaceName } from '@affine/core/components/hooks/use-workspace-info';
-import { WorkspaceSelector } from '@affine/core/components/workspace-selector';
-import { AuthService, ServerService } from '@affine/core/modules/cloud';
+import { Button } from '@madisboard/component';
+import { AuthHeader } from '@madisboard/component/auth-components';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { useWorkspaceName } from '@madisboard/core/components/hooks/use-workspace-info';
+import { WorkspaceSelector } from '@madisboard/core/components/workspace-selector';
+import { AuthService, ServerService } from '@madisboard/core/modules/cloud';
 import {
   type ClipperInput,
   ImportClipperService,
-} from '@affine/core/modules/import-clipper';
+} from '@madisboard/core/modules/import-clipper';
 import {
   type WorkspaceMetadata,
   WorkspacesService,
-} from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+} from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import { AllDocsIcon } from '@blocksuite/icons/rc';
 import { LiveData, useLiveData, useService } from '@toeverything/infra';
 import { cssVar } from '@toeverything/theme';

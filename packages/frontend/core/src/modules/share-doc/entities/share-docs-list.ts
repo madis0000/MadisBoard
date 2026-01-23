@@ -1,5 +1,5 @@
-import { DebugLogger } from '@affine/debug';
-import type { GetWorkspacePublicPagesQuery } from '@affine/graphql';
+import { DebugLogger } from '@madisboard/debug';
+import type { GetWorkspacePublicPagesQuery } from '@madisboard/graphql';
 import {
   catchErrorInto,
   effect,

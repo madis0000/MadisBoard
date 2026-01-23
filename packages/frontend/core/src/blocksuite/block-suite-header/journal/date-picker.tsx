@@ -1,10 +1,10 @@
-import type { WeekDatePickerHandle } from '@affine/component';
-import { WeekDatePicker } from '@affine/component';
+import type { WeekDatePickerHandle } from '@madisboard/component';
+import { WeekDatePicker } from '@madisboard/component';
 import {
   JOURNAL_DATE_FORMAT,
   JournalService,
-} from '@affine/core/modules/journal';
-import { WorkbenchService } from '@affine/core/modules/workbench';
+} from '@madisboard/core/modules/journal';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
 import type { Store } from '@blocksuite/affine/store';
 import { useLiveData, useService } from '@toeverything/infra';
 import dayjs from 'dayjs';

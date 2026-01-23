@@ -5,19 +5,19 @@ import {
   toast,
   useConfirmModal,
   usePromptModal,
-} from '@affine/component';
-import { useBlockSuiteMetaHelper } from '@affine/core/components/hooks/affine/use-block-suite-meta-helper';
-import { useCatchEventCallback } from '@affine/core/components/hooks/use-catch-event-hook';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { DocsService } from '@affine/core/modules/doc';
+} from '@madisboard/component';
+import { useBlockSuiteMetaHelper } from '@madisboard/core/components/hooks/affine/use-block-suite-meta-helper';
+import { useCatchEventCallback } from '@madisboard/core/components/hooks/use-catch-event-hook';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { DocsService } from '@madisboard/core/modules/doc';
 import {
   CompatibleFavoriteItemsAdapter,
   FavoriteService,
-} from '@affine/core/modules/favorite';
-import { WorkbenchService } from '@affine/core/modules/workbench';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/core/modules/favorite';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import type { DocMeta } from '@blocksuite/affine/store';
 import {
   DeleteIcon,

@@ -1,11 +1,11 @@
-import { DefaultServerService } from '@affine/core/modules/cloud';
-import { DesktopApiService } from '@affine/core/modules/desktop-api';
-import { WorkspacesService } from '@affine/core/modules/workspace';
+import { DefaultServerService } from '@madisboard/core/modules/cloud';
+import { DesktopApiService } from '@madisboard/core/modules/desktop-api';
+import { WorkspacesService } from '@madisboard/core/modules/workspace';
 import {
   buildShowcaseWorkspace,
   createFirstAppData,
-} from '@affine/core/utils/first-app-data';
-import { ServerFeature } from '@affine/graphql';
+} from '@madisboard/core/utils/first-app-data';
+import { ServerFeature } from '@madisboard/graphql';
 import {
   useLiveData,
   useService,

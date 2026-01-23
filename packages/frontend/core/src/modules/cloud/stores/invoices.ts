@@ -1,4 +1,4 @@
-import { invoicesQuery, workspaceInvoicesQuery } from '@affine/graphql';
+import { invoicesQuery, workspaceInvoicesQuery } from '@madisboard/graphql';
 import { Store } from '@toeverything/infra';
 
 import type { GraphQLService } from '../services/graphql';

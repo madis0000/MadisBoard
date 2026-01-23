@@ -1,5 +1,5 @@
-import { DebugLogger } from '@affine/debug';
-import type { GetWorkspaceConfigQuery, InviteLink } from '@affine/graphql';
+import { DebugLogger } from '@madisboard/debug';
+import type { GetWorkspaceConfigQuery, InviteLink } from '@madisboard/graphql';
 import {
   catchErrorInto,
   effect,

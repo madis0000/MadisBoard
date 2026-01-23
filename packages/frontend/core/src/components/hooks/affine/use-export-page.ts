@@ -1,13 +1,13 @@
-import { notify } from '@affine/component';
+import { notify } from '@madisboard/component';
 import {
   pushGlobalLoadingEventAtom,
   resolveGlobalLoadingEventAtom,
-} from '@affine/component/global-loading';
-import type { AffineEditorContainer } from '@affine/core/blocksuite/block-suite-editor/blocksuite-editor';
-import { EditorService } from '@affine/core/modules/editor';
-import { getAFFiNEWorkspaceSchema } from '@affine/core/modules/workspace/global-schema';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/component/global-loading';
+import type { AffineEditorContainer } from '@madisboard/core/blocksuite/block-suite-editor/blocksuite-editor';
+import { EditorService } from '@madisboard/core/modules/editor';
+import { getAFFiNEWorkspaceSchema } from '@madisboard/core/modules/workspace/global-schema';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { ExportManager } from '@blocksuite/affine/blocks/surface';
 import {
   docLinkBaseURLMiddleware,

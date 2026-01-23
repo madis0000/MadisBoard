@@ -1,18 +1,18 @@
 // packages/frontend/core/src/blocksuite/ai/hooks/useChatPanelConfig.ts
-import { AIPlaygroundService } from '@affine/core/modules/ai-button/services/playground';
-import { AIReasoningService } from '@affine/core/modules/ai-button/services/reasoning';
-import { CollectionService } from '@affine/core/modules/collection';
-import { DocsService } from '@affine/core/modules/doc';
-import { DocDisplayMetaService } from '@affine/core/modules/doc-display-meta';
-import { DocsSearchService } from '@affine/core/modules/docs-search';
+import { AIPlaygroundService } from '@madisboard/core/modules/ai-button/services/playground';
+import { AIReasoningService } from '@madisboard/core/modules/ai-button/services/reasoning';
+import { CollectionService } from '@madisboard/core/modules/collection';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { DocDisplayMetaService } from '@madisboard/core/modules/doc-display-meta';
+import { DocsSearchService } from '@madisboard/core/modules/docs-search';
 import {
   type SearchCollectionMenuAction,
   type SearchDocMenuAction,
   SearchMenuService,
   type SearchTagMenuAction,
-} from '@affine/core/modules/search-menu/services';
-import { TagService } from '@affine/core/modules/tag';
-import { WorkspaceService } from '@affine/core/modules/workspace';
+} from '@madisboard/core/modules/search-menu/services';
+import { TagService } from '@madisboard/core/modules/tag';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
 import { createSignalFromObservable } from '@blocksuite/affine/shared/utils';
 import { useFramework } from '@toeverything/infra';
 

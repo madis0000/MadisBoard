@@ -1,5 +1,5 @@
-import { observeIntersection } from '@affine/component';
-import { useI18n } from '@affine/i18n';
+import { observeIntersection } from '@madisboard/component';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData } from '@toeverything/infra';
 import { debounce } from 'lodash-es';
 import { forwardRef, useEffect, useMemo, useRef, useState } from 'react';

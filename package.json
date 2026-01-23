@@ -1,8 +1,8 @@
 {
-  "name": "@affine/monorepo",
+  "name": "@madisboard/monorepo",
   "version": "0.26.0",
   "private": true,
-  "author": "toeverything",
+  "author": "madis0000",
   "license": "MIT",
   "workspaces": [
     ".",
@@ -49,11 +49,11 @@
     ]
   },
   "devDependencies": {
-    "@affine-tools/cli": "workspace:*",
     "@capacitor/cli": "^7.0.0",
     "@eslint/js": "^9.16.0",
     "@faker-js/faker": "^10.1.0",
     "@istanbuljs/schema": "^0.1.3",
+    "@madisboard-tools/cli": "workspace:*",
     "@magic-works/i18n-codegen": "^0.6.1",
     "@playwright/test": "=1.52.0",
     "@smarttools/eslint-plugin-rxjs": "^1.0.8",

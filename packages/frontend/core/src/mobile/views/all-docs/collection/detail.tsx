@@ -1,16 +1,16 @@
-import { Wrapper } from '@affine/component';
+import { Wrapper } from '@madisboard/component';
 import {
   EmptyCollectionDetail,
   EmptyDocs,
-} from '@affine/core/components/affine/empty';
+} from '@madisboard/core/components/affine/empty';
 import {
   createDocExplorerContext,
   DocExplorerContext,
-} from '@affine/core/components/explorer/context';
-import { DocsExplorer } from '@affine/core/components/explorer/docs-view/docs-list';
-import { PageHeader } from '@affine/core/mobile/components';
-import { Page } from '@affine/core/mobile/components/page';
-import type { Collection } from '@affine/core/modules/collection';
+} from '@madisboard/core/components/explorer/context';
+import { DocsExplorer } from '@madisboard/core/components/explorer/docs-view/docs-list';
+import { PageHeader } from '@madisboard/core/mobile/components';
+import { Page } from '@madisboard/core/mobile/components/page';
+import type { Collection } from '@madisboard/core/modules/collection';
 import { ViewLayersIcon } from '@blocksuite/icons/rc';
 import { useLiveData } from '@toeverything/infra';
 import { useEffect, useState } from 'react';

@@ -1,15 +1,15 @@
-import { Loading } from '@affine/component';
-import { Guard } from '@affine/core/components/guard';
-import type { NodeOperation } from '@affine/core/desktop/components/navigation-panel';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { DocsService } from '@affine/core/modules/doc';
-import { DocDisplayMetaService } from '@affine/core/modules/doc-display-meta';
-import { DocsSearchService } from '@affine/core/modules/docs-search';
-import { FeatureFlagService } from '@affine/core/modules/feature-flag';
-import { GlobalContextService } from '@affine/core/modules/global-context';
-import { NavigationPanelService } from '@affine/core/modules/navigation-panel';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
+import { Loading } from '@madisboard/component';
+import { Guard } from '@madisboard/core/components/guard';
+import type { NodeOperation } from '@madisboard/core/desktop/components/navigation-panel';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { DocDisplayMetaService } from '@madisboard/core/modules/doc-display-meta';
+import { DocsSearchService } from '@madisboard/core/modules/docs-search';
+import { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
+import { GlobalContextService } from '@madisboard/core/modules/global-context';
+import { NavigationPanelService } from '@madisboard/core/modules/navigation-panel';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
 import {
   LiveData,
   MANUALLY_STOP,

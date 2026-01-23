@@ -1,8 +1,8 @@
-import type { ElementOrFactory } from '@affine/component';
+import type { ElementOrFactory } from '@madisboard/component';
 import {
   patchForEdgelessNoteConfig,
   patchForEmbedSyncedDocConfig,
-} from '@affine/core/blocksuite/view-extensions/edgeless-block-header/patch';
+} from '@madisboard/core/blocksuite/view-extensions/edgeless-block-header/patch';
 import {
   type ViewExtensionContext,
   ViewExtensionProvider,

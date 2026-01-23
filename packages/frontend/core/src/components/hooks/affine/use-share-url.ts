@@ -1,9 +1,9 @@
-import { notify } from '@affine/component';
-import { ServerService } from '@affine/core/modules/cloud';
-import { toDocSearchParams } from '@affine/core/modules/navigation';
-import { copyTextToClipboard } from '@affine/core/utils/clipboard';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+import { notify } from '@madisboard/component';
+import { ServerService } from '@madisboard/core/modules/cloud';
+import { toDocSearchParams } from '@madisboard/core/modules/navigation';
+import { copyTextToClipboard } from '@madisboard/core/utils/clipboard';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import type { SerializedXYWH } from '@blocksuite/affine/global/gfx';
 import { type DocMode } from '@blocksuite/affine/model';
 import {

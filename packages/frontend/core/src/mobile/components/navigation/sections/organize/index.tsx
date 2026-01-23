@@ -1,9 +1,9 @@
-import { Skeleton } from '@affine/component';
-import { NavigationPanelTreeRoot } from '@affine/core/desktop/components/navigation-panel';
-import { NavigationPanelService } from '@affine/core/modules/navigation-panel';
-import { OrganizeService } from '@affine/core/modules/organize';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+import { Skeleton } from '@madisboard/component';
+import { NavigationPanelTreeRoot } from '@madisboard/core/desktop/components/navigation-panel';
+import { NavigationPanelService } from '@madisboard/core/modules/navigation-panel';
+import { OrganizeService } from '@madisboard/core/modules/organize';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import { AddOrganizeIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@toeverything/infra';
 import { useCallback, useMemo, useState } from 'react';

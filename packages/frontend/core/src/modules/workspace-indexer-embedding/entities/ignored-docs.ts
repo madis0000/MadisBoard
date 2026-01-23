@@ -1,4 +1,4 @@
-import type { WorkspaceService } from '@affine/core/modules/workspace';
+import type { WorkspaceService } from '@madisboard/core/modules/workspace';
 import {
   catchErrorInto,
   effect,

@@ -1,13 +1,13 @@
-import { Wrapper } from '@affine/component';
-import { EmptyDocs } from '@affine/core/components/affine/empty';
+import { Wrapper } from '@madisboard/component';
+import { EmptyDocs } from '@madisboard/core/components/affine/empty';
 import {
   createDocExplorerContext,
   DocExplorerContext,
-} from '@affine/core/components/explorer/context';
-import { DocsExplorer } from '@affine/core/components/explorer/docs-view/docs-list';
-import { Page } from '@affine/core/mobile/components/page';
-import { CollectionRulesService } from '@affine/core/modules/collection-rules';
-import type { Tag } from '@affine/core/modules/tag';
+} from '@madisboard/core/components/explorer/context';
+import { DocsExplorer } from '@madisboard/core/components/explorer/docs-view/docs-list';
+import { Page } from '@madisboard/core/mobile/components/page';
+import { CollectionRulesService } from '@madisboard/core/modules/collection-rules';
+import type { Tag } from '@madisboard/core/modules/tag';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useEffect, useState } from 'react';
 

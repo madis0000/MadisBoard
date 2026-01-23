@@ -1,7 +1,7 @@
-import { Avatar } from '@affine/component/ui/avatar';
-import { Menu, MenuItem, MenuSeparator } from '@affine/component/ui/menu';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { useI18n } from '@affine/i18n';
+import { Avatar } from '@madisboard/component/ui/avatar';
+import { Menu, MenuItem, MenuSeparator } from '@madisboard/component/ui/menu';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { useI18n } from '@madisboard/i18n';
 import { SignOutIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useEffect, useMemo } from 'react';

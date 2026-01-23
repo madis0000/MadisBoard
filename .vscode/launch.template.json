@@ -9,7 +9,7 @@
       "cwd": "${workspaceFolder}",
       "runtimeArgs": [
         "affine",
-        "@affine/server",
+        "@madisboard/server",
         "dev"
       ]
     },
@@ -21,7 +21,7 @@
       "cwd": "${workspaceFolder}",
       "runtimeArgs": [
         "affine",
-        "@affine/web",
+        "@madisboard/web",
         "dev"
       ]
     },

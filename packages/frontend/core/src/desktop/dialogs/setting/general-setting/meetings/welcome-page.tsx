@@ -1,6 +1,6 @@
-import { Button } from '@affine/component';
-import { MeetingSettingsService } from '@affine/core/modules/media/services/meeting-settings';
-import { Trans, useI18n } from '@affine/i18n';
+import { Button } from '@madisboard/component';
+import { MeetingSettingsService } from '@madisboard/core/modules/media/services/meeting-settings';
+import { Trans, useI18n } from '@madisboard/i18n';
 import { DualLinkIcon } from '@blocksuite/icons/rc';
 import { useService } from '@toeverything/infra';
 import { useTheme } from 'next-themes';

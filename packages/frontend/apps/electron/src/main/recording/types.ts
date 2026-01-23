@@ -1,6 +1,6 @@
 import type { WriteStream } from 'node:fs';
 
-import type { ApplicationInfo, AudioCaptureSession } from '@affine/native';
+import type { ApplicationInfo, AudioCaptureSession } from '@madisboard/native';
 
 export interface TappableAppInfo {
   info: ApplicationInfo;

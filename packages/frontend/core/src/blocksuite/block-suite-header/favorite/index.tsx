@@ -1,8 +1,8 @@
-import { FavoriteTag } from '@affine/core/components/page-list';
-import { CompatibleFavoriteItemsAdapter } from '@affine/core/modules/favorite';
-import { toast } from '@affine/core/utils';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+import { FavoriteTag } from '@madisboard/core/components/page-list';
+import { CompatibleFavoriteItemsAdapter } from '@madisboard/core/modules/favorite';
+import { toast } from '@madisboard/core/utils';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback } from 'react';
 

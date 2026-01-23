@@ -1,8 +1,8 @@
-import { WorkspaceServerService } from '@affine/core/modules/cloud';
+import { WorkspaceServerService } from '@madisboard/core/modules/cloud';
 import {
   WorkspaceScope,
   WorkspaceService,
-} from '@affine/core/modules/workspace';
+} from '@madisboard/core/modules/workspace';
 import { type Framework } from '@toeverything/infra';
 
 import { AdditionalAttachments } from './entities/additional-attachments';

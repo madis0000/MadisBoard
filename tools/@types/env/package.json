@@ -4,8 +4,8 @@
   "types": "./__all.d.ts",
   "type": "module",
   "dependencies": {
-    "@affine/env": "workspace:*",
-    "@blocksuite/affine": "workspace:*"
+    "@blocksuite/affine": "workspace:*",
+    "@madisboard/env": "workspace:*"
   },
   "version": "0.26.0"
 }

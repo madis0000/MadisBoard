@@ -1,28 +1,28 @@
-import { notify, toast, useConfirmModal } from '@affine/component';
+import { notify, toast, useConfirmModal } from '@madisboard/component';
 import {
   Menu,
   MenuItem,
   MenuSeparator,
   MenuSub,
-} from '@affine/component/ui/menu';
-import { PageHistoryModal } from '@affine/core/components/affine/page-history-modal';
-import { useGuard } from '@affine/core/components/guard';
-import { useBlockSuiteMetaHelper } from '@affine/core/components/hooks/affine/use-block-suite-meta-helper';
-import { useEnableCloud } from '@affine/core/components/hooks/affine/use-enable-cloud';
-import { useExportPage } from '@affine/core/components/hooks/affine/use-export-page';
-import { Export, MoveToTrash } from '@affine/core/components/page-list';
-import { IsFavoriteIcon } from '@affine/core/components/pure/icons';
-import { useDetailPageHeaderResponsive } from '@affine/core/desktop/pages/workspace/detail-page/use-header-responsive';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { EditorService } from '@affine/core/modules/editor';
-import { OpenInAppService } from '@affine/core/modules/open-in-app/services';
-import { GuardService } from '@affine/core/modules/permissions';
-import { ShareMenuContent } from '@affine/core/modules/share-menu';
-import { WorkbenchService } from '@affine/core/modules/workbench';
-import { ViewService } from '@affine/core/modules/workbench/services/view';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/component/ui/menu';
+import { PageHistoryModal } from '@madisboard/core/components/affine/page-history-modal';
+import { useGuard } from '@madisboard/core/components/guard';
+import { useBlockSuiteMetaHelper } from '@madisboard/core/components/hooks/affine/use-block-suite-meta-helper';
+import { useEnableCloud } from '@madisboard/core/components/hooks/affine/use-enable-cloud';
+import { useExportPage } from '@madisboard/core/components/hooks/affine/use-export-page';
+import { Export, MoveToTrash } from '@madisboard/core/components/page-list';
+import { IsFavoriteIcon } from '@madisboard/core/components/pure/icons';
+import { useDetailPageHeaderResponsive } from '@madisboard/core/desktop/pages/workspace/detail-page/use-header-responsive';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { EditorService } from '@madisboard/core/modules/editor';
+import { OpenInAppService } from '@madisboard/core/modules/open-in-app/services';
+import { GuardService } from '@madisboard/core/modules/permissions';
+import { ShareMenuContent } from '@madisboard/core/modules/share-menu';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
+import { ViewService } from '@madisboard/core/modules/workbench/services/view';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import type { Store } from '@blocksuite/affine/store';
 import {
   DuplicateIcon,

@@ -1,9 +1,9 @@
-import { Button, IconButton, Loading, notify } from '@affine/component';
-import { AuthPageContainer } from '@affine/component/auth-components';
-import { SelfhostGenerateLicenseService } from '@affine/core/modules/cloud';
-import { OpenInAppService } from '@affine/core/modules/open-in-app';
-import { copyTextToClipboard } from '@affine/core/utils/clipboard';
-import { Trans, useI18n } from '@affine/i18n';
+import { Button, IconButton, Loading, notify } from '@madisboard/component';
+import { AuthPageContainer } from '@madisboard/component/auth-components';
+import { SelfhostGenerateLicenseService } from '@madisboard/core/modules/cloud';
+import { OpenInAppService } from '@madisboard/core/modules/open-in-app';
+import { copyTextToClipboard } from '@madisboard/core/utils/clipboard';
+import { Trans, useI18n } from '@madisboard/i18n';
 import { CopyIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useEffect } from 'react';

@@ -2,11 +2,11 @@ import {
   type ConfirmModalProps,
   notify,
   useConfirmModal,
-} from '@affine/component';
-import { AuthService, DefaultServerService } from '@affine/core/modules/cloud';
-import { UserFriendlyError } from '@affine/error';
-import { ServerFeature } from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/component';
+import { AuthService, DefaultServerService } from '@madisboard/core/modules/cloud';
+import { UserFriendlyError } from '@madisboard/error';
+import { ServerFeature } from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
 import { useService, useServices } from '@toeverything/infra';
 import { useCallback } from 'react';
 

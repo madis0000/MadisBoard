@@ -5,12 +5,12 @@ import {
   Tooltip,
   useDraggable,
   useDropTarget,
-} from '@affine/component';
-import type { DocCustomPropertyInfo } from '@affine/core/modules/db';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { WorkspacePropertyService } from '@affine/core/modules/workspace-property';
-import type { AffineDNDData } from '@affine/core/types/dnd';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/component';
+import type { DocCustomPropertyInfo } from '@madisboard/core/modules/db';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { WorkspacePropertyService } from '@madisboard/core/modules/workspace-property';
+import type { AffineDNDData } from '@madisboard/core/types/dnd';
+import { useI18n } from '@madisboard/i18n';
 import { MoreHorizontalIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import clsx from 'clsx';

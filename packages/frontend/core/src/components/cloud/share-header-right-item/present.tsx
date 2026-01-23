@@ -1,6 +1,6 @@
-import { Button } from '@affine/component/ui/button';
-import { EditorService } from '@affine/core/modules/editor';
-import { useI18n } from '@affine/i18n';
+import { Button } from '@madisboard/component/ui/button';
+import { EditorService } from '@madisboard/core/modules/editor';
+import { useI18n } from '@madisboard/i18n';
 import { PresentationIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 

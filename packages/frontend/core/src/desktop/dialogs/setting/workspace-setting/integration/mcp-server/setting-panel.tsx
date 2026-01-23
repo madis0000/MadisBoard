@@ -1,9 +1,9 @@
-import { Button, ErrorMessage, notify, Skeleton } from '@affine/component';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { AccessTokenService, ServerService } from '@affine/core/modules/cloud';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { UserFriendlyError } from '@affine/error';
-import { useI18n } from '@affine/i18n';
+import { Button, ErrorMessage, notify, Skeleton } from '@madisboard/component';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { AccessTokenService, ServerService } from '@madisboard/core/modules/cloud';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { UserFriendlyError } from '@madisboard/error';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { type ReactNode, useEffect, useMemo, useState } from 'react';
 

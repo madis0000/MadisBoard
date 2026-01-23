@@ -2,9 +2,9 @@ import {
   type DropTargetDropEvent,
   type DropTargetOptions,
   useDropTarget,
-} from '@affine/component';
-import type { AffineDNDData } from '@affine/core/types/dnd';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/component';
+import type { AffineDNDData } from '@madisboard/core/types/dnd';
+import { useI18n } from '@madisboard/i18n';
 
 import { EmptyNodeChildren } from '../../layouts/empty-node-children';
 import { draggedOverHighlight } from './empty.css';

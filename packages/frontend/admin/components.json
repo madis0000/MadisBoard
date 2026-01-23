@@ -11,7 +11,7 @@
     "prefix": ""
   },
   "aliases": {
-    "components": "@affine/admin/components",
-    "utils": "@affine/admin/utils"
+    "components": "@madisboard/admin/components",
+    "utils": "@madisboard/admin/utils"
   }
 }

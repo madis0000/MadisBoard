@@ -1,23 +1,23 @@
-import { Button, IconButton, IconType, Modal } from '@affine/component';
-import { getStoreManager } from '@affine/core/blocksuite/manager/store';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { useNavigateHelper } from '@affine/core/components/hooks/use-navigate-helper';
+import { Button, IconButton, IconType, Modal } from '@madisboard/component';
+import { getStoreManager } from '@madisboard/core/blocksuite/manager/store';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { useNavigateHelper } from '@madisboard/core/components/hooks/use-navigate-helper';
 import {
   type DialogComponentProps,
   GlobalDialogService,
   type WORKSPACE_DIALOG_SCHEMA,
-} from '@affine/core/modules/dialogs';
-import { ExplorerIconService } from '@affine/core/modules/explorer-icon/services/explorer-icon';
-import { OrganizeService } from '@affine/core/modules/organize';
-import { UrlService } from '@affine/core/modules/url';
+} from '@madisboard/core/modules/dialogs';
+import { ExplorerIconService } from '@madisboard/core/modules/explorer-icon/services/explorer-icon';
+import { OrganizeService } from '@madisboard/core/modules/organize';
+import { UrlService } from '@madisboard/core/modules/url';
 import {
   getAFFiNEWorkspaceSchema,
   type WorkspaceMetadata,
   WorkspaceService,
-} from '@affine/core/modules/workspace';
-import { DebugLogger } from '@affine/debug';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+} from '@madisboard/core/modules/workspace';
+import { DebugLogger } from '@madisboard/debug';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import { openFilesWith } from '@blocksuite/affine/shared/utils';
 import type { Workspace } from '@blocksuite/affine/store';
 import {

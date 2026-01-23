@@ -1,7 +1,7 @@
-import { NbstoreProvider } from '@affine/core/modules/storage';
-import { apis } from '@affine/electron-api';
-import { StoreManagerClient } from '@affine/nbstore/worker/client';
-import { setTelemetryTransport } from '@affine/track';
+import { NbstoreProvider } from '@madisboard/core/modules/storage';
+import { apis } from '@madisboard/electron-api';
+import { StoreManagerClient } from '@madisboard/nbstore/worker/client';
+import { setTelemetryTransport } from '@madisboard/track';
 import type { Framework } from '@toeverything/infra';
 import { OpClient } from '@toeverything/infra/op';
 import { v4 as uuid } from 'uuid';

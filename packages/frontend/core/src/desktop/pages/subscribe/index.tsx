@@ -1,12 +1,12 @@
-import { Button, Loading } from '@affine/component';
-import { UrlService } from '@affine/core/modules/url';
-import { UserFriendlyError } from '@affine/error';
+import { Button, Loading } from '@madisboard/component';
+import { UrlService } from '@madisboard/core/modules/url';
+import { UserFriendlyError } from '@madisboard/error';
 import {
   SubscriptionPlan,
   SubscriptionRecurring,
   SubscriptionVariant,
-} from '@affine/graphql';
-import { track } from '@affine/track';
+} from '@madisboard/graphql';
+import { track } from '@madisboard/track';
 import { effect, fromPromise, useServices } from '@toeverything/infra';
 import { nanoid } from 'nanoid';
 import { useEffect, useMemo, useState } from 'react';

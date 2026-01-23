@@ -1,7 +1,7 @@
-import { Button, Loading, Menu, MenuItem, notify } from '@affine/component';
-import { GraphQLService } from '@affine/core/modules/cloud';
-import { UrlService } from '@affine/core/modules/url';
-import { UserFriendlyError } from '@affine/error';
+import { Button, Loading, Menu, MenuItem, notify } from '@madisboard/component';
+import { GraphQLService } from '@madisboard/core/modules/cloud';
+import { UrlService } from '@madisboard/core/modules/url';
+import { UserFriendlyError } from '@madisboard/error';
 import {
   type CalendarAccountsQuery,
   calendarAccountsQuery,
@@ -9,8 +9,8 @@ import {
   CalendarProviderType,
   linkCalendarAccountMutation,
   unlinkCalendarAccountMutation,
-} from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
 import { GoogleIcon, LinkIcon, TodayIcon } from '@blocksuite/icons/rc';
 import { useService } from '@toeverything/infra';
 import {

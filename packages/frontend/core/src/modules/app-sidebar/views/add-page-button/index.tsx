@@ -1,15 +1,15 @@
-import { Button, IconButton, Menu, MenuItem, MenuSub } from '@affine/component';
-import { usePageHelper } from '@affine/core/blocksuite/block-suite-page-list/utils';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { DocsService } from '@affine/core/modules/doc';
-import { EditorSettingService } from '@affine/core/modules/editor-setting';
-import { TemplateDocService } from '@affine/core/modules/template-doc';
-import { TemplateListMenuContentScrollable } from '@affine/core/modules/template-doc/view/template-list-menu';
-import { WorkbenchService } from '@affine/core/modules/workbench';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { inferOpenMode } from '@affine/core/utils';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+import { Button, IconButton, Menu, MenuItem, MenuSub } from '@madisboard/component';
+import { usePageHelper } from '@madisboard/core/blocksuite/block-suite-page-list/utils';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { EditorSettingService } from '@madisboard/core/modules/editor-setting';
+import { TemplateDocService } from '@madisboard/core/modules/template-doc';
+import { TemplateListMenuContentScrollable } from '@madisboard/core/modules/template-doc/view/template-list-menu';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { inferOpenMode } from '@madisboard/core/utils';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import type { DocMode } from '@blocksuite/affine/model';
 import {
   ArrowDownSmallIcon,

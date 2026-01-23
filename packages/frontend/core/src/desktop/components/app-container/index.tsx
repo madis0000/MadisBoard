@@ -1,14 +1,14 @@
-import { useAppSettingHelper } from '@affine/core/components/hooks/affine/use-app-setting-helper';
-import { RootAppSidebar } from '@affine/core/components/root-app-sidebar';
-import { AppSidebarService } from '@affine/core/modules/app-sidebar';
+import { useAppSettingHelper } from '@madisboard/core/components/hooks/affine/use-app-setting-helper';
+import { RootAppSidebar } from '@madisboard/core/components/root-app-sidebar';
+import { AppSidebarService } from '@madisboard/core/modules/app-sidebar';
 import {
   AppSidebarFallback,
   OpenInAppCard,
   SidebarSwitch,
-} from '@affine/core/modules/app-sidebar/views';
-import { AppTabsHeader } from '@affine/core/modules/app-tabs-header';
-import { NavigationButtons } from '@affine/core/modules/navigation';
-import { WorkspaceService } from '@affine/core/modules/workspace';
+} from '@madisboard/core/modules/app-sidebar/views';
+import { AppTabsHeader } from '@madisboard/core/modules/app-tabs-header';
+import { NavigationButtons } from '@madisboard/core/modules/navigation';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
 import {
   useLiveData,
   useService,

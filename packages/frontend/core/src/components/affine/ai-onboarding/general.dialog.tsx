@@ -1,9 +1,9 @@
-import { Button, IconButton, Modal } from '@affine/component';
-import { useBlurRoot } from '@affine/core/components/hooks/use-blur-root';
-import { AuthService, SubscriptionService } from '@affine/core/modules/cloud';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { Trans, useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+import { Button, IconButton, Modal } from '@madisboard/component';
+import { useBlurRoot } from '@madisboard/core/components/hooks/use-blur-root';
+import { AuthService, SubscriptionService } from '@madisboard/core/modules/cloud';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { Trans, useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { ArrowLeftSmallIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@toeverything/infra';
 import type { ReactNode } from 'react';

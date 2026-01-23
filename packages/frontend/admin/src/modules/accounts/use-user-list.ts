@@ -1,5 +1,5 @@
-import { useQuery } from '@affine/admin/use-query';
-import { FeatureType, listUsersQuery } from '@affine/graphql';
+import { useQuery } from '@madisboard/admin/use-query';
+import { FeatureType, listUsersQuery } from '@madisboard/graphql';
 import { useEffect, useMemo, useState } from 'react';
 
 export const useUserList = (filter?: {

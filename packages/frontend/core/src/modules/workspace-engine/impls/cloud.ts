@@ -1,4 +1,4 @@
-import { DebugLogger } from '@affine/debug';
+import { DebugLogger } from '@madisboard/debug';
 import {
   createWorkspaceMutation,
   deleteWorkspaceMutation,
@@ -7,13 +7,13 @@ import {
   Permission,
   ServerDeploymentType,
   ServerFeature,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 import type {
   BlobStorage,
   DocStorage,
   ListedBlobRecord,
-} from '@affine/nbstore';
-import { CloudBlobStorage, StaticCloudDocStorage } from '@affine/nbstore/cloud';
+} from '@madisboard/nbstore';
+import { CloudBlobStorage, StaticCloudDocStorage } from '@madisboard/nbstore/cloud';
 import {
   IndexedDBBlobStorage,
   IndexedDBBlobSyncStorage,
@@ -21,11 +21,11 @@ import {
   IndexedDBDocSyncStorage,
   IndexedDBIndexerStorage,
   IndexedDBIndexerSyncStorage,
-} from '@affine/nbstore/idb';
+} from '@madisboard/nbstore/idb';
 import {
   IndexedDBV1BlobStorage,
   IndexedDBV1DocStorage,
-} from '@affine/nbstore/idb/v1';
+} from '@madisboard/nbstore/idb/v1';
 import {
   SqliteBlobStorage,
   SqliteBlobSyncStorage,
@@ -33,12 +33,12 @@ import {
   SqliteDocSyncStorage,
   SqliteIndexerStorage,
   SqliteIndexerSyncStorage,
-} from '@affine/nbstore/sqlite';
+} from '@madisboard/nbstore/sqlite';
 import {
   SqliteV1BlobStorage,
   SqliteV1DocStorage,
-} from '@affine/nbstore/sqlite/v1';
-import type { WorkerInitOptions } from '@affine/nbstore/worker/client';
+} from '@madisboard/nbstore/sqlite/v1';
+import type { WorkerInitOptions } from '@madisboard/nbstore/worker/client';
 import {
   catchErrorInto,
   effect,

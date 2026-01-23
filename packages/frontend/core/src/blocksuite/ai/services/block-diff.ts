@@ -1,4 +1,4 @@
-import { parsePageDoc } from '@affine/reader';
+import { parsePageDoc } from '@madisboard/reader';
 import { LifeCycleWatcher } from '@blocksuite/affine/std';
 import { Extension, type Store } from '@blocksuite/affine/store';
 import { type Container, createIdentifier } from '@blocksuite/global/di';

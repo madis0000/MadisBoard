@@ -1,6 +1,6 @@
-import '@affine/env/constant';
+import '@madisboard/env/constant';
 import '../types/types.d.ts';
 
-import { setupGlobal } from '@affine/env/global';
+import { setupGlobal } from '@madisboard/env/global';
 
 setupGlobal();

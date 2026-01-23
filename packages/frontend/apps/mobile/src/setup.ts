@@ -1,4 +1,4 @@
-import '@affine/core/bootstrap/browser';
-import '@affine/core/bootstrap/cleanup';
-import '@affine/component/theme';
-import '@affine/core/mobile/styles/mobile.css';
+import '@madisboard/core/bootstrap/browser';
+import '@madisboard/core/bootstrap/cleanup';
+import '@madisboard/component/theme';
+import '@madisboard/core/mobile/styles/mobile.css';

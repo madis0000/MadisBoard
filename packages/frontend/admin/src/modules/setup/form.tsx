@@ -1,12 +1,12 @@
-import { Button } from '@affine/admin/components/ui/button';
-import type { CarouselApi } from '@affine/admin/components/ui/carousel';
+import { Button } from '@madisboard/admin/components/ui/button';
+import type { CarouselApi } from '@madisboard/admin/components/ui/carousel';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from '@affine/admin/components/ui/carousel';
-import { validateEmailAndPassword } from '@affine/admin/utils';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
+} from '@madisboard/admin/components/ui/carousel';
+import { validateEmailAndPassword } from '@madisboard/admin/utils';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
 import { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';

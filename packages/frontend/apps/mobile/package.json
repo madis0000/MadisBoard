@@ -1,7 +1,7 @@
 {
-  "name": "@affine/mobile",
+  "name": "@madisboard/mobile",
   "version": "0.26.0",
-  "description": "AFFiNE Desktop Web application",
+  "description": "MadisBoard Web Application",
   "private": true,
   "browser": "src/index.tsx",
   "scripts": {
@@ -9,14 +9,14 @@
     "dev": "affine bundle --dev"
   },
   "dependencies": {
-    "@affine/component": "workspace:*",
-    "@affine/core": "workspace:*",
-    "@affine/env": "workspace:*",
-    "@affine/i18n": "workspace:*",
-    "@affine/nbstore": "workspace:*",
-    "@affine/track": "workspace:*",
     "@blocksuite/affine": "workspace:*",
     "@blocksuite/icons": "^2.2.17",
+    "@madisboard/component": "workspace:*",
+    "@madisboard/core": "workspace:*",
+    "@madisboard/env": "workspace:*",
+    "@madisboard/i18n": "workspace:*",
+    "@madisboard/nbstore": "workspace:*",
+    "@madisboard/track": "workspace:*",
     "@sentry/react": "^9.47.1",
     "@toeverything/infra": "workspace:*",
     "react": "^19.2.1",

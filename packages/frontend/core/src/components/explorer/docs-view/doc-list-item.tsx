@@ -4,13 +4,13 @@ import {
   DragHandle as DragHandleIcon,
   Tooltip,
   useDraggable,
-} from '@affine/component';
-import { DocsService } from '@affine/core/modules/doc';
-import { DocDisplayMetaService } from '@affine/core/modules/doc-display-meta';
-import { WorkbenchLink } from '@affine/core/modules/workbench';
-import type { AffineDNDData } from '@affine/core/types/dnd';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+} from '@madisboard/component';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { DocDisplayMetaService } from '@madisboard/core/modules/doc-display-meta';
+import { WorkbenchLink } from '@madisboard/core/modules/workbench';
+import type { AffineDNDData } from '@madisboard/core/types/dnd';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import {
   AutoTidyUpIcon,
   PropertyIcon,

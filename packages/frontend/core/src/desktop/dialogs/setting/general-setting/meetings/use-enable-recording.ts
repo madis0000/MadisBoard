@@ -1,8 +1,8 @@
-import { useConfirmModal } from '@affine/component';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { MeetingSettingsService } from '@affine/core/modules/media/services/meeting-settings';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+import { useConfirmModal } from '@madisboard/component';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { MeetingSettingsService } from '@madisboard/core/modules/media/services/meeting-settings';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import { useService } from '@toeverything/infra';
 
 export const useEnableRecording = () => {

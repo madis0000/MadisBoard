@@ -1,7 +1,7 @@
-import { Switch } from '@affine/component';
-import { AuthService, SubscriptionService } from '@affine/core/modules/cloud';
-import { SubscriptionPlan, SubscriptionRecurring } from '@affine/graphql';
-import { Trans, useI18n } from '@affine/i18n';
+import { Switch } from '@madisboard/component';
+import { AuthService, SubscriptionService } from '@madisboard/core/modules/cloud';
+import { SubscriptionPlan, SubscriptionRecurring } from '@madisboard/graphql';
+import { Trans, useI18n } from '@madisboard/i18n';
 import { AfFiNeIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@toeverything/infra';
 import {

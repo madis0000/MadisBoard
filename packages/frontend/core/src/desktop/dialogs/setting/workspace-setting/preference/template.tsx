@@ -3,16 +3,16 @@ import {
   MenuSeparator,
   MenuTrigger,
   Switch,
-} from '@affine/component';
+} from '@madisboard/component';
 import {
   SettingRow,
   SettingWrapper,
-} from '@affine/component/setting-components';
-import { DocsService } from '@affine/core/modules/doc';
-import { DocDisplayMetaService } from '@affine/core/modules/doc-display-meta';
-import { TemplateDocService } from '@affine/core/modules/template-doc';
-import { TemplateListMenu } from '@affine/core/modules/template-doc/view/template-list-menu';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/component/setting-components';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { DocDisplayMetaService } from '@madisboard/core/modules/doc-display-meta';
+import { TemplateDocService } from '@madisboard/core/modules/template-doc';
+import { TemplateListMenu } from '@madisboard/core/modules/template-doc/view/template-list-menu';
+import { useI18n } from '@madisboard/i18n';
 import { DeleteIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback } from 'react';

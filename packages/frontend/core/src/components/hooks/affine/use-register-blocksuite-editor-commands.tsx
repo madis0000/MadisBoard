@@ -1,19 +1,19 @@
-import { toast, useConfirmModal } from '@affine/component';
+import { toast, useConfirmModal } from '@madisboard/component';
 import {
   PreconditionStrategy,
   registerAffineCommand,
-} from '@affine/core/commands';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { DocService } from '@affine/core/modules/doc';
-import type { Editor } from '@affine/core/modules/editor';
-import { EditorSettingService } from '@affine/core/modules/editor-setting';
-import { CompatibleFavoriteItemsAdapter } from '@affine/core/modules/favorite';
-import { OpenInAppService } from '@affine/core/modules/open-in-app';
-import { GuardService } from '@affine/core/modules/permissions';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { UserFriendlyError } from '@affine/error';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/core/commands';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { DocService } from '@madisboard/core/modules/doc';
+import type { Editor } from '@madisboard/core/modules/editor';
+import { EditorSettingService } from '@madisboard/core/modules/editor-setting';
+import { CompatibleFavoriteItemsAdapter } from '@madisboard/core/modules/favorite';
+import { OpenInAppService } from '@madisboard/core/modules/open-in-app';
+import { GuardService } from '@madisboard/core/modules/permissions';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { UserFriendlyError } from '@madisboard/error';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import {
   EdgelessIcon,
   HistoryIcon,

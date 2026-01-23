@@ -1,14 +1,14 @@
-import { Button, Loading } from '@affine/component';
+import { Button, Loading } from '@madisboard/component';
 import {
   Pagination,
   SettingRow,
   SettingWrapper,
-} from '@affine/component/setting-components';
-import { InvoicesService } from '@affine/core/modules/cloud';
-import { UrlService } from '@affine/core/modules/url';
-import { UserFriendlyError } from '@affine/error';
-import { type InvoicesQuery, InvoiceStatus } from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/component/setting-components';
+import { InvoicesService } from '@madisboard/core/modules/cloud';
+import { UrlService } from '@madisboard/core/modules/url';
+import { UserFriendlyError } from '@madisboard/error';
+import { type InvoicesQuery, InvoiceStatus } from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { cssVar } from '@toeverything/theme';
 import { useCallback, useEffect } from 'react';

@@ -1,9 +1,9 @@
-import { notify } from '@affine/component';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { WorkspacePermissionService } from '@affine/core/modules/permissions';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
-import type { BlobSyncState } from '@affine/nbstore';
+import { notify } from '@madisboard/component';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { WorkspacePermissionService } from '@madisboard/core/modules/permissions';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
+import type { BlobSyncState } from '@madisboard/nbstore';
 import { useLiveData, useService } from '@toeverything/infra';
 import { debounce } from 'lodash-es';
 import { useCallback, useEffect } from 'react';

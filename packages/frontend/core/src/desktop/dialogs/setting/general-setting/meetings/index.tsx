@@ -5,17 +5,17 @@ import {
   MenuItem,
   MenuTrigger,
   Switch,
-} from '@affine/component';
+} from '@madisboard/component';
 import {
   SettingHeader,
   SettingRow,
   SettingWrapper,
-} from '@affine/component/setting-components';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { DesktopApiService } from '@affine/core/modules/desktop-api';
-import { MeetingSettingsService } from '@affine/core/modules/media/services/meeting-settings';
-import type { MeetingSettingsSchema } from '@affine/electron/main/shared-state-schema';
-import { Trans, useI18n } from '@affine/i18n';
+} from '@madisboard/component/setting-components';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { DesktopApiService } from '@madisboard/core/modules/desktop-api';
+import { MeetingSettingsService } from '@madisboard/core/modules/media/services/meeting-settings';
+import type { MeetingSettingsSchema } from '@madisboard/electron/main/shared-state-schema';
+import { Trans, useI18n } from '@madisboard/i18n';
 import {
   ArrowRightSmallIcon,
   DoneIcon,

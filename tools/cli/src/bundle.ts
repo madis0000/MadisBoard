@@ -1,8 +1,8 @@
 import { rmSync } from 'node:fs';
 import { cpus } from 'node:os';
 
-import { Logger } from '@affine-tools/utils/logger';
-import { Package } from '@affine-tools/utils/workspace';
+import { Logger } from '@madisboard-tools/utils/logger';
+import { Package } from '@madisboard-tools/utils/workspace';
 import { merge } from 'lodash-es';
 import webpack from 'webpack';
 import WebpackDevServer, {
@@ -17,7 +17,7 @@ import {
 } from './webpack';
 
 function getBaseWorkerConfigs(pkg: Package) {
-  const core = new Package('@affine/core');
+  const core = new Package('@madisboard/core');
 
   return [
     createWorkerTargetConfig(
@@ -41,15 +41,15 @@ function getBaseWorkerConfigs(pkg: Package) {
 
 function getBundleConfigs(pkg: Package): webpack.MultiConfiguration {
   switch (pkg.name) {
-    case '@affine/admin': {
+    case '@madisboard/admin': {
       return [
         createHTMLTargetConfig(pkg, pkg.srcPath.join('index.tsx').value),
       ] as webpack.MultiConfiguration;
     }
-    case '@affine/web':
-    case '@affine/mobile':
-    case '@affine/ios':
-    case '@affine/android': {
+    case '@madisboard/web':
+    case '@madisboard/mobile':
+    case '@madisboard/ios':
+    case '@madisboard/android': {
       const workerConfigs = getBaseWorkerConfigs(pkg);
       workerConfigs.push(
         createWorkerTargetConfig(
@@ -68,7 +68,7 @@ function getBundleConfigs(pkg: Package): webpack.MultiConfiguration {
         ...workerConfigs,
       ] as webpack.MultiConfiguration;
     }
-    case '@affine/electron-renderer': {
+    case '@madisboard/electron-renderer': {
       const workerConfigs = getBaseWorkerConfigs(pkg);
 
       return [
@@ -91,7 +91,7 @@ function getBundleConfigs(pkg: Package): webpack.MultiConfiguration {
         ...workerConfigs,
       ] as webpack.MultiConfiguration;
     }
-    case '@affine/server': {
+    case '@madisboard/server': {
       return [
         createNodeTargetConfig(pkg, pkg.srcPath.join('index.ts').value),
       ] as webpack.MultiConfiguration;

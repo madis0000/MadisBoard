@@ -1,7 +1,7 @@
 {
-  "name": "AFFiNE: There can be more than Notion and Miro.",
-  "short_name": "AFFiNE",
-  "description": "AFFiNE is a workspace with fully merged docs, whiteboards and databases. Get more things done, your creativity isn’t monotone.",
+  "name": "MadisBoard: Your Ideas, Connected",
+  "short_name": "MadisBoard",
+  "description": "MadisBoard is a personal knowledge management platform with docs, whiteboards, and databases for organizing ideas and connecting projects.",
   "start_url": "/?source=pwa",
   "background_color": "#ffffff",
   "display": "standalone",

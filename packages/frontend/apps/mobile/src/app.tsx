@@ -1,22 +1,22 @@
-import { AffineContext } from '@affine/core/components/context';
-import { AppFallback } from '@affine/core/mobile/components/app-fallback';
-import { configureMobileModules } from '@affine/core/mobile/modules';
-import { HapticProvider } from '@affine/core/mobile/modules/haptics';
-import { VirtualKeyboardProvider } from '@affine/core/mobile/modules/virtual-keyboard';
-import { router } from '@affine/core/mobile/router';
-import { configureCommonModules } from '@affine/core/modules';
-import { I18nProvider } from '@affine/core/modules/i18n';
-import { LifecycleService } from '@affine/core/modules/lifecycle';
+import { AffineContext } from '@madisboard/core/components/context';
+import { AppFallback } from '@madisboard/core/mobile/components/app-fallback';
+import { configureMobileModules } from '@madisboard/core/mobile/modules';
+import { HapticProvider } from '@madisboard/core/mobile/modules/haptics';
+import { VirtualKeyboardProvider } from '@madisboard/core/mobile/modules/virtual-keyboard';
+import { router } from '@madisboard/core/mobile/router';
+import { configureCommonModules } from '@madisboard/core/modules';
+import { I18nProvider } from '@madisboard/core/modules/i18n';
+import { LifecycleService } from '@madisboard/core/modules/lifecycle';
 import {
   configureLocalStorageStateStorageImpls,
   NbstoreProvider,
-} from '@affine/core/modules/storage';
-import { PopupWindowProvider } from '@affine/core/modules/url';
-import { configureBrowserWorkbenchModule } from '@affine/core/modules/workbench';
-import { configureBrowserWorkspaceFlavours } from '@affine/core/modules/workspace-engine';
-import { getWorkerUrl } from '@affine/env/worker';
-import { StoreManagerClient } from '@affine/nbstore/worker/client';
-import { setTelemetryTransport } from '@affine/track';
+} from '@madisboard/core/modules/storage';
+import { PopupWindowProvider } from '@madisboard/core/modules/url';
+import { configureBrowserWorkbenchModule } from '@madisboard/core/modules/workbench';
+import { configureBrowserWorkspaceFlavours } from '@madisboard/core/modules/workspace-engine';
+import { getWorkerUrl } from '@madisboard/env/worker';
+import { StoreManagerClient } from '@madisboard/nbstore/worker/client';
+import { setTelemetryTransport } from '@madisboard/track';
 import { Framework, FrameworkRoot, getCurrentStore } from '@toeverything/infra';
 import { OpClient } from '@toeverything/infra/op';
 import { Suspense } from 'react';

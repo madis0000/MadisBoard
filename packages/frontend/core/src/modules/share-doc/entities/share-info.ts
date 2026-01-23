@@ -1,4 +1,4 @@
-import type { GetWorkspacePageByIdQuery, PublicDocMode } from '@affine/graphql';
+import type { GetWorkspacePageByIdQuery, PublicDocMode } from '@madisboard/graphql';
 import {
   catchErrorInto,
   effect,

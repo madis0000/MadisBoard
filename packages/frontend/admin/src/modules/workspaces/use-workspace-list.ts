@@ -1,10 +1,10 @@
-import { useQuery } from '@affine/admin/use-query';
+import { useQuery } from '@madisboard/admin/use-query';
 import {
   adminWorkspacesCountQuery,
   AdminWorkspaceSort,
   adminWorkspacesQuery,
   FeatureType,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 import { useEffect, useMemo, useState } from 'react';
 
 import type { WorkspaceFlagFilter } from './schema';

@@ -1,5 +1,5 @@
-import type { AffineEditorContainer } from '@affine/core/blocksuite/block-suite-editor';
-import type { DefaultOpenProperty } from '@affine/core/components/properties';
+import type { AffineEditorContainer } from '@madisboard/core/blocksuite/block-suite-editor';
+import type { DefaultOpenProperty } from '@madisboard/core/components/properties';
 import { PresentTool } from '@blocksuite/affine/blocks/frame';
 import { DefaultTool } from '@blocksuite/affine/blocks/surface';
 import type { DocTitle } from '@blocksuite/affine/fragments/doc-title';

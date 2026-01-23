@@ -1,6 +1,6 @@
-import { buttonVariants } from '@affine/admin/components/ui/button';
-import { Separator } from '@affine/admin/components/ui/separator';
-import { cn } from '@affine/admin/utils';
+import { buttonVariants } from '@madisboard/admin/components/ui/button';
+import { Separator } from '@madisboard/admin/components/ui/separator';
+import { cn } from '@madisboard/admin/utils';
 import {
   AlbumIcon,
   ChevronRightIcon,

@@ -3,15 +3,15 @@ import {
   SafeArea,
   startScopedViewTransition,
   useThemeColorV2,
-} from '@affine/component';
-import { CollectionService } from '@affine/core/modules/collection';
+} from '@madisboard/component';
+import { CollectionService } from '@madisboard/core/modules/collection';
 import {
   type QuickSearchItem,
   QuickSearchTagIcon,
-} from '@affine/core/modules/quicksearch';
-import { TagService } from '@affine/core/modules/tag';
-import { UserFriendlyError } from '@affine/error';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/quicksearch';
+import { TagService } from '@madisboard/core/modules/tag';
+import { UserFriendlyError } from '@madisboard/error';
+import { useI18n } from '@madisboard/i18n';
 import { sleep } from '@blocksuite/affine/global/utils';
 import { ViewLayersIcon } from '@blocksuite/icons/rc';
 import {

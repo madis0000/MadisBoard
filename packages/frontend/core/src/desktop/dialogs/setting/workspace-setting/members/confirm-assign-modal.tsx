@@ -1,6 +1,6 @@
-import { ConfirmModal, Input } from '@affine/component';
-import type { Member } from '@affine/core/modules/permissions';
-import { useI18n } from '@affine/i18n';
+import { ConfirmModal, Input } from '@madisboard/component';
+import type { Member } from '@madisboard/core/modules/permissions';
+import { useI18n } from '@madisboard/i18n';
 import { cssVar } from '@toeverything/theme';
 
 import * as styles from './styles.css';

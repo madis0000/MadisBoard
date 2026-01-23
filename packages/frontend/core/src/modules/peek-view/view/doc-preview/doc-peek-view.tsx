@@ -1,13 +1,13 @@
-import { Scrollable } from '@affine/component';
-import { PageDetailLoading } from '@affine/component/page-detail-skeleton';
-import { type AIChatParams, AIProvider } from '@affine/core/blocksuite/ai';
-import type { AffineEditorContainer } from '@affine/core/blocksuite/block-suite-editor';
-import { EditorOutlineViewer } from '@affine/core/blocksuite/outline-viewer';
-import { AffineErrorBoundary } from '@affine/core/components/affine/affine-error-boundary';
-import { useGuard } from '@affine/core/components/guard';
-import { PageNotFound } from '@affine/core/desktop/pages/404';
-import { EditorService } from '@affine/core/modules/editor';
-import { DebugLogger } from '@affine/debug';
+import { Scrollable } from '@madisboard/component';
+import { PageDetailLoading } from '@madisboard/component/page-detail-skeleton';
+import { type AIChatParams, AIProvider } from '@madisboard/core/blocksuite/ai';
+import type { AffineEditorContainer } from '@madisboard/core/blocksuite/block-suite-editor';
+import { EditorOutlineViewer } from '@madisboard/core/blocksuite/outline-viewer';
+import { AffineErrorBoundary } from '@madisboard/core/components/affine/affine-error-boundary';
+import { useGuard } from '@madisboard/core/components/guard';
+import { PageNotFound } from '@madisboard/core/desktop/pages/404';
+import { EditorService } from '@madisboard/core/modules/editor';
+import { DebugLogger } from '@madisboard/debug';
 import { DisposableGroup } from '@blocksuite/affine/global/disposable';
 import { Bound } from '@blocksuite/affine/global/gfx';
 import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
@@ -32,7 +32,7 @@ const logger = new DebugLogger('doc-peek-view');
 
 // Lazy load BlockSuiteEditor to break circular dependency
 const BlockSuiteEditor = lazy(() =>
-  import('@affine/core/blocksuite/block-suite-editor').then(module => ({
+  import('@madisboard/core/blocksuite/block-suite-editor').then(module => ({
     default: module.BlockSuiteEditor,
   }))
 );

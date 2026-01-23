@@ -1,30 +1,30 @@
-import { Scrollable } from '@affine/component';
-import { PageDetailLoading } from '@affine/component/page-detail-skeleton';
-import type { AIChatParams, ChatPanel } from '@affine/core/blocksuite/ai';
-import { AIProvider } from '@affine/core/blocksuite/ai';
-import type { AffineEditorContainer } from '@affine/core/blocksuite/block-suite-editor';
-import { EditorOutlineViewer } from '@affine/core/blocksuite/outline-viewer';
-import { AffineErrorBoundary } from '@affine/core/components/affine/affine-error-boundary';
-// import { PageAIOnboarding } from '@affine/core/components/affine/ai-onboarding';
-import { GlobalPageHistoryModal } from '@affine/core/components/affine/page-history-modal';
-import { CommentSidebar } from '@affine/core/components/comment/sidebar';
-import { useGuard } from '@affine/core/components/guard';
-import { useAppSettingHelper } from '@affine/core/components/hooks/affine/use-app-setting-helper';
-import { useEnableAI } from '@affine/core/components/hooks/affine/use-enable-ai';
-import { useRegisterBlocksuiteEditorCommands } from '@affine/core/components/hooks/affine/use-register-blocksuite-editor-commands';
-import { useActiveBlocksuiteEditor } from '@affine/core/components/hooks/use-block-suite-editor';
-import { PageDetailEditor } from '@affine/core/components/page-detail-editor';
-import { WorkspacePropertySidebar } from '@affine/core/components/properties/sidebar';
-import { TrashPageFooter } from '@affine/core/components/pure/trash-page-footer';
-import { TopTip } from '@affine/core/components/top-tip';
-import { ServerService } from '@affine/core/modules/cloud';
-import { DocService } from '@affine/core/modules/doc';
-import { EditorService } from '@affine/core/modules/editor';
-import { FeatureFlagService } from '@affine/core/modules/feature-flag';
-import { GlobalContextService } from '@affine/core/modules/global-context';
-import { JournalService } from '@affine/core/modules/journal';
-import { PeekViewService } from '@affine/core/modules/peek-view';
-import { RecentDocsService } from '@affine/core/modules/quicksearch';
+import { Scrollable } from '@madisboard/component';
+import { PageDetailLoading } from '@madisboard/component/page-detail-skeleton';
+import type { AIChatParams, ChatPanel } from '@madisboard/core/blocksuite/ai';
+import { AIProvider } from '@madisboard/core/blocksuite/ai';
+import type { AffineEditorContainer } from '@madisboard/core/blocksuite/block-suite-editor';
+import { EditorOutlineViewer } from '@madisboard/core/blocksuite/outline-viewer';
+import { AffineErrorBoundary } from '@madisboard/core/components/affine/affine-error-boundary';
+// import { PageAIOnboarding } from '@madisboard/core/components/affine/ai-onboarding';
+import { GlobalPageHistoryModal } from '@madisboard/core/components/affine/page-history-modal';
+import { CommentSidebar } from '@madisboard/core/components/comment/sidebar';
+import { useGuard } from '@madisboard/core/components/guard';
+import { useAppSettingHelper } from '@madisboard/core/components/hooks/affine/use-app-setting-helper';
+import { useEnableAI } from '@madisboard/core/components/hooks/affine/use-enable-ai';
+import { useRegisterBlocksuiteEditorCommands } from '@madisboard/core/components/hooks/affine/use-register-blocksuite-editor-commands';
+import { useActiveBlocksuiteEditor } from '@madisboard/core/components/hooks/use-block-suite-editor';
+import { PageDetailEditor } from '@madisboard/core/components/page-detail-editor';
+import { WorkspacePropertySidebar } from '@madisboard/core/components/properties/sidebar';
+import { TrashPageFooter } from '@madisboard/core/components/pure/trash-page-footer';
+import { TopTip } from '@madisboard/core/components/top-tip';
+import { ServerService } from '@madisboard/core/modules/cloud';
+import { DocService } from '@madisboard/core/modules/doc';
+import { EditorService } from '@madisboard/core/modules/editor';
+import { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
+import { GlobalContextService } from '@madisboard/core/modules/global-context';
+import { JournalService } from '@madisboard/core/modules/journal';
+import { PeekViewService } from '@madisboard/core/modules/peek-view';
+import { RecentDocsService } from '@madisboard/core/modules/quicksearch';
 import {
   useIsActiveView,
   ViewBody,
@@ -32,11 +32,11 @@ import {
   ViewService,
   ViewSidebarTab,
   WorkbenchService,
-} from '@affine/core/modules/workbench';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { isNewTabTrigger } from '@affine/core/utils';
-import { ServerFeature } from '@affine/graphql';
-import track from '@affine/track';
+} from '@madisboard/core/modules/workbench';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { isNewTabTrigger } from '@madisboard/core/utils';
+import { ServerFeature } from '@madisboard/graphql';
+import track from '@madisboard/track';
 import { DisposableGroup } from '@blocksuite/affine/global/disposable';
 import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
 import { focusBlockEnd } from '@blocksuite/affine/shared/commands';

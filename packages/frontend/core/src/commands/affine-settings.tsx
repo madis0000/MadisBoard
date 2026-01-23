@@ -1,5 +1,5 @@
-import type { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+import type { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { SettingsIcon } from '@blocksuite/icons/rc';
 import { appSettingAtom } from '@toeverything/infra';
 import type { createStore } from 'jotai';

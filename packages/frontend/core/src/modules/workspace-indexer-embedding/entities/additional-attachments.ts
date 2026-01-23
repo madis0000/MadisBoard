@@ -1,5 +1,5 @@
-import type { WorkspaceService } from '@affine/core/modules/workspace';
-import type { PaginationInput } from '@affine/graphql';
+import type { WorkspaceService } from '@madisboard/core/modules/workspace';
+import type { PaginationInput } from '@madisboard/graphql';
 import {
   catchErrorInto,
   effect,

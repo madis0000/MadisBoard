@@ -1,5 +1,5 @@
-import { fuzzyMatch } from '@affine/core/utils/fuzzy-match';
-import { I18n } from '@affine/i18n';
+import { fuzzyMatch } from '@madisboard/core/utils/fuzzy-match';
+import { I18n } from '@madisboard/i18n';
 import dayjs from 'dayjs';
 
 import { JOURNAL_DATE_FORMAT } from './services/journal';

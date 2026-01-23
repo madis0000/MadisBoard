@@ -1,19 +1,19 @@
-import { Button, usePromptModal } from '@affine/component';
+import { Button, usePromptModal } from '@madisboard/component';
 import {
   createDocExplorerContext,
   DocExplorerContext,
-} from '@affine/core/components/explorer/context';
-import { DocsExplorer } from '@affine/core/components/explorer/docs-view/docs-list';
-import type { ExplorerDisplayPreference } from '@affine/core/components/explorer/types';
-import { Filters } from '@affine/core/components/filter';
+} from '@madisboard/core/components/explorer/context';
+import { DocsExplorer } from '@madisboard/core/components/explorer/docs-view/docs-list';
+import type { ExplorerDisplayPreference } from '@madisboard/core/components/explorer/types';
+import { Filters } from '@madisboard/core/components/filter';
 import {
   CollectionService,
   PinnedCollectionService,
-} from '@affine/core/modules/collection';
-import { CollectionRulesService } from '@affine/core/modules/collection-rules';
-import type { FilterParams } from '@affine/core/modules/collection-rules/types';
-import { WorkspaceLocalState } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/collection';
+import { CollectionRulesService } from '@madisboard/core/modules/collection-rules';
+import type { FilterParams } from '@madisboard/core/modules/collection-rules/types';
+import { WorkspaceLocalState } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useEffect, useState } from 'react';
 

@@ -1,8 +1,8 @@
 import type {
   AuthService,
   PublicUserService,
-} from '@affine/core/modules/cloud';
-import { UserFriendlyError } from '@affine/error';
+} from '@madisboard/core/modules/cloud';
+import { UserFriendlyError } from '@madisboard/error';
 import {
   type AffineUserInfo,
   UserServiceExtension,

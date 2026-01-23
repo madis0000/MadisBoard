@@ -1,8 +1,8 @@
-import { NavigationPanelTreeRoot } from '@affine/core/desktop/components/navigation-panel';
-import { NavigationPanelService } from '@affine/core/modules/navigation-panel';
-import { TagService } from '@affine/core/modules/tag';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+import { NavigationPanelTreeRoot } from '@madisboard/core/desktop/components/navigation-panel';
+import { NavigationPanelService } from '@madisboard/core/modules/navigation-panel';
+import { TagService } from '@madisboard/core/modules/tag';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { AddTagIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@toeverything/infra';
 import { useCallback, useMemo, useState } from 'react';

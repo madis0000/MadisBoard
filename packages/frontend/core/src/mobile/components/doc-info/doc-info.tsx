@@ -5,20 +5,20 @@ import {
   PropertyCollapsibleContent,
   PropertyCollapsibleSection,
   Scrollable,
-} from '@affine/component';
-import { useGuard } from '@affine/core/components/guard';
+} from '@madisboard/component';
+import { useGuard } from '@madisboard/core/components/guard';
 import {
   type DefaultOpenProperty,
   WorkspacePropertyRow,
-} from '@affine/core/components/properties';
-import { CreatePropertyMenuItems } from '@affine/core/components/properties/menu/create-doc-property';
-import { LinksRow } from '@affine/core/desktop/dialogs/doc-info/links-row';
-import { TimeRow } from '@affine/core/desktop/dialogs/doc-info/time-row';
-import type { DocCustomPropertyInfo } from '@affine/core/modules/db';
-import { DocDatabaseBacklinkInfo } from '@affine/core/modules/doc-info';
-import { DocLinksService } from '@affine/core/modules/doc-link';
-import { WorkspacePropertyService } from '@affine/core/modules/workspace-property';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/components/properties';
+import { CreatePropertyMenuItems } from '@madisboard/core/components/properties/menu/create-doc-property';
+import { LinksRow } from '@madisboard/core/desktop/dialogs/doc-info/links-row';
+import { TimeRow } from '@madisboard/core/desktop/dialogs/doc-info/time-row';
+import type { DocCustomPropertyInfo } from '@madisboard/core/modules/db';
+import { DocDatabaseBacklinkInfo } from '@madisboard/core/modules/doc-info';
+import { DocLinksService } from '@madisboard/core/modules/doc-link';
+import { WorkspacePropertyService } from '@madisboard/core/modules/workspace-property';
+import { useI18n } from '@madisboard/i18n';
 import { PlusIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@toeverything/infra';
 import { Suspense, useCallback, useEffect, useState } from 'react';

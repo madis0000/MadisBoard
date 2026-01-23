@@ -1,5 +1,5 @@
 {
-  "name": "@affine/track",
+  "name": "@madisboard/track",
   "type": "module",
   "private": true,
   "version": "0.26.0",
@@ -7,7 +7,7 @@
     ".": "./src/index.ts"
   },
   "dependencies": {
-    "@affine/debug": "workspace:*",
+    "@madisboard/debug": "workspace:*",
     "@sentry/react": "^9.47.1",
     "nanoid": "^5.1.6",
     "react-router-dom": "^6.30.3"

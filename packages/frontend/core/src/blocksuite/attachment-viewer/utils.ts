@@ -37,4 +37,4 @@ export function buildAttachmentProps(
   return { model, name, ext, size };
 }
 
-export { getAttachmentType } from '@affine/core/modules/media/utils';
+export { getAttachmentType } from '@madisboard/core/modules/media/utils';

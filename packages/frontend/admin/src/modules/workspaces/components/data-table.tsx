@@ -1,4 +1,4 @@
-import type { AdminWorkspaceSort, FeatureType } from '@affine/graphql';
+import type { AdminWorkspaceSort, FeatureType } from '@madisboard/graphql';
 import type { ColumnDef, PaginationState } from '@tanstack/react-table';
 import type { Dispatch, SetStateAction } from 'react';
 

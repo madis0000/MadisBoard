@@ -1,12 +1,12 @@
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
 import {
   TagListHeader,
   VirtualizedTagList,
-} from '@affine/core/components/page-list/tags';
-import { CreateOrEditTag } from '@affine/core/components/page-list/tags/create-tag';
-import type { TagMeta } from '@affine/core/components/page-list/types';
-import { TagService, useDeleteTagConfirmModal } from '@affine/core/modules/tag';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/components/page-list/tags';
+import { CreateOrEditTag } from '@madisboard/core/components/page-list/tags/create-tag';
+import type { TagMeta } from '@madisboard/core/components/page-list/types';
+import { TagService, useDeleteTagConfirmModal } from '@madisboard/core/modules/tag';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useState } from 'react';
 

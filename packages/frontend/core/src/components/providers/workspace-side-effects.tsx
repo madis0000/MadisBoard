@@ -1,37 +1,37 @@
-import { toast } from '@affine/component';
+import { toast } from '@madisboard/component';
 import {
   pushGlobalLoadingEventAtom,
   resolveGlobalLoadingEventAtom,
-} from '@affine/component/global-loading';
+} from '@madisboard/component/global-loading';
 import {
   AIProvider,
   CopilotClient,
   setupAIProvider,
-} from '@affine/core/blocksuite/ai';
-import { useRegisterFindInPageCommands } from '@affine/core/components/hooks/affine/use-register-find-in-page-commands';
-import { useRegisterWorkspaceCommands } from '@affine/core/components/hooks/use-register-workspace-commands';
-import { OverCapacityNotification } from '@affine/core/components/over-capacity';
+} from '@madisboard/core/blocksuite/ai';
+import { useRegisterFindInPageCommands } from '@madisboard/core/components/hooks/affine/use-register-find-in-page-commands';
+import { useRegisterWorkspaceCommands } from '@madisboard/core/components/hooks/use-register-workspace-commands';
+import { OverCapacityNotification } from '@madisboard/core/components/over-capacity';
 import {
   AuthService,
   EventSourceService,
   FetchService,
   GraphQLService,
-} from '@affine/core/modules/cloud';
+} from '@madisboard/core/modules/cloud';
 import {
   GlobalDialogService,
   WorkspaceDialogService,
-} from '@affine/core/modules/dialogs';
-import { DocsService } from '@affine/core/modules/doc';
-import { EditorSettingService } from '@affine/core/modules/editor-setting';
-import { useRegisterNavigationCommands } from '@affine/core/modules/navigation/view/use-register-navigation-commands';
-import { QuickSearchContainer } from '@affine/core/modules/quicksearch';
-import { WorkbenchService } from '@affine/core/modules/workbench';
+} from '@madisboard/core/modules/dialogs';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { EditorSettingService } from '@madisboard/core/modules/editor-setting';
+import { useRegisterNavigationCommands } from '@madisboard/core/modules/navigation/view/use-register-navigation-commands';
+import { QuickSearchContainer } from '@madisboard/core/modules/quicksearch';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
 import {
   getAFFiNEWorkspaceSchema,
   WorkspaceService,
-} from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+} from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import type { DocMode } from '@blocksuite/affine/model';
 import { ZipTransformer } from '@blocksuite/affine/widgets/linked-doc';
 import {

@@ -1,17 +1,17 @@
-import '@affine/core/bootstrap/electron';
+import '@madisboard/core/bootstrap/electron';
 
-import { apis } from '@affine/electron-api';
-import { broadcastChannelStorages } from '@affine/nbstore/broadcast-channel';
-import { cloudStorages } from '@affine/nbstore/cloud';
-import { bindNativeDBApis, sqliteStorages } from '@affine/nbstore/sqlite';
+import { apis } from '@madisboard/electron-api';
+import { broadcastChannelStorages } from '@madisboard/nbstore/broadcast-channel';
+import { cloudStorages } from '@madisboard/nbstore/cloud';
+import { bindNativeDBApis, sqliteStorages } from '@madisboard/nbstore/sqlite';
 import {
   bindNativeDBV1Apis,
   sqliteV1Storages,
-} from '@affine/nbstore/sqlite/v1';
+} from '@madisboard/nbstore/sqlite/v1';
 import {
   StoreManagerConsumer,
   type WorkerManagerOps,
-} from '@affine/nbstore/worker/consumer';
+} from '@madisboard/nbstore/worker/consumer';
 import { OpConsumer } from '@toeverything/infra/op';
 
 // oxlint-disable-next-line no-non-null-assertion

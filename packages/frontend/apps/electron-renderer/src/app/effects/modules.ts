@@ -1,23 +1,23 @@
-import { configureElectronStateStorageImpls } from '@affine/core/desktop/storage';
-import { configureCommonModules } from '@affine/core/modules';
-import { configureAppTabsHeaderModule } from '@affine/core/modules/app-tabs-header';
-import { configureDesktopBackupModule } from '@affine/core/modules/backup';
-import { ValidatorProvider } from '@affine/core/modules/cloud';
+import { configureElectronStateStorageImpls } from '@madisboard/core/desktop/storage';
+import { configureCommonModules } from '@madisboard/core/modules';
+import { configureAppTabsHeaderModule } from '@madisboard/core/modules/app-tabs-header';
+import { configureDesktopBackupModule } from '@madisboard/core/modules/backup';
+import { ValidatorProvider } from '@madisboard/core/modules/cloud';
 import {
   configureDesktopApiModule,
   DesktopApiService,
-} from '@affine/core/modules/desktop-api';
+} from '@madisboard/core/modules/desktop-api';
 import {
   configureSpellCheckSettingModule,
   configureTraySettingModule,
-} from '@affine/core/modules/editor-setting';
-import { configureFindInPageModule } from '@affine/core/modules/find-in-page';
+} from '@madisboard/core/modules/editor-setting';
+import { configureFindInPageModule } from '@madisboard/core/modules/find-in-page';
 import {
   ClientSchemeProvider,
   PopupWindowProvider,
-} from '@affine/core/modules/url';
-import { configureDesktopWorkbenchModule } from '@affine/core/modules/workbench';
-import { configureBrowserWorkspaceFlavours } from '@affine/core/modules/workspace-engine';
+} from '@madisboard/core/modules/url';
+import { configureDesktopWorkbenchModule } from '@madisboard/core/modules/workbench';
+import { configureBrowserWorkspaceFlavours } from '@madisboard/core/modules/workspace-engine';
 import { Framework } from '@toeverything/infra';
 
 export function setupModules() {

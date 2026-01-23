@@ -1,9 +1,9 @@
 import { execSync } from 'node:child_process';
 
-import { ProjectRoot } from '@affine-tools/utils/path';
-import { Package } from '@affine-tools/utils/workspace';
+import { ProjectRoot } from '@madisboard-tools/utils/path';
+import { Package } from '@madisboard-tools/utils/workspace';
 
-const iosPackage = new Package('@affine/ios');
+const iosPackage = new Package('@madisboard/ios');
 
 const PackageRoot = iosPackage.path;
 

@@ -1,7 +1,7 @@
-import { Avatar } from '@affine/component';
-import { useSignOut } from '@affine/core/components/hooks/affine/use-sign-out';
-import { AuthService } from '@affine/core/modules/cloud';
-import { GlobalDialogService } from '@affine/core/modules/dialogs';
+import { Avatar } from '@madisboard/component';
+import { useSignOut } from '@madisboard/core/components/hooks/affine/use-sign-out';
+import { AuthService } from '@madisboard/core/modules/cloud';
+import { GlobalDialogService } from '@madisboard/core/modules/dialogs';
 import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { type ReactNode } from 'react';

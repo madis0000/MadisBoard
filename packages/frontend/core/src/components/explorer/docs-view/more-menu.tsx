@@ -5,14 +5,14 @@ import {
   MenuItem,
   type MenuProps,
   useConfirmModal,
-} from '@affine/component';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { DocsService } from '@affine/core/modules/doc';
-import { CompatibleFavoriteItemsAdapter } from '@affine/core/modules/favorite';
-import { GuardService } from '@affine/core/modules/permissions';
-import { WorkbenchService } from '@affine/core/modules/workbench';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+} from '@madisboard/component';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { CompatibleFavoriteItemsAdapter } from '@madisboard/core/modules/favorite';
+import { GuardService } from '@madisboard/core/modules/permissions';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import {
   DeleteIcon,
   DuplicateIcon,

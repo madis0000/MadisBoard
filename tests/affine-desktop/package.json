@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "@affine-test/kit": "workspace:*",
-    "@affine/electron-api": "workspace:*",
+    "@madisboard/electron-api": "workspace:*",
     "@playwright/test": "=1.52.0",
     "@types/fs-extra": "^11.0.4",
     "fs-extra": "^11.2.0",

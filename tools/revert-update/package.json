@@ -1,5 +1,5 @@
 {
-  "name": "@affine/revert-update",
+  "name": "@madisboard/revert-update",
   "version": "0.26.0",
   "private": true,
   "type": "module",
@@ -9,7 +9,7 @@
     "generate": "r ./index.ts"
   },
   "dependencies": {
-    "@affine-tools/cli": "workspace:*",
+    "@madisboard-tools/cli": "workspace:*",
     "typescript": "^5.7.2",
     "yjs": "^13.6.27"
   },

@@ -1,10 +1,10 @@
-import { Modal } from '@affine/component';
-import { CollectionService } from '@affine/core/modules/collection';
+import { Modal } from '@madisboard/component';
+import { CollectionService } from '@madisboard/core/modules/collection';
 import type {
   DialogComponentProps,
   WORKSPACE_DIALOG_SCHEMA,
-} from '@affine/core/modules/dialogs';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/dialogs';
+import { useI18n } from '@madisboard/i18n';
 import { ViewLayersIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { cssVarV2 } from '@toeverything/theme/v2';

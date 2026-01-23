@@ -1,10 +1,10 @@
-import { Button, Checkbox, IconButton } from '@affine/component';
+import { Button, Checkbox, IconButton } from '@madisboard/component';
 import {
   OpenInAppService,
   OpenLinkMode,
-} from '@affine/core/modules/open-in-app';
-import { appIconMap } from '@affine/core/utils';
-import { Trans, useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/open-in-app';
+import { appIconMap } from '@madisboard/core/utils';
+import { Trans, useI18n } from '@madisboard/i18n';
 import { CloseIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useState } from 'react';

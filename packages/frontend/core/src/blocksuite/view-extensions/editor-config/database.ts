@@ -1,13 +1,13 @@
-import { notify } from '@affine/component';
+import { notify } from '@madisboard/component';
 import {
   generateUrl,
   type UseSharingUrl,
-} from '@affine/core/components/hooks/affine/use-share-url';
-import { ServerService } from '@affine/core/modules/cloud';
-import { EditorService } from '@affine/core/modules/editor';
-import { copyLinkToBlockStdScopeClipboard } from '@affine/core/utils/clipboard';
-import { I18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/core/components/hooks/affine/use-share-url';
+import { ServerService } from '@madisboard/core/modules/cloud';
+import { EditorService } from '@madisboard/core/modules/editor';
+import { copyLinkToBlockStdScopeClipboard } from '@madisboard/core/utils/clipboard';
+import { I18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import {
   menu,
   type MenuOptions,

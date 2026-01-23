@@ -1,4 +1,4 @@
-import type { Server } from '@affine/core/modules/cloud';
+import type { Server } from '@madisboard/core/modules/cloud';
 import { useLiveData } from '@toeverything/infra';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import semver from 'semver';

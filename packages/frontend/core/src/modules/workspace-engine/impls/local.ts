@@ -1,10 +1,10 @@
-import { DebugLogger } from '@affine/debug';
+import { DebugLogger } from '@madisboard/debug';
 import {
   type BlobStorage,
   type DocStorage,
   type ListedBlobRecord,
   universalId,
-} from '@affine/nbstore';
+} from '@madisboard/nbstore';
 import {
   IndexedDBBlobStorage,
   IndexedDBBlobSyncStorage,
@@ -12,11 +12,11 @@ import {
   IndexedDBDocSyncStorage,
   IndexedDBIndexerStorage,
   IndexedDBIndexerSyncStorage,
-} from '@affine/nbstore/idb';
+} from '@madisboard/nbstore/idb';
 import {
   IndexedDBV1BlobStorage,
   IndexedDBV1DocStorage,
-} from '@affine/nbstore/idb/v1';
+} from '@madisboard/nbstore/idb/v1';
 import {
   SqliteBlobStorage,
   SqliteBlobSyncStorage,
@@ -24,12 +24,12 @@ import {
   SqliteDocSyncStorage,
   SqliteIndexerStorage,
   SqliteIndexerSyncStorage,
-} from '@affine/nbstore/sqlite';
+} from '@madisboard/nbstore/sqlite';
 import {
   SqliteV1BlobStorage,
   SqliteV1DocStorage,
-} from '@affine/nbstore/sqlite/v1';
-import type { WorkerInitOptions } from '@affine/nbstore/worker/client';
+} from '@madisboard/nbstore/sqlite/v1';
+import type { WorkerInitOptions } from '@madisboard/nbstore/worker/client';
 import type { FrameworkProvider } from '@toeverything/infra';
 import { LiveData, Service } from '@toeverything/infra';
 import { isEqual } from 'lodash-es';

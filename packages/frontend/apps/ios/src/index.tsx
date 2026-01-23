@@ -1,9 +1,9 @@
 import './setup';
-import '@affine/component/theme';
-import '@affine/core/mobile/styles/mobile.css';
+import '@madisboard/component/theme';
+import '@madisboard/core/mobile/styles/mobile.css';
 
-import { Telemetry } from '@affine/core/components/telemetry';
-import { bindNativeDBApis } from '@affine/nbstore/sqlite';
+import { Telemetry } from '@madisboard/core/components/telemetry';
+import { bindNativeDBApis } from '@madisboard/nbstore/sqlite';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 

@@ -1,8 +1,8 @@
-import { Tooltip } from '@affine/component';
-import { useCatchEventCallback } from '@affine/core/components/hooks/use-catch-event-hook';
-import { UrlService } from '@affine/core/modules/url';
-import { Unreachable } from '@affine/env/constant';
-import { useI18n } from '@affine/i18n';
+import { Tooltip } from '@madisboard/component';
+import { useCatchEventCallback } from '@madisboard/core/components/hooks/use-catch-event-hook';
+import { UrlService } from '@madisboard/core/modules/url';
+import { Unreachable } from '@madisboard/env/constant';
+import { useI18n } from '@madisboard/i18n';
 import {
   CloseIcon,
   DownloadIcon,

@@ -1,3 +1,3 @@
-import '@affine/core/bootstrap/electron';
-import '@affine/component/theme';
+import '@madisboard/core/bootstrap/electron';
+import '@madisboard/component/theme';
 import '../app/global.css';

@@ -1,4 +1,4 @@
-import { Permission } from '@affine/graphql';
+import { Permission } from '@madisboard/graphql';
 import {
   backoffRetry,
   effect,

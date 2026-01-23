@@ -1,6 +1,6 @@
-import { showAILoginRequiredAtom } from '@affine/core/components/affine/auth/ai-login-required';
-import type { AIToolsConfig } from '@affine/core/modules/ai-button';
-import { UserFriendlyError } from '@affine/error';
+import { showAILoginRequiredAtom } from '@madisboard/core/components/affine/auth/ai-login-required';
+import type { AIToolsConfig } from '@madisboard/core/modules/ai-button';
+import { UserFriendlyError } from '@madisboard/error';
 import {
   addContextBlobMutation,
   addContextCategoryMutation,
@@ -31,7 +31,7 @@ import {
   removeContextFileMutation,
   type RequestOptions,
   updateCopilotSessionMutation,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 import { getCurrentStore } from '@toeverything/infra';
 
 import {

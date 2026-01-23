@@ -1,10 +1,10 @@
-import { UserFriendlyError } from '@affine/error';
+import { UserFriendlyError } from '@madisboard/error';
 import {
   gqlFetcherFactory,
   type GraphQLQuery,
   type QueryOptions,
   type QueryResponse,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 import { fromPromise, Service } from '@toeverything/infra';
 import type { Observable } from 'rxjs';
 

@@ -1,5 +1,5 @@
-import { SubscriptionService } from '@affine/core/modules/cloud';
-import { Trans, useI18n } from '@affine/i18n';
+import { SubscriptionService } from '@madisboard/core/modules/cloud';
+import { Trans, useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 
 import { BelieverCard } from '../plans/lifetime/believer-card';

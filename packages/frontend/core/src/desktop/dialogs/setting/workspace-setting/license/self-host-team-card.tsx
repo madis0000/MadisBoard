@@ -1,22 +1,22 @@
-import { Button, ConfirmModal, Input, Modal, notify } from '@affine/component';
-import { SettingRow } from '@affine/component/setting-components';
-import { useEnableCloud } from '@affine/core/components/hooks/affine/use-enable-cloud';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { useMutation } from '@affine/core/components/hooks/use-mutation';
+import { Button, ConfirmModal, Input, Modal, notify } from '@madisboard/component';
+import { SettingRow } from '@madisboard/component/setting-components';
+import { useEnableCloud } from '@madisboard/core/components/hooks/affine/use-enable-cloud';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { useMutation } from '@madisboard/core/components/hooks/use-mutation';
 import {
   SelfhostLicenseService,
   WorkspaceSubscriptionService,
-} from '@affine/core/modules/cloud';
-import { WorkspacePermissionService } from '@affine/core/modules/permissions';
-import { WorkspaceQuotaService } from '@affine/core/modules/quota';
-import { UrlService } from '@affine/core/modules/url';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { UserFriendlyError } from '@affine/error';
+} from '@madisboard/core/modules/cloud';
+import { WorkspacePermissionService } from '@madisboard/core/modules/permissions';
+import { WorkspaceQuotaService } from '@madisboard/core/modules/quota';
+import { UrlService } from '@madisboard/core/modules/url';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { UserFriendlyError } from '@madisboard/error';
 import {
   createSelfhostCustomerPortalMutation,
   SubscriptionVariant,
-} from '@affine/graphql';
-import { Trans, useI18n } from '@affine/i18n';
+} from '@madisboard/graphql';
+import { Trans, useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import clsx from 'clsx';

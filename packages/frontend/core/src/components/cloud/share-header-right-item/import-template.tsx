@@ -1,6 +1,6 @@
-import { Button } from '@affine/component';
-import { useNavigateHelper } from '@affine/core/components/hooks/use-navigate-helper';
-import { useI18n } from '@affine/i18n';
+import { Button } from '@madisboard/component';
+import { useNavigateHelper } from '@madisboard/core/components/hooks/use-navigate-helper';
+import { useI18n } from '@madisboard/i18n';
 
 export const ImportTemplateButton = ({
   name,

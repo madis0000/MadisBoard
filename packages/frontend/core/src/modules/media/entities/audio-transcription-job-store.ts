@@ -3,7 +3,7 @@ import {
   getAudioTranscriptionQuery,
   retryAudioTranscriptionMutation,
   submitAudioTranscriptionMutation,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 import { Entity } from '@toeverything/infra';
 
 import type { DefaultServerService, WorkspaceServerService } from '../../cloud';

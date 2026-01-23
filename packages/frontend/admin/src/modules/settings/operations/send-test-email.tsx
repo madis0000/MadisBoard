@@ -1,8 +1,8 @@
-import { Button } from '@affine/admin/components/ui/button';
-import { useMutation } from '@affine/admin/use-mutation';
-import { notify } from '@affine/component';
-import type { UserFriendlyError } from '@affine/error';
-import { sendTestEmailMutation } from '@affine/graphql';
+import { Button } from '@madisboard/admin/components/ui/button';
+import { useMutation } from '@madisboard/admin/use-mutation';
+import { notify } from '@madisboard/component';
+import type { UserFriendlyError } from '@madisboard/error';
+import { sendTestEmailMutation } from '@madisboard/graphql';
 import { useCallback } from 'react';
 
 import type { AppConfig } from '../config';

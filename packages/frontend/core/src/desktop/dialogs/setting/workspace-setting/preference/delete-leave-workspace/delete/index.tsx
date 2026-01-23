@@ -1,10 +1,10 @@
-import { Input } from '@affine/component';
-import type { ConfirmModalProps } from '@affine/component/ui/modal';
-import { ConfirmModal } from '@affine/component/ui/modal';
-import { useWorkspaceInfo } from '@affine/core/components/hooks/use-workspace-info';
-import type { WorkspaceMetadata } from '@affine/core/modules/workspace';
-import { UNTITLED_WORKSPACE_NAME } from '@affine/env/constant';
-import { Trans, useI18n } from '@affine/i18n';
+import { Input } from '@madisboard/component';
+import type { ConfirmModalProps } from '@madisboard/component/ui/modal';
+import { ConfirmModal } from '@madisboard/component/ui/modal';
+import { useWorkspaceInfo } from '@madisboard/core/components/hooks/use-workspace-info';
+import type { WorkspaceMetadata } from '@madisboard/core/modules/workspace';
+import { UNTITLED_WORKSPACE_NAME } from '@madisboard/env/constant';
+import { Trans, useI18n } from '@madisboard/i18n';
 import { useCallback, useState } from 'react';
 
 import * as styles from './style.css';

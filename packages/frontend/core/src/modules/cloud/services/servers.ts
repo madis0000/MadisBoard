@@ -1,4 +1,4 @@
-import { Unreachable } from '@affine/env/constant';
+import { Unreachable } from '@madisboard/env/constant';
 import { LiveData, ObjectPool, Service } from '@toeverything/infra';
 import { nanoid } from 'nanoid';
 import { Observable, switchMap } from 'rxjs';

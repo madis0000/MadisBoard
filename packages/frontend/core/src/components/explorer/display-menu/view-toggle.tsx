@@ -1,5 +1,5 @@
-import { RadioGroup, type RadioItem } from '@affine/component';
-import track from '@affine/track';
+import { RadioGroup, type RadioItem } from '@madisboard/component';
+import track from '@madisboard/track';
 import { useCallback } from 'react';
 
 import {

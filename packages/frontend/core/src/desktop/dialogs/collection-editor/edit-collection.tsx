@@ -1,7 +1,7 @@
-import { Button, RadioGroup } from '@affine/component';
-import { SelectPage } from '@affine/core/components/page-list/docs/select-page';
-import type { CollectionInfo } from '@affine/core/modules/collection';
-import { useI18n } from '@affine/i18n';
+import { Button, RadioGroup } from '@madisboard/component';
+import { SelectPage } from '@madisboard/core/components/page-list/docs/select-page';
+import type { CollectionInfo } from '@madisboard/core/modules/collection';
+import { useI18n } from '@madisboard/i18n';
 import { useCallback, useMemo, useState } from 'react';
 
 import * as styles from './edit-collection.css';

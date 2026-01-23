@@ -1,5 +1,5 @@
-import { useAppUpdater } from '@affine/core/components/hooks/use-app-updater';
-import { AppUpdaterButton } from '@affine/core/modules/app-sidebar/views';
+import { useAppUpdater } from '@madisboard/core/components/hooks/use-app-updater';
+import { AppUpdaterButton } from '@madisboard/core/modules/app-sidebar/views';
 import { Suspense } from 'react';
 
 const UpdaterButtonInner = () => {

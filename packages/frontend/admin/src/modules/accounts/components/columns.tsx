@@ -2,8 +2,8 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from '@affine/admin/components/ui/avatar';
-import { FeatureType } from '@affine/graphql';
+} from '@madisboard/admin/components/ui/avatar';
+import { FeatureType } from '@madisboard/graphql';
 import {
   AccountIcon,
   EmailIcon,

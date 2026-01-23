@@ -1,6 +1,6 @@
-import { Menu, Scrollable } from '@affine/component';
-import type { DocCustomPropertyInfo } from '@affine/core/modules/db';
-import { useI18n } from '@affine/i18n';
+import { Menu, Scrollable } from '@madisboard/component';
+import type { DocCustomPropertyInfo } from '@madisboard/core/modules/db';
+import { useI18n } from '@madisboard/i18n';
 import { chunk } from 'lodash-es';
 
 import {

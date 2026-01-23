@@ -1,10 +1,10 @@
-import { Skeleton } from '@affine/component';
+import { Skeleton } from '@madisboard/component';
 import {
   AuthService,
   ServerService,
   UserCopilotQuotaService,
   UserQuotaService,
-} from '@affine/core/modules/cloud';
+} from '@madisboard/core/modules/cloud';
 import { useLiveData, useService } from '@toeverything/infra';
 import { cssVar } from '@toeverything/theme';
 import { cssVarV2 } from '@toeverything/theme/v2';

@@ -1,5 +1,5 @@
-import { EmptyCollections } from '@affine/core/components/affine/empty';
-import { CollectionService } from '@affine/core/modules/collection';
+import { EmptyCollections } from '@madisboard/core/components/affine/empty';
+import { CollectionService } from '@madisboard/core/modules/collection';
 import { useLiveData, useService } from '@toeverything/infra';
 
 import { CollectionListItem } from './item';

@@ -1,5 +1,5 @@
-import { getThemeOptions } from '@affine/core/desktop/dialogs/setting/general-setting/appearance';
-import { useI18n } from '@affine/i18n';
+import { getThemeOptions } from '@madisboard/core/desktop/dialogs/setting/general-setting/appearance';
+import { useI18n } from '@madisboard/i18n';
 import { useTheme } from 'next-themes';
 import { useMemo } from 'react';
 

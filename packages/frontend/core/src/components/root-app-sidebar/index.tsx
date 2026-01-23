@@ -8,15 +8,15 @@ import {
   QuickSearchInput,
   SidebarContainer,
   SidebarScrollableContainer,
-} from '@affine/core/modules/app-sidebar/views';
-import { ExternalMenuLinkItem } from '@affine/core/modules/app-sidebar/views/menu-item/external-menu-link-item';
-import { AuthService, ServerService } from '@affine/core/modules/cloud';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { FeatureFlagService } from '@affine/core/modules/feature-flag';
-import { CMDKQuickSearchService } from '@affine/core/modules/quicksearch/services/cmdk';
-import type { Workspace } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/core/modules/app-sidebar/views';
+import { ExternalMenuLinkItem } from '@madisboard/core/modules/app-sidebar/views/menu-item/external-menu-link-item';
+import { AuthService, ServerService } from '@madisboard/core/modules/cloud';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
+import { CMDKQuickSearchService } from '@madisboard/core/modules/quicksearch/services/cmdk';
+import type { Workspace } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import type { Store } from '@blocksuite/affine/store';
 import {
   AiOutlineIcon,
@@ -115,7 +115,7 @@ const AIChatButton = () => {
 
 /**
  * This is for the whole affine app sidebar.
- * This component wraps the app sidebar in `@affine/component` with logic and data.
+ * This component wraps the app sidebar in `@madisboard/component` with logic and data.
  *
  */
 export const RootAppSidebar = memo((): ReactElement => {

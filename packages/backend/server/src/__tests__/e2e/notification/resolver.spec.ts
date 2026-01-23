@@ -10,7 +10,7 @@ import {
   NotificationType,
   readAllNotificationsMutation,
   readNotificationMutation,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 
 import { Mockers } from '../../mocks';
 import { app, e2e } from '../test';

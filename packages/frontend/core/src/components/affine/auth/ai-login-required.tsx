@@ -1,6 +1,6 @@
-import { useConfirmModal } from '@affine/component';
-import { GlobalDialogService } from '@affine/core/modules/dialogs';
-import { useI18n } from '@affine/i18n';
+import { useConfirmModal } from '@madisboard/component';
+import { GlobalDialogService } from '@madisboard/core/modules/dialogs';
+import { useI18n } from '@madisboard/i18n';
 import { useService } from '@toeverything/infra';
 import { atom, useAtom } from 'jotai';
 import { useCallback, useEffect } from 'react';

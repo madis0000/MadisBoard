@@ -1,11 +1,11 @@
 import {
   PreconditionStrategy,
   registerAffineCommand,
-} from '@affine/core/commands';
-import { useSharingUrl } from '@affine/core/components/hooks/affine/use-share-url';
-import { useIsActiveView } from '@affine/core/modules/workbench';
-import type { WorkspaceMetadata } from '@affine/core/modules/workspace';
-import { track } from '@affine/track';
+} from '@madisboard/core/commands';
+import { useSharingUrl } from '@madisboard/core/components/hooks/affine/use-share-url';
+import { useIsActiveView } from '@madisboard/core/modules/workbench';
+import type { WorkspaceMetadata } from '@madisboard/core/modules/workspace';
+import { track } from '@madisboard/track';
 import { useEffect } from 'react';
 
 export function useRegisterCopyLinkCommands({

@@ -1,5 +1,5 @@
-import type { FeatureFlagService } from '@affine/core/modules/feature-flag';
-import type { PeekViewService } from '@affine/core/modules/peek-view';
+import type { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
+import type { PeekViewService } from '@madisboard/core/modules/peek-view';
 import { WithDisposable } from '@blocksuite/affine/global/lit';
 import type { ColorScheme } from '@blocksuite/affine/model';
 import {

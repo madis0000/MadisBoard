@@ -4,10 +4,10 @@ import {
   MenuItem,
   type MenuProps,
   Scrollable,
-} from '@affine/component';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { inferOpenMode } from '@affine/core/utils';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/component';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { inferOpenMode } from '@madisboard/core/utils';
+import { useI18n } from '@madisboard/i18n';
 import {
   DualLinkIcon,
   InformationIcon,

@@ -1,11 +1,11 @@
-import { MenuItem, notify, useConfirmModal } from '@affine/component';
+import { MenuItem, notify, useConfirmModal } from '@madisboard/component';
 import {
   type Member,
   WorkspaceMembersService,
   WorkspacePermissionService,
-} from '@affine/core/modules/permissions';
-import { Permission, WorkspaceMemberStatus } from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/permissions';
+import { Permission, WorkspaceMemberStatus } from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useMemo } from 'react';
 

@@ -1,5 +1,5 @@
-import { DebugLogger } from '@affine/debug';
-import { apis } from '@affine/electron-api';
+import { DebugLogger } from '@madisboard/debug';
+import { apis } from '@madisboard/electron-api';
 import { ArrayBufferTarget, Muxer } from 'mp4-muxer';
 
 import { isLink } from '../modules/navigation/utils';

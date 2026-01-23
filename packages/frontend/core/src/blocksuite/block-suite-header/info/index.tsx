@@ -1,7 +1,7 @@
-import { IconButton } from '@affine/component';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+import { IconButton } from '@madisboard/component';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { InformationIcon } from '@blocksuite/icons/rc';
 import { useService } from '@toeverything/infra';
 import { useCallback } from 'react';

@@ -6,17 +6,17 @@ import {
   notify,
   Skeleton,
   useConfirmModal,
-} from '@affine/component';
+} from '@madisboard/component';
 import {
   Pagination,
   SettingHeader,
-} from '@affine/component/setting-components';
-import { Avatar } from '@affine/component/ui/avatar';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { useNavigateHelper } from '@affine/core/components/hooks/use-navigate-helper';
-import { BackupService } from '@affine/core/modules/backup/services';
-import { i18nTime, useI18n } from '@affine/i18n';
-import track from '@affine/track';
+} from '@madisboard/component/setting-components';
+import { Avatar } from '@madisboard/component/ui/avatar';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { useNavigateHelper } from '@madisboard/core/components/hooks/use-navigate-helper';
+import { BackupService } from '@madisboard/core/modules/backup/services';
+import { i18nTime, useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import {
   DeleteIcon,
   LocalWorkspaceIcon,

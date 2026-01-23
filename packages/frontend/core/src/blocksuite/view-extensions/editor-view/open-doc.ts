@@ -1,5 +1,5 @@
-import { EditorSettingSchema } from '@affine/core/modules/editor-setting';
-import { I18n } from '@affine/i18n';
+import { EditorSettingSchema } from '@madisboard/core/modules/editor-setting';
+import { I18n } from '@madisboard/i18n';
 import {
   type OpenDocConfig,
   type OpenDocConfigItem,

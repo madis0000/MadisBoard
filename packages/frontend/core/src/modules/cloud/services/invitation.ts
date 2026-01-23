@@ -1,4 +1,4 @@
-import type { GetInviteInfoQuery } from '@affine/graphql';
+import type { GetInviteInfoQuery } from '@madisboard/graphql';
 import {
   catchErrorInto,
   effect,

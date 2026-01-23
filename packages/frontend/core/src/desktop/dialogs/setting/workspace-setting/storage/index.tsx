@@ -1,10 +1,10 @@
 import {
   SettingHeader,
   SettingWrapper,
-} from '@affine/component/setting-components';
-import { WorkspacePermissionService } from '@affine/core/modules/permissions';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/component/setting-components';
+import { WorkspacePermissionService } from '@madisboard/core/modules/permissions';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 
 import { EnableCloudPanel } from '../preference/enable-cloud';

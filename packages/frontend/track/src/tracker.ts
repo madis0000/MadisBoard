@@ -1,4 +1,4 @@
-import { DebugLogger } from '@affine/debug';
+import { DebugLogger } from '@madisboard/debug';
 import { nanoid } from 'nanoid';
 
 import type { TelemetryEvent } from './telemetry';

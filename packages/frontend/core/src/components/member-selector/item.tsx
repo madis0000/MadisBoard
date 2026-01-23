@@ -1,6 +1,6 @@
-import { Avatar, Skeleton } from '@affine/component';
-import { PublicUserService } from '@affine/core/modules/cloud';
-import { useI18n } from '@affine/i18n';
+import { Avatar, Skeleton } from '@madisboard/component';
+import { PublicUserService } from '@madisboard/core/modules/cloud';
+import { useI18n } from '@madisboard/i18n';
 import { CloseIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { type MouseEventHandler, useCallback, useEffect } from 'react';

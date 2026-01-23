@@ -1,4 +1,4 @@
-import type { DNDData } from '@affine/component';
+import type { DNDData } from '@madisboard/component';
 
 export type AffineDNDEntity =
   | {

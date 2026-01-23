@@ -1,13 +1,13 @@
-import { IconButton, MenuItem, MenuSeparator, toast } from '@affine/component';
-import { usePageHelper } from '@affine/core/blocksuite/block-suite-page-list/utils';
-import { IsFavoriteIcon } from '@affine/core/components/pure/icons';
-import { DocsService } from '@affine/core/modules/doc';
-import { FavoriteService } from '@affine/core/modules/favorite';
-import { TagService } from '@affine/core/modules/tag';
-import { WorkbenchService } from '@affine/core/modules/workbench';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+import { IconButton, MenuItem, MenuSeparator, toast } from '@madisboard/component';
+import { usePageHelper } from '@madisboard/core/blocksuite/block-suite-page-list/utils';
+import { IsFavoriteIcon } from '@madisboard/core/components/pure/icons';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { FavoriteService } from '@madisboard/core/modules/favorite';
+import { TagService } from '@madisboard/core/modules/tag';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import {
   DeleteIcon,
   OpenInNewIcon,

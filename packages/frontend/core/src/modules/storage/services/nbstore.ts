@@ -1,4 +1,4 @@
-import type { WorkerInitOptions } from '@affine/nbstore/worker/client';
+import type { WorkerInitOptions } from '@madisboard/nbstore/worker/client';
 import { Service } from '@toeverything/infra';
 
 import type { NbstoreProvider } from '../providers/nbstore';

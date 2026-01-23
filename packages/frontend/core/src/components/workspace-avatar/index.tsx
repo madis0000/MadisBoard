@@ -1,8 +1,8 @@
-import { Avatar, type AvatarProps } from '@affine/component';
+import { Avatar, type AvatarProps } from '@madisboard/component';
 import {
   type WorkspaceMetadata,
   WorkspacesService,
-} from '@affine/core/modules/workspace';
+} from '@madisboard/core/modules/workspace';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useEffect, useLayoutEffect, useState } from 'react';
 

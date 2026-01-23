@@ -1,5 +1,5 @@
-import { getStoreManager } from '@affine/core/blocksuite/manager/store';
-import { getAFFiNEWorkspaceSchema } from '@affine/core/modules/workspace';
+import { getStoreManager } from '@madisboard/core/blocksuite/manager/store';
+import { getAFFiNEWorkspaceSchema } from '@madisboard/core/modules/workspace';
 import { getEmbedLinkedDocIcons } from '@blocksuite/affine/blocks/embed-doc';
 import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
 import type { ColorScheme } from '@blocksuite/affine/model';

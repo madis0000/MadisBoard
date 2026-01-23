@@ -1,5 +1,5 @@
-import { Separator } from '@affine/admin/components/ui/separator';
-import { adminWorkspaceQuery } from '@affine/graphql';
+import { Separator } from '@madisboard/admin/components/ui/separator';
+import { adminWorkspaceQuery } from '@madisboard/graphql';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import { useMemo } from 'react';
 

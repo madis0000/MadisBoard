@@ -1,4 +1,4 @@
-import { Avatar, notify } from '@affine/component';
+import { Avatar, notify } from '@madisboard/component';
 import {
   type ExistedUserInfo,
   type UserListService,

@@ -1,21 +1,21 @@
-import { Loading, Scrollable } from '@affine/component';
-import { WorkspaceDetailSkeleton } from '@affine/component/setting-components';
-import type { ModalProps } from '@affine/component/ui/modal';
-import { Modal } from '@affine/component/ui/modal';
+import { Loading, Scrollable } from '@madisboard/component';
+import { WorkspaceDetailSkeleton } from '@madisboard/component/setting-components';
+import type { ModalProps } from '@madisboard/component/ui/modal';
+import { Modal } from '@madisboard/component/ui/modal';
 import {
   AuthService,
   DefaultServerService,
   ServersService,
-} from '@affine/core/modules/cloud';
-import type { DialogComponentProps } from '@affine/core/modules/dialogs';
+} from '@madisboard/core/modules/cloud';
+import type { DialogComponentProps } from '@madisboard/core/modules/dialogs';
 import type {
   SettingTab,
   WORKSPACE_DIALOG_SCHEMA,
-} from '@affine/core/modules/dialogs/constant';
-import { GlobalContextService } from '@affine/core/modules/global-context';
-import { createIsland, type Island } from '@affine/core/utils/island';
-import { ServerDeploymentType } from '@affine/graphql';
-import { Trans } from '@affine/i18n';
+} from '@madisboard/core/modules/dialogs/constant';
+import { GlobalContextService } from '@madisboard/core/modules/global-context';
+import { createIsland, type Island } from '@madisboard/core/utils/island';
+import { ServerDeploymentType } from '@madisboard/graphql';
+import { Trans } from '@madisboard/i18n';
 import { ContactWithUsIcon } from '@blocksuite/icons/rc';
 import { FrameworkScope, useLiveData, useService } from '@toeverything/infra';
 import { debounce } from 'lodash-es';

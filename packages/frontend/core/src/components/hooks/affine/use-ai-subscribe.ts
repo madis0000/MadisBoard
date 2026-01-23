@@ -1,7 +1,7 @@
-import { generateSubscriptionCallbackLink } from '@affine/core/components/hooks/affine/use-subscription-notify';
-import { AuthService, SubscriptionService } from '@affine/core/modules/cloud';
-import { UrlService } from '@affine/core/modules/url';
-import { SubscriptionPlan, SubscriptionRecurring } from '@affine/graphql';
+import { generateSubscriptionCallbackLink } from '@madisboard/core/components/hooks/affine/use-subscription-notify';
+import { AuthService, SubscriptionService } from '@madisboard/core/modules/cloud';
+import { UrlService } from '@madisboard/core/modules/url';
+import { SubscriptionPlan, SubscriptionRecurring } from '@madisboard/graphql';
 import { useFramework } from '@toeverything/infra';
 import { nanoid } from 'nanoid';
 import { useCallback } from 'react';

@@ -1,5 +1,5 @@
 {
-  "name": "@affine/routes",
+  "name": "@madisboard/routes",
   "version": "0.26.0",
   "private": true,
   "type": "module",
@@ -10,8 +10,8 @@
     "build": "r build.ts"
   },
   "devDependencies": {
-    "@affine-tools/cli": "workspace:*",
-    "@affine-tools/utils": "workspace:*",
+    "@madisboard-tools/cli": "workspace:*",
+    "@madisboard-tools/utils": "workspace:*",
     "path-to-regexp": "^8.3.0",
     "query-string": "^9.1.1",
     "vitest": "^3.2.4"

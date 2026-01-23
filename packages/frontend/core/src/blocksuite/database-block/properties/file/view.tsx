@@ -1,7 +1,7 @@
-import { Popover, uniReactRoot } from '@affine/component';
-import { Button } from '@affine/component/ui/button';
-import { Menu, MenuItem } from '@affine/component/ui/menu';
-import { PeekViewService } from '@affine/core/modules/peek-view';
+import { Popover, uniReactRoot } from '@madisboard/component';
+import { Button } from '@madisboard/component/ui/button';
+import { Menu, MenuItem } from '@madisboard/component/ui/menu';
+import { PeekViewService } from '@madisboard/core/modules/peek-view';
 import {
   type Cell,
   type CellRenderProps,

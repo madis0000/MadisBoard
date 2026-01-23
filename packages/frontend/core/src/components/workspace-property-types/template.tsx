@@ -1,7 +1,7 @@
-import { Checkbox, MenuItem, PropertyValue } from '@affine/component';
-import type { FilterParams } from '@affine/core/modules/collection-rules';
-import { type DocRecord, DocService } from '@affine/core/modules/doc';
-import { useI18n } from '@affine/i18n';
+import { Checkbox, MenuItem, PropertyValue } from '@madisboard/component';
+import type { FilterParams } from '@madisboard/core/modules/collection-rules';
+import { type DocRecord, DocService } from '@madisboard/core/modules/doc';
+import { useI18n } from '@madisboard/i18n';
 import { TemplateIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { type ChangeEvent, useCallback } from 'react';

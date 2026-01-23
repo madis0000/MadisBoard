@@ -1,4 +1,4 @@
-import type { PricesQuery } from '@affine/graphql';
+import type { PricesQuery } from '@madisboard/graphql';
 import {
   catchErrorInto,
   effect,

@@ -1,8 +1,8 @@
-import { IconButton } from '@affine/component';
-import { IsFavoriteIcon } from '@affine/core/components/pure/icons';
-import type { CollectionMeta } from '@affine/core/modules/collection';
-import { CompatibleFavoriteItemsAdapter } from '@affine/core/modules/favorite';
-import { WorkbenchLink } from '@affine/core/modules/workbench';
+import { IconButton } from '@madisboard/component';
+import { IsFavoriteIcon } from '@madisboard/core/components/pure/icons';
+import type { CollectionMeta } from '@madisboard/core/modules/collection';
+import { CompatibleFavoriteItemsAdapter } from '@madisboard/core/modules/favorite';
+import { WorkbenchLink } from '@madisboard/core/modules/workbench';
 import { ViewLayersIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { type MouseEvent, useCallback } from 'react';

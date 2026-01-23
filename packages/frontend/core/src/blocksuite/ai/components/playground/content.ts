@@ -1,8 +1,8 @@
-import type { AIToolsConfigService } from '@affine/core/modules/ai-button';
-import type { ServerService } from '@affine/core/modules/cloud';
-import type { FeatureFlagService } from '@affine/core/modules/feature-flag';
-import type { AppThemeService } from '@affine/core/modules/theme';
-import type { CopilotChatHistoryFragment } from '@affine/graphql';
+import type { AIToolsConfigService } from '@madisboard/core/modules/ai-button';
+import type { ServerService } from '@madisboard/core/modules/cloud';
+import type { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
+import type { AppThemeService } from '@madisboard/core/modules/theme';
+import type { CopilotChatHistoryFragment } from '@madisboard/graphql';
 import { SignalWatcher, WithDisposable } from '@blocksuite/affine/global/lit';
 import type { EditorHost } from '@blocksuite/affine/std';
 import { ShadowlessElement } from '@blocksuite/affine/std';

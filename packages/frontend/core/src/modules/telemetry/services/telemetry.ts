@@ -1,7 +1,7 @@
-import { shallowEqual } from '@affine/component';
-import { DebugLogger } from '@affine/debug';
-import { ServerDeploymentType } from '@affine/graphql';
-import { flushTelemetry, setTelemetryContext, tracker } from '@affine/track';
+import { shallowEqual } from '@madisboard/component';
+import { DebugLogger } from '@madisboard/debug';
+import { ServerDeploymentType } from '@madisboard/graphql';
+import { flushTelemetry, setTelemetryContext, tracker } from '@madisboard/track';
 import { LiveData, OnEvent, Service } from '@toeverything/infra';
 
 import type { AuthAccountInfo, Server, ServersService } from '../../cloud';

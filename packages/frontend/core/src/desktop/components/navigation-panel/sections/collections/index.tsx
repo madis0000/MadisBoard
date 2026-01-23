@@ -1,9 +1,9 @@
-import { IconButton, usePromptModal } from '@affine/component';
-import { CollectionService } from '@affine/core/modules/collection';
-import { NavigationPanelService } from '@affine/core/modules/navigation-panel';
-import { WorkbenchService } from '@affine/core/modules/workbench';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+import { IconButton, usePromptModal } from '@madisboard/component';
+import { CollectionService } from '@madisboard/core/modules/collection';
+import { NavigationPanelService } from '@madisboard/core/modules/navigation-panel';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { AddCollectionIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@toeverything/infra';
 import { useCallback, useMemo } from 'react';

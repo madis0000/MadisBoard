@@ -1,5 +1,5 @@
-import { EmptyTags } from '@affine/core/components/affine/empty';
-import { TagService } from '@affine/core/modules/tag';
+import { EmptyTags } from '@madisboard/core/components/affine/empty';
+import { TagService } from '@madisboard/core/modules/tag';
 import { useLiveData, useService } from '@toeverything/infra';
 
 import { TagItem } from './item';

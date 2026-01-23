@@ -1,9 +1,9 @@
 import {
   NoPermissionOrNotFound,
   NotFoundPage,
-} from '@affine/component/not-found-page';
-import { useSignOut } from '@affine/core/components/hooks/affine/use-sign-out';
-import { DesktopApiService } from '@affine/core/modules/desktop-api';
+} from '@madisboard/component/not-found-page';
+import { useSignOut } from '@madisboard/core/components/hooks/affine/use-sign-out';
+import { DesktopApiService } from '@madisboard/core/modules/desktop-api';
 import {
   FrameworkScope,
   useLiveData,

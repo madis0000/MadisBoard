@@ -3,13 +3,13 @@ import './ai-chat-composer-tip';
 import type {
   AIDraftService,
   AIToolsConfigService,
-} from '@affine/core/modules/ai-button';
-import type { AIModelService } from '@affine/core/modules/ai-button/services/models';
+} from '@madisboard/core/modules/ai-button';
+import type { AIModelService } from '@madisboard/core/modules/ai-button/services/models';
 import type {
   ServerService,
   SubscriptionService,
-} from '@affine/core/modules/cloud';
-import type { WorkspaceDialogService } from '@affine/core/modules/dialogs';
+} from '@madisboard/core/modules/cloud';
+import type { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
 import type {
   ContextEmbedStatus,
   ContextWorkspaceEmbeddingStatus,
@@ -17,7 +17,7 @@ import type {
   CopilotContextBlob,
   CopilotContextDoc,
   CopilotContextFile,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 import { SignalWatcher, WithDisposable } from '@blocksuite/affine/global/lit';
 import type { EditorHost } from '@blocksuite/affine/std';
 import { ShadowlessElement } from '@blocksuite/affine/std';

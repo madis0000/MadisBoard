@@ -1,21 +1,21 @@
-import { useConfirmModal } from '@affine/component';
-import { AIProvider, ChatPanel } from '@affine/core/blocksuite/ai';
-import type { AffineEditorContainer } from '@affine/core/blocksuite/block-suite-editor';
-import { NotificationServiceImpl } from '@affine/core/blocksuite/view-extensions/editor-view/notification-service';
-import { useAIChatConfig } from '@affine/core/components/hooks/affine/use-ai-chat-config';
-import { useAISpecs } from '@affine/core/components/hooks/affine/use-ai-specs';
-import { useAISubscribe } from '@affine/core/components/hooks/affine/use-ai-subscribe';
+import { useConfirmModal } from '@madisboard/component';
+import { AIProvider, ChatPanel } from '@madisboard/core/blocksuite/ai';
+import type { AffineEditorContainer } from '@madisboard/core/blocksuite/block-suite-editor';
+import { NotificationServiceImpl } from '@madisboard/core/blocksuite/view-extensions/editor-view/notification-service';
+import { useAIChatConfig } from '@madisboard/core/components/hooks/affine/use-ai-chat-config';
+import { useAISpecs } from '@madisboard/core/components/hooks/affine/use-ai-specs';
+import { useAISubscribe } from '@madisboard/core/components/hooks/affine/use-ai-subscribe';
 import {
   AIDraftService,
   AIToolsConfigService,
-} from '@affine/core/modules/ai-button';
-import { AIModelService } from '@affine/core/modules/ai-button/services/models';
-import { ServerService, SubscriptionService } from '@affine/core/modules/cloud';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { FeatureFlagService } from '@affine/core/modules/feature-flag';
-import { PeekViewService } from '@affine/core/modules/peek-view';
-import { AppThemeService } from '@affine/core/modules/theme';
-import { WorkbenchService } from '@affine/core/modules/workbench';
+} from '@madisboard/core/modules/ai-button';
+import { AIModelService } from '@madisboard/core/modules/ai-button/services/models';
+import { ServerService, SubscriptionService } from '@madisboard/core/modules/cloud';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
+import { PeekViewService } from '@madisboard/core/modules/peek-view';
+import { AppThemeService } from '@madisboard/core/modules/theme';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
 import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
 import { DocModeProvider } from '@blocksuite/affine/shared/services';
 import { createSignalFromObservable } from '@blocksuite/affine/shared/utils';

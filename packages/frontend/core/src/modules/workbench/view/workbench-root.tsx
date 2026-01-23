@@ -1,6 +1,6 @@
-import { ResizePanel } from '@affine/component/resize-panel';
-import { AffineErrorComponent } from '@affine/core/components/affine/affine-error-boundary/affine-error-fallback';
-import { workbenchRoutes } from '@affine/core/desktop/workbench-router';
+import { ResizePanel } from '@madisboard/component/resize-panel';
+import { AffineErrorComponent } from '@madisboard/core/components/affine/affine-error-boundary/affine-error-fallback';
+import { workbenchRoutes } from '@madisboard/core/desktop/workbench-router';
 import {
   appSettingAtom,
   FrameworkScope,

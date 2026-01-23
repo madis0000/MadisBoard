@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-import { installLicenseMutation, SubscriptionVariant } from '@affine/graphql';
+import { installLicenseMutation, SubscriptionVariant } from '@madisboard/graphql';
 
 import { Workspace, WorkspaceRole } from '../../../models';
 import {

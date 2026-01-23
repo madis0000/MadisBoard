@@ -3,12 +3,12 @@ import {
   Menu,
   SafeArea,
   startScopedViewTransition,
-} from '@affine/component';
-import { NotificationList } from '@affine/core/components/notification/list';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { NotificationCountService } from '@affine/core/modules/notification';
-import { WorkbenchService } from '@affine/core/modules/workbench';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/component';
+import { NotificationList } from '@madisboard/core/components/notification/list';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { NotificationCountService } from '@madisboard/core/modules/notification';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
+import { useI18n } from '@madisboard/i18n';
 import { NotificationIcon, SettingsIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { cssVarV2 } from '@toeverything/theme/v2';

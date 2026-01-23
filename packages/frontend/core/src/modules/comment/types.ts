@@ -1,4 +1,4 @@
-import type { CommentChangeAction, PublicUserType } from '@affine/graphql';
+import type { CommentChangeAction, PublicUserType } from '@madisboard/graphql';
 import type { DocMode } from '@blocksuite/affine/model';
 import type {
   BaseSelection,

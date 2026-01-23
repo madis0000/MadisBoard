@@ -1,9 +1,9 @@
-import { Tooltip } from '@affine/component/ui/tooltip';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import type { SettingTab } from '@affine/core/modules/dialogs/constant';
-import { GlobalContextService } from '@affine/core/modules/global-context';
-import { UrlService } from '@affine/core/modules/url';
-import { useI18n } from '@affine/i18n';
+import { Tooltip } from '@madisboard/component/ui/tooltip';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import type { SettingTab } from '@madisboard/core/modules/dialogs/constant';
+import { GlobalContextService } from '@madisboard/core/modules/global-context';
+import { UrlService } from '@madisboard/core/modules/url';
+import { useI18n } from '@madisboard/i18n';
 import { CloseIcon, NewIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@toeverything/infra';
 import { useCallback, useState } from 'react';

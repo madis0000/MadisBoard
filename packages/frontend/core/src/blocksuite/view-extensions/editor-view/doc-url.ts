@@ -1,7 +1,7 @@
-import { generateUrl } from '@affine/core/components/hooks/affine/use-share-url';
-import { WorkspaceServerService } from '@affine/core/modules/cloud';
-import { resolveLinkToDoc } from '@affine/core/modules/navigation/utils';
-import { WorkspaceService } from '@affine/core/modules/workspace';
+import { generateUrl } from '@madisboard/core/components/hooks/affine/use-share-url';
+import { WorkspaceServerService } from '@madisboard/core/modules/cloud';
+import { resolveLinkToDoc } from '@madisboard/core/modules/navigation/utils';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
 import { type ReferenceParams } from '@blocksuite/affine/model';
 import {
   GenerateDocUrlExtension,

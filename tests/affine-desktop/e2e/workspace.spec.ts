@@ -1,6 +1,6 @@
 import path from 'node:path';
 
-import type { apis } from '@affine/electron-api';
+import type { apis } from '@madisboard/electron-api';
 import { test } from '@affine-test/kit/electron';
 import {
   getBlockSuiteEditorTitle,

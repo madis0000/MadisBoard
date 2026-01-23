@@ -1154,17 +1154,17 @@ export const PackageList = [
   },
   {
     location: 'docs/reference',
-    name: '@affine/docs',
+    name: '@madisboard/docs',
     workspaceDependencies: [],
   },
   {
     location: 'packages/backend/native',
-    name: '@affine/server-native',
+    name: '@madisboard/server-native',
     workspaceDependencies: [],
   },
   {
     location: 'packages/backend/server',
-    name: '@affine/server',
+    name: '@madisboard/server',
     workspaceDependencies: [
       'packages/backend/native',
       'tools/cli',
@@ -1174,22 +1174,22 @@ export const PackageList = [
   },
   {
     location: 'packages/common/debug',
-    name: '@affine/debug',
+    name: '@madisboard/debug',
     workspaceDependencies: [],
   },
   {
     location: 'packages/common/env',
-    name: '@affine/env',
+    name: '@madisboard/env',
     workspaceDependencies: [],
   },
   {
     location: 'packages/common/error',
-    name: '@affine/error',
+    name: '@madisboard/error',
     workspaceDependencies: [],
   },
   {
     location: 'packages/common/graphql',
-    name: '@affine/graphql',
+    name: '@madisboard/graphql',
     workspaceDependencies: [
       'packages/common/debug',
       'packages/common/env',
@@ -1208,23 +1208,23 @@ export const PackageList = [
   },
   {
     location: 'packages/common/nbstore',
-    name: '@affine/nbstore',
+    name: '@madisboard/nbstore',
     workspaceDependencies: [
       'packages/common/reader',
       'packages/common/infra',
+      'blocksuite/affine/all',
       'packages/common/error',
       'packages/common/graphql',
-      'blocksuite/affine/all',
     ],
   },
   {
     location: 'packages/common/reader',
-    name: '@affine/reader',
+    name: '@madisboard/reader',
     workspaceDependencies: ['blocksuite/affine/all'],
   },
   {
     location: 'packages/frontend/admin',
-    name: '@affine/admin',
+    name: '@madisboard/admin',
     workspaceDependencies: [
       'packages/frontend/component',
       'packages/frontend/core',
@@ -1236,21 +1236,21 @@ export const PackageList = [
   },
   {
     location: 'packages/frontend/apps/android',
-    name: '@affine/android',
+    name: '@madisboard/android',
     workspaceDependencies: [
+      'blocksuite/affine/all',
       'packages/frontend/component',
       'packages/frontend/core',
       'packages/common/env',
       'packages/frontend/i18n',
       'packages/common/nbstore',
       'packages/frontend/track',
-      'blocksuite/affine/all',
       'packages/common/infra',
     ],
   },
   {
     location: 'packages/frontend/apps/electron',
-    name: '@affine/electron',
+    name: '@madisboard/electron',
     workspaceDependencies: [
       'tools/utils',
       'packages/frontend/i18n',
@@ -1261,8 +1261,9 @@ export const PackageList = [
   },
   {
     location: 'packages/frontend/apps/electron-renderer',
-    name: '@affine/electron-renderer',
+    name: '@madisboard/electron-renderer',
     workspaceDependencies: [
+      'blocksuite/affine/all',
       'packages/frontend/component',
       'packages/frontend/core',
       'packages/common/debug',
@@ -1270,15 +1271,15 @@ export const PackageList = [
       'packages/frontend/i18n',
       'packages/common/nbstore',
       'packages/frontend/track',
-      'blocksuite/affine/all',
       'packages/common/infra',
       'tools/utils',
     ],
   },
   {
     location: 'packages/frontend/apps/ios',
-    name: '@affine/ios',
+    name: '@madisboard/ios',
     workspaceDependencies: [
+      'blocksuite/affine/all',
       'packages/frontend/component',
       'packages/frontend/core',
       'packages/common/env',
@@ -1286,7 +1287,6 @@ export const PackageList = [
       'packages/frontend/i18n',
       'packages/common/nbstore',
       'packages/frontend/track',
-      'blocksuite/affine/all',
       'packages/common/infra',
       'tools/cli',
       'tools/utils',
@@ -1295,21 +1295,21 @@ export const PackageList = [
   },
   {
     location: 'packages/frontend/apps/mobile',
-    name: '@affine/mobile',
+    name: '@madisboard/mobile',
     workspaceDependencies: [
+      'blocksuite/affine/all',
       'packages/frontend/component',
       'packages/frontend/core',
       'packages/common/env',
       'packages/frontend/i18n',
       'packages/common/nbstore',
       'packages/frontend/track',
-      'blocksuite/affine/all',
       'packages/common/infra',
     ],
   },
   {
     location: 'packages/frontend/apps/web',
-    name: '@affine/web',
+    name: '@madisboard/web',
     workspaceDependencies: [
       'packages/frontend/component',
       'packages/frontend/core',
@@ -1322,21 +1322,27 @@ export const PackageList = [
   },
   {
     location: 'packages/frontend/component',
-    name: '@affine/component',
+    name: '@madisboard/component',
     workspaceDependencies: [
       'packages/common/debug',
       'packages/frontend/electron-api',
       'packages/common/error',
       'packages/common/graphql',
       'packages/frontend/i18n',
-      'tools/utils',
       'blocksuite/affine/all',
+      'tools/utils',
     ],
   },
   {
     location: 'packages/frontend/core',
-    name: '@affine/core',
+    name: '@madisboard/core',
     workspaceDependencies: [
+      'blocksuite/affine/all',
+      'blocksuite/affine/blocks/root',
+      'blocksuite/affine/components',
+      'blocksuite/affine/shared',
+      'blocksuite/framework/global',
+      'blocksuite/framework/std',
       'packages/frontend/component',
       'packages/common/debug',
       'packages/frontend/electron-api',
@@ -1348,24 +1354,18 @@ export const PackageList = [
       'packages/common/reader',
       'packages/frontend/templates',
       'packages/frontend/track',
-      'blocksuite/affine/all',
-      'blocksuite/affine/blocks/root',
-      'blocksuite/affine/components',
-      'blocksuite/affine/shared',
-      'blocksuite/framework/global',
-      'blocksuite/framework/std',
       'packages/common/infra',
       'blocksuite/affine/ext-loader',
     ],
   },
   {
     location: 'packages/frontend/electron-api',
-    name: '@affine/electron-api',
+    name: '@madisboard/electron-api',
     workspaceDependencies: ['packages/frontend/apps/electron'],
   },
   {
     location: 'packages/frontend/i18n',
-    name: '@affine/i18n',
+    name: '@madisboard/i18n',
     workspaceDependencies: [
       'packages/common/debug',
       'tools/cli',
@@ -1374,27 +1374,27 @@ export const PackageList = [
   },
   {
     location: 'packages/frontend/media-capture-playground',
-    name: '@affine/media-capture-playground',
+    name: '@madisboard/media-capture-playground',
     workspaceDependencies: ['packages/frontend/native'],
   },
   {
     location: 'packages/frontend/native',
-    name: '@affine/native',
+    name: '@madisboard/native',
     workspaceDependencies: [],
   },
   {
     location: 'packages/frontend/routes',
-    name: '@affine/routes',
+    name: '@madisboard/routes',
     workspaceDependencies: ['tools/cli', 'tools/utils'],
   },
   {
     location: 'packages/frontend/templates',
-    name: '@affine/templates',
+    name: '@madisboard/templates',
     workspaceDependencies: [],
   },
   {
     location: 'packages/frontend/track',
-    name: '@affine/track',
+    name: '@madisboard/track',
     workspaceDependencies: ['packages/common/debug'],
   },
   {
@@ -1439,8 +1439,8 @@ export const PackageList = [
     location: 'tests/kit',
     name: '@affine-test/kit',
     workspaceDependencies: [
-      'tools/utils',
       'blocksuite/affine/all',
+      'tools/utils',
       'packages/common/infra',
     ],
   },
@@ -1452,41 +1452,41 @@ export const PackageList = [
   {
     location: 'tools/@types/env',
     name: '@types/affine__env',
-    workspaceDependencies: ['packages/common/env', 'blocksuite/affine/all'],
+    workspaceDependencies: ['blocksuite/affine/all', 'packages/common/env'],
   },
   {
     location: 'tools/changelog',
-    name: '@affine/changelog',
+    name: '@madisboard/changelog',
     workspaceDependencies: [],
   },
   {
     location: 'tools/cli',
-    name: '@affine-tools/cli',
+    name: '@madisboard-tools/cli',
     workspaceDependencies: ['tools/utils'],
   },
   {
     location: 'tools/commitlint',
-    name: '@affine/commitlint-config',
+    name: '@madisboard/commitlint-config',
     workspaceDependencies: [],
   },
   {
     location: 'tools/copilot-result',
-    name: '@affine/copilot-result',
+    name: '@madisboard/copilot-result',
     workspaceDependencies: [],
   },
   {
     location: 'tools/playstore-auto-bump',
-    name: '@affine/playstore-auto-bump',
+    name: '@madisboard/playstore-auto-bump',
     workspaceDependencies: ['tools/cli', 'tools/utils'],
   },
   {
     location: 'tools/revert-update',
-    name: '@affine/revert-update',
+    name: '@madisboard/revert-update',
     workspaceDependencies: ['tools/cli'],
   },
   {
     location: 'tools/utils',
-    name: '@affine-tools/utils',
+    name: '@madisboard-tools/utils',
     workspaceDependencies: [],
   },
 ];
@@ -1565,32 +1565,32 @@ export type PackageName =
   | '@blocksuite/sync'
   | '@blocksuite/integration-test'
   | '@blocksuite/playground'
-  | '@affine/docs'
-  | '@affine/server-native'
-  | '@affine/server'
-  | '@affine/debug'
-  | '@affine/env'
-  | '@affine/error'
-  | '@affine/graphql'
+  | '@madisboard/docs'
+  | '@madisboard/server-native'
+  | '@madisboard/server'
+  | '@madisboard/debug'
+  | '@madisboard/env'
+  | '@madisboard/error'
+  | '@madisboard/graphql'
   | '@toeverything/infra'
-  | '@affine/nbstore'
-  | '@affine/reader'
-  | '@affine/admin'
-  | '@affine/android'
-  | '@affine/electron'
-  | '@affine/electron-renderer'
-  | '@affine/ios'
-  | '@affine/mobile'
-  | '@affine/web'
-  | '@affine/component'
-  | '@affine/core'
-  | '@affine/electron-api'
-  | '@affine/i18n'
-  | '@affine/media-capture-playground'
-  | '@affine/native'
-  | '@affine/routes'
-  | '@affine/templates'
-  | '@affine/track'
+  | '@madisboard/nbstore'
+  | '@madisboard/reader'
+  | '@madisboard/admin'
+  | '@madisboard/android'
+  | '@madisboard/electron'
+  | '@madisboard/electron-renderer'
+  | '@madisboard/ios'
+  | '@madisboard/mobile'
+  | '@madisboard/web'
+  | '@madisboard/component'
+  | '@madisboard/core'
+  | '@madisboard/electron-api'
+  | '@madisboard/i18n'
+  | '@madisboard/media-capture-playground'
+  | '@madisboard/native'
+  | '@madisboard/routes'
+  | '@madisboard/templates'
+  | '@madisboard/track'
   | '@affine-test/affine-cloud'
   | '@affine-test/affine-cloud-copilot'
   | '@affine-test/affine-desktop'
@@ -1601,10 +1601,10 @@ export type PackageName =
   | '@affine-test/kit'
   | '@types/build-config'
   | '@types/affine__env'
-  | '@affine/changelog'
-  | '@affine-tools/cli'
-  | '@affine/commitlint-config'
-  | '@affine/copilot-result'
-  | '@affine/playstore-auto-bump'
-  | '@affine/revert-update'
-  | '@affine-tools/utils';
+  | '@madisboard/changelog'
+  | '@madisboard-tools/cli'
+  | '@madisboard/commitlint-config'
+  | '@madisboard/copilot-result'
+  | '@madisboard/playstore-auto-bump'
+  | '@madisboard/revert-update'
+  | '@madisboard-tools/utils';

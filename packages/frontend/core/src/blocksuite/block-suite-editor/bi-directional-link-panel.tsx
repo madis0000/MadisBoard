@@ -4,26 +4,26 @@ import {
   observeIntersection,
   Skeleton,
   useLitPortalFactory,
-} from '@affine/component';
-import { getViewManager } from '@affine/core/blocksuite/manager/view';
+} from '@madisboard/component';
+import { getViewManager } from '@madisboard/core/blocksuite/manager/view';
 import {
   patchReferenceRenderer,
   type ReferenceReactRenderer,
-} from '@affine/core/blocksuite/view-extensions/editor-view/reference-renderer';
-import { useGuard } from '@affine/core/components/guard';
-import { useEnableAI } from '@affine/core/components/hooks/affine/use-enable-ai';
-import { DocService } from '@affine/core/modules/doc';
+} from '@madisboard/core/blocksuite/view-extensions/editor-view/reference-renderer';
+import { useGuard } from '@madisboard/core/components/guard';
+import { useEnableAI } from '@madisboard/core/components/hooks/affine/use-enable-ai';
+import { DocService } from '@madisboard/core/modules/doc';
 import {
   type Backlink,
   DocLinksService,
   type Link,
-} from '@affine/core/modules/doc-link';
-import { toDocSearchParams } from '@affine/core/modules/navigation/utils';
-import { GlobalSessionStateService } from '@affine/core/modules/storage';
-import { WorkbenchLink } from '@affine/core/modules/workbench';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+} from '@madisboard/core/modules/doc-link';
+import { toDocSearchParams } from '@madisboard/core/modules/navigation/utils';
+import { GlobalSessionStateService } from '@madisboard/core/modules/storage';
+import { WorkbenchLink } from '@madisboard/core/modules/workbench';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import type {
   ExtensionType,
   TransformerMiddleware,

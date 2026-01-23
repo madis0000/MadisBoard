@@ -4,20 +4,20 @@ import {
   MenuSub,
   toast,
   useConfirmModal,
-} from '@affine/component';
-import { usePageHelper } from '@affine/core/blocksuite/block-suite-page-list/utils';
-import { Guard } from '@affine/core/components/guard';
-import { useBlockSuiteMetaHelper } from '@affine/core/components/hooks/affine/use-block-suite-meta-helper';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { IsFavoriteIcon } from '@affine/core/components/pure/icons';
-import type { NodeOperation } from '@affine/core/desktop/components/navigation-panel';
-import { DocsService } from '@affine/core/modules/doc';
-import { CompatibleFavoriteItemsAdapter } from '@affine/core/modules/favorite';
-import { WorkbenchService } from '@affine/core/modules/workbench';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { preventDefault } from '@affine/core/utils';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/component';
+import { usePageHelper } from '@madisboard/core/blocksuite/block-suite-page-list/utils';
+import { Guard } from '@madisboard/core/components/guard';
+import { useBlockSuiteMetaHelper } from '@madisboard/core/components/hooks/affine/use-block-suite-meta-helper';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { IsFavoriteIcon } from '@madisboard/core/components/pure/icons';
+import type { NodeOperation } from '@madisboard/core/desktop/components/navigation-panel';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { CompatibleFavoriteItemsAdapter } from '@madisboard/core/modules/favorite';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { preventDefault } from '@madisboard/core/utils';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import {
   DeleteIcon,
   DuplicateIcon,

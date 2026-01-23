@@ -1,4 +1,4 @@
-import { Avatar, uniReactRoot } from '@affine/component';
+import { Avatar, uniReactRoot } from '@madisboard/component';
 import {
   type CellRenderProps,
   createIcon,

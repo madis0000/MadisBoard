@@ -1,4 +1,4 @@
-import { cn } from '@affine/admin/utils';
+import { cn } from '@madisboard/admin/utils';
 
 function Skeleton({
   className,

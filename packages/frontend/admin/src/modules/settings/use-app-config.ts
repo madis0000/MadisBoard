@@ -1,13 +1,13 @@
-import { useMutation } from '@affine/admin/use-mutation';
-import { useQuery } from '@affine/admin/use-query';
-import { notify } from '@affine/component';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { UserFriendlyError } from '@affine/error';
+import { useMutation } from '@madisboard/admin/use-mutation';
+import { useQuery } from '@madisboard/admin/use-query';
+import { notify } from '@madisboard/component';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { UserFriendlyError } from '@madisboard/error';
 import {
   appConfigQuery,
   type UpdateAppConfigInput,
   updateAppConfigMutation,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 import { cloneDeep, get, merge, set } from 'lodash-es';
 import { useCallback, useState } from 'react';
 

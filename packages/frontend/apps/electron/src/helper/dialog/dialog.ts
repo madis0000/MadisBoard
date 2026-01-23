@@ -1,7 +1,7 @@
 import { parse } from 'node:path';
 
-import { DocStorage, ValidationResult } from '@affine/native';
-import { parseUniversalId } from '@affine/nbstore';
+import { DocStorage, ValidationResult } from '@madisboard/native';
+import { parseUniversalId } from '@madisboard/nbstore';
 import fs from 'fs-extra';
 import { nanoid } from 'nanoid';
 
@@ -252,7 +252,7 @@ async function cpV1DBFile(
   originalPath: string,
   workspaceId: string
 ): Promise<LoadDBFileResult> {
-  const { SqliteConnection } = await import('@affine/native');
+  const { SqliteConnection } = await import('@madisboard/native');
 
   const validationResult = await SqliteConnection.validate(originalPath);
 

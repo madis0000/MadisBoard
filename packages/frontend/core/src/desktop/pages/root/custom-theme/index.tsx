@@ -1,6 +1,6 @@
-import { EditorSettingService } from '@affine/core/modules/editor-setting';
-import { FeatureFlagService } from '@affine/core/modules/feature-flag';
-import { ThemeEditorService } from '@affine/core/modules/theme-editor';
+import { EditorSettingService } from '@madisboard/core/modules/editor-setting';
+import { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
+import { ThemeEditorService } from '@madisboard/core/modules/theme-editor';
 import { useLiveData, useServices } from '@toeverything/infra';
 import { useTheme } from 'next-themes';
 import { useEffect } from 'react';

@@ -1,11 +1,11 @@
-import { Skeleton } from '@affine/component';
+import { Skeleton } from '@madisboard/component';
 import {
   SettingHeader,
   SettingWrapper,
-} from '@affine/component/setting-components';
-import { SubscriptionService } from '@affine/core/modules/cloud';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/component/setting-components';
+import { SubscriptionService } from '@madisboard/core/modules/cloud';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useEffect } from 'react';
 

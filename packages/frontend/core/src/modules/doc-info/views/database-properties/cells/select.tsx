@@ -1,12 +1,12 @@
 /* eslint-disable rxjs/finnish */
 
-import { PropertyValue } from '@affine/component';
-import { type TagLike, TagsInlineEditor } from '@affine/core/components/tags';
-import { TagService } from '@affine/core/modules/tag';
+import { PropertyValue } from '@madisboard/component';
+import { type TagLike, TagsInlineEditor } from '@madisboard/core/components/tags';
+import { TagService } from '@madisboard/core/modules/tag';
 import {
   affineLabelToDatabaseTagColor,
   databaseTagColorToV2,
-} from '@affine/core/modules/tag/entities/utils';
+} from '@madisboard/core/modules/tag/entities/utils';
 import type { DatabaseBlockDataSource } from '@blocksuite/affine/blocks/database';
 import type { SelectTag } from '@blocksuite/data-view';
 import { MultiSelectIcon, SingleSelectIcon } from '@blocksuite/icons/rc';

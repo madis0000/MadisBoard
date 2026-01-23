@@ -1,23 +1,23 @@
-import { Button, type ButtonProps } from '@affine/component/ui/button';
-import { Tooltip } from '@affine/component/ui/tooltip';
-import { generateSubscriptionCallbackLink } from '@affine/core/components/hooks/affine/use-subscription-notify';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
+import { Button, type ButtonProps } from '@madisboard/component/ui/button';
+import { Tooltip } from '@madisboard/component/ui/tooltip';
+import { generateSubscriptionCallbackLink } from '@madisboard/core/components/hooks/affine/use-subscription-notify';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
 import {
   AuthService,
   ServerService,
   SubscriptionService,
-} from '@affine/core/modules/cloud';
-import { GlobalDialogService } from '@affine/core/modules/dialogs';
-import { UrlService } from '@affine/core/modules/url';
+} from '@madisboard/core/modules/cloud';
+import { GlobalDialogService } from '@madisboard/core/modules/dialogs';
+import { UrlService } from '@madisboard/core/modules/url';
 import {
   type CreateCheckoutSessionInput,
   SubscriptionPlan,
   SubscriptionRecurring,
   SubscriptionStatus,
   SubscriptionVariant,
-} from '@affine/graphql';
-import { Trans, useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/graphql';
+import { Trans, useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { DoneIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import clsx from 'clsx';

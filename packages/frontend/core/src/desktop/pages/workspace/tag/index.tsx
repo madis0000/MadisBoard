@@ -1,20 +1,20 @@
 import {
   createDocExplorerContext,
   DocExplorerContext,
-} from '@affine/core/components/explorer/context';
-import { DocsExplorer } from '@affine/core/components/explorer/docs-view/docs-list';
-import type { ExplorerDisplayPreference } from '@affine/core/components/explorer/types';
-import { CollectionRulesService } from '@affine/core/modules/collection-rules';
-import { GlobalContextService } from '@affine/core/modules/global-context';
-import { WorkspacePermissionService } from '@affine/core/modules/permissions';
-import { TagService } from '@affine/core/modules/tag';
+} from '@madisboard/core/components/explorer/context';
+import { DocsExplorer } from '@madisboard/core/components/explorer/docs-view/docs-list';
+import type { ExplorerDisplayPreference } from '@madisboard/core/components/explorer/types';
+import { CollectionRulesService } from '@madisboard/core/modules/collection-rules';
+import { GlobalContextService } from '@madisboard/core/modules/global-context';
+import { WorkspacePermissionService } from '@madisboard/core/modules/permissions';
+import { TagService } from '@madisboard/core/modules/tag';
 import {
   useIsActiveView,
   ViewBody,
   ViewHeader,
   ViewIcon,
   ViewTitle,
-} from '@affine/core/modules/workbench';
+} from '@madisboard/core/modules/workbench';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';

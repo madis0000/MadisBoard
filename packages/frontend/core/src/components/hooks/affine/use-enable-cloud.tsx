@@ -1,9 +1,9 @@
-import { notify, useConfirmModal } from '@affine/component';
-import { AuthService, ServersService } from '@affine/core/modules/cloud';
-import { GlobalDialogService } from '@affine/core/modules/dialogs';
-import type { Workspace } from '@affine/core/modules/workspace';
-import { WorkspacesService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
+import { notify, useConfirmModal } from '@madisboard/component';
+import { AuthService, ServersService } from '@madisboard/core/modules/cloud';
+import { GlobalDialogService } from '@madisboard/core/modules/dialogs';
+import type { Workspace } from '@madisboard/core/modules/workspace';
+import { WorkspacesService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback } from 'react';
 

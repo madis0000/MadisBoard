@@ -1,6 +1,6 @@
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { DocsService } from '@affine/core/modules/doc';
-import { WorkspaceService } from '@affine/core/modules/workspace';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
 import { useService } from '@toeverything/infra';
 import { useCallback } from 'react';
 

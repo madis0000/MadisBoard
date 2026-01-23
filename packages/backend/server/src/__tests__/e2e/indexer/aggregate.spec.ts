@@ -1,4 +1,4 @@
-import { indexerAggregateQuery, SearchTable } from '@affine/graphql';
+import { indexerAggregateQuery, SearchTable } from '@madisboard/graphql';
 
 import { IndexerService } from '../../../plugins/indexer/service';
 import { Mockers } from '../../mocks';

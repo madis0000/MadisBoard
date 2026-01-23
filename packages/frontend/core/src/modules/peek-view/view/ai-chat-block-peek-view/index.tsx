@@ -1,16 +1,16 @@
-import { toReactNode } from '@affine/component';
-import { AIChatBlockPeekViewTemplate } from '@affine/core/blocksuite/ai';
-import type { AIChatBlockModel } from '@affine/core/blocksuite/ai/blocks/ai-chat-block/model/ai-chat-model';
-import { useAIChatConfig } from '@affine/core/components/hooks/affine/use-ai-chat-config';
-import { useAISubscribe } from '@affine/core/components/hooks/affine/use-ai-subscribe';
+import { toReactNode } from '@madisboard/component';
+import { AIChatBlockPeekViewTemplate } from '@madisboard/core/blocksuite/ai';
+import type { AIChatBlockModel } from '@madisboard/core/blocksuite/ai/blocks/ai-chat-block/model/ai-chat-model';
+import { useAIChatConfig } from '@madisboard/core/components/hooks/affine/use-ai-chat-config';
+import { useAISubscribe } from '@madisboard/core/components/hooks/affine/use-ai-subscribe';
 import {
   AIDraftService,
   AIToolsConfigService,
-} from '@affine/core/modules/ai-button';
-import { AIModelService } from '@affine/core/modules/ai-button/services/models';
-import { ServerService, SubscriptionService } from '@affine/core/modules/cloud';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { FeatureFlagService } from '@affine/core/modules/feature-flag';
+} from '@madisboard/core/modules/ai-button';
+import { AIModelService } from '@madisboard/core/modules/ai-button/services/models';
+import { ServerService, SubscriptionService } from '@madisboard/core/modules/cloud';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
 import type { EditorHost } from '@blocksuite/affine/std';
 import { useFramework } from '@toeverything/infra';
 import { useMemo } from 'react';

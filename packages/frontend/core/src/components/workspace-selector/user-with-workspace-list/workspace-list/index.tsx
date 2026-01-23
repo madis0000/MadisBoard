@@ -1,19 +1,19 @@
-import { IconButton, Menu, MenuItem } from '@affine/component';
-import { Divider } from '@affine/component/ui/divider';
-import { useEnableCloud } from '@affine/core/components/hooks/affine/use-enable-cloud';
-import { useSignOut } from '@affine/core/components/hooks/affine/use-sign-out';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { useNavigateHelper } from '@affine/core/components/hooks/use-navigate-helper';
-import type { AuthAccountInfo, Server } from '@affine/core/modules/cloud';
-import { AuthService, ServersService } from '@affine/core/modules/cloud';
-import { GlobalDialogService } from '@affine/core/modules/dialogs';
-import { GlobalContextService } from '@affine/core/modules/global-context';
+import { IconButton, Menu, MenuItem } from '@madisboard/component';
+import { Divider } from '@madisboard/component/ui/divider';
+import { useEnableCloud } from '@madisboard/core/components/hooks/affine/use-enable-cloud';
+import { useSignOut } from '@madisboard/core/components/hooks/affine/use-sign-out';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { useNavigateHelper } from '@madisboard/core/components/hooks/use-navigate-helper';
+import type { AuthAccountInfo, Server } from '@madisboard/core/modules/cloud';
+import { AuthService, ServersService } from '@madisboard/core/modules/cloud';
+import { GlobalDialogService } from '@madisboard/core/modules/dialogs';
+import { GlobalContextService } from '@madisboard/core/modules/global-context';
 import {
   type WorkspaceMetadata,
   WorkspaceService,
   WorkspacesService,
-} from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
 import {
   AccountIcon,
   CloudWorkspaceIcon,

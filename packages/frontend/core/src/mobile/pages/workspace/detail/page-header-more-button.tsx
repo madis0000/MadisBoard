@@ -1,21 +1,21 @@
-import { IconButton, notify, toast, useConfirmModal } from '@affine/component';
+import { IconButton, notify, toast, useConfirmModal } from '@madisboard/component';
 import {
   MenuSeparator,
   MenuSub,
   MobileMenu,
   MobileMenuItem,
-} from '@affine/component/ui/menu';
-import { useFavorite } from '@affine/core/blocksuite/block-suite-header/favorite';
-import { Guard, useGuard } from '@affine/core/components/guard';
-import { IsFavoriteIcon } from '@affine/core/components/pure/icons';
-import { DocInfoSheet } from '@affine/core/mobile/components';
-import { MobileTocMenu } from '@affine/core/mobile/components/toc-menu';
-import { DocService } from '@affine/core/modules/doc';
-import { EditorService } from '@affine/core/modules/editor';
-import { ViewService } from '@affine/core/modules/workbench/services/view';
-import { preventDefault } from '@affine/core/utils';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/component/ui/menu';
+import { useFavorite } from '@madisboard/core/blocksuite/block-suite-header/favorite';
+import { Guard, useGuard } from '@madisboard/core/components/guard';
+import { IsFavoriteIcon } from '@madisboard/core/components/pure/icons';
+import { DocInfoSheet } from '@madisboard/core/mobile/components';
+import { MobileTocMenu } from '@madisboard/core/mobile/components/toc-menu';
+import { DocService } from '@madisboard/core/modules/doc';
+import { EditorService } from '@madisboard/core/modules/editor';
+import { ViewService } from '@madisboard/core/modules/workbench/services/view';
+import { preventDefault } from '@madisboard/core/utils';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import {
   DeleteIcon,
   EdgelessIcon,

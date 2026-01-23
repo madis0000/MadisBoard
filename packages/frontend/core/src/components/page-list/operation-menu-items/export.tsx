@@ -1,7 +1,7 @@
-import { MenuItem, MenuSeparator, MenuSub } from '@affine/component';
-import { FeatureFlagService } from '@affine/core/modules/feature-flag';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+import { MenuItem, MenuSeparator, MenuSub } from '@madisboard/component';
+import { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import {
   ExportIcon,
   ExportToHtmlIcon,

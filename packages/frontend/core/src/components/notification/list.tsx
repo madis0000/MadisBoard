@@ -8,16 +8,16 @@ import {
   observeIntersection,
   Scrollable,
   Skeleton,
-} from '@affine/component';
-import { InvitationService } from '@affine/core/modules/cloud';
+} from '@madisboard/component';
+import { InvitationService } from '@madisboard/core/modules/cloud';
 import {
   type Notification,
   NotificationListService,
   NotificationType,
-} from '@affine/core/modules/notification';
-import { WorkspacesService } from '@affine/core/modules/workspace';
-import { extractEmojiIcon } from '@affine/core/utils';
-import { UserFriendlyError } from '@affine/error';
+} from '@madisboard/core/modules/notification';
+import { WorkspacesService } from '@madisboard/core/modules/workspace';
+import { extractEmojiIcon } from '@madisboard/core/utils';
+import { UserFriendlyError } from '@madisboard/error';
 import type {
   InvitationAcceptedNotificationBodyType,
   InvitationBlockedNotificationBodyType,
@@ -26,9 +26,9 @@ import type {
   InvitationReviewDeclinedNotificationBodyType,
   InvitationReviewRequestNotificationBodyType,
   MentionNotificationBodyType,
-} from '@affine/graphql';
-import { i18nTime, Trans, useI18n } from '@affine/i18n';
-import track from '@affine/track';
+} from '@madisboard/graphql';
+import { i18nTime, Trans, useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import {
   CollaborationIcon,
   DeleteIcon,

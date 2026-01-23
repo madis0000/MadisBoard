@@ -1,6 +1,6 @@
-import type { DropTargetOptions } from '@affine/component';
-import { isOrganizeSupportType } from '@affine/core/modules/organize/constants';
-import type { AffineDNDData } from '@affine/core/types/dnd';
+import type { DropTargetOptions } from '@madisboard/component';
+import { isOrganizeSupportType } from '@madisboard/core/modules/organize/constants';
+import type { AffineDNDData } from '@madisboard/core/types/dnd';
 
 import type { NavigationPanelTreeNodeDropEffect } from '../../tree';
 

@@ -1,14 +1,14 @@
-import type { RadioItem } from '@affine/component';
-import { RadioGroup, Switch } from '@affine/component';
+import type { RadioItem } from '@madisboard/component';
+import { RadioGroup, Switch } from '@madisboard/component';
 import {
   SettingHeader,
   SettingRow,
   SettingWrapper,
-} from '@affine/component/setting-components';
-import { LanguageMenu } from '@affine/core/components/affine/language-menu';
-import { TraySettingService } from '@affine/core/modules/editor-setting/services/tray-settings';
-import { FeatureFlagService } from '@affine/core/modules/feature-flag';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/component/setting-components';
+import { LanguageMenu } from '@madisboard/core/components/affine/language-menu';
+import { TraySettingService } from '@madisboard/core/modules/editor-setting/services/tray-settings';
+import { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useTheme } from 'next-themes';
 import { useCallback, useMemo } from 'react';

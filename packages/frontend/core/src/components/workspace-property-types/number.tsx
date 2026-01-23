@@ -1,6 +1,6 @@
-import { Input, PropertyValue } from '@affine/component';
-import type { FilterParams } from '@affine/core/modules/collection-rules';
-import { useI18n } from '@affine/i18n';
+import { Input, PropertyValue } from '@madisboard/component';
+import type { FilterParams } from '@madisboard/core/modules/collection-rules';
+import { useI18n } from '@madisboard/i18n';
 import { NumberIcon } from '@blocksuite/icons/rc';
 import { cssVar } from '@toeverything/theme';
 import { cssVarV2 } from '@toeverything/theme/v2';

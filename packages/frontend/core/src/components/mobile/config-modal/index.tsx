@@ -1,6 +1,6 @@
-import { Button, Modal } from '@affine/component';
-import { PageHeader } from '@affine/core/mobile/components/page-header';
-import { useI18n } from '@affine/i18n';
+import { Button, Modal } from '@madisboard/component';
+import { PageHeader } from '@madisboard/core/mobile/components/page-header';
+import { useI18n } from '@madisboard/i18n';
 import clsx from 'clsx';
 import {
   type CSSProperties,

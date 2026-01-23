@@ -4,18 +4,18 @@ import {
   MobileMenuItem,
   MobileMenuSub,
   useConfirmModal,
-} from '@affine/component';
-import { Guard } from '@affine/core/components/guard';
-import { MoveToTrash } from '@affine/core/components/page-list';
+} from '@madisboard/component';
+import { Guard } from '@madisboard/core/components/guard';
+import { MoveToTrash } from '@madisboard/core/components/page-list';
 import {
   type DocRecord,
   DocService,
   DocsService,
-} from '@affine/core/modules/doc';
-import { DocDisplayMetaService } from '@affine/core/modules/doc-display-meta';
-import { JournalService } from '@affine/core/modules/journal';
-import { WorkbenchLink } from '@affine/core/modules/workbench';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/doc';
+import { DocDisplayMetaService } from '@madisboard/core/modules/doc-display-meta';
+import { JournalService } from '@madisboard/core/modules/journal';
+import { WorkbenchLink } from '@madisboard/core/modules/workbench';
+import { useI18n } from '@madisboard/i18n';
 import { CalendarXmarkIcon, EditIcon, TodayIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { type MouseEvent, useCallback, useMemo } from 'react';

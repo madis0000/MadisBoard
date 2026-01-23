@@ -1,4 +1,4 @@
-import { getPromptModelsQuery, SubscriptionStatus } from '@affine/graphql';
+import { getPromptModelsQuery, SubscriptionStatus } from '@madisboard/graphql';
 import {
   createSignalFromObservable,
   type Signal,

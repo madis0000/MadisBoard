@@ -1,4 +1,4 @@
-import type { GetMembersByWorkspaceIdQuery } from '@affine/graphql';
+import type { GetMembersByWorkspaceIdQuery } from '@madisboard/graphql';
 import {
   catchErrorInto,
   effect,

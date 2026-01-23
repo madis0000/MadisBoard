@@ -1,4 +1,4 @@
-import { ServerService } from '@affine/core/modules/cloud';
+import { ServerService } from '@madisboard/core/modules/cloud';
 import { AdapterPanel } from '@blocksuite/affine/fragments/adapter-panel';
 import {
   customImageProxyMiddleware,

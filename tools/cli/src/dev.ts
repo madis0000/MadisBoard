@@ -1,4 +1,4 @@
-import type { PackageName } from '@affine-tools/utils/workspace';
+import type { PackageName } from '@madisboard-tools/utils/workspace';
 
 import { Option, PackageSelectorCommand } from './command';
 
@@ -6,14 +6,14 @@ export class DevCommand extends PackageSelectorCommand {
   static override paths = [['dev'], ['d']];
 
   protected override availablePackages: PackageName[] = [
-    '@affine/web',
-    '@affine/server',
-    '@affine/electron',
-    '@affine/electron-renderer',
-    '@affine/mobile',
-    '@affine/ios',
-    '@affine/android',
-    '@affine/admin',
+    '@madisboard/web',
+    '@madisboard/server',
+    '@madisboard/electron',
+    '@madisboard/electron-renderer',
+    '@madisboard/mobile',
+    '@madisboard/ios',
+    '@madisboard/android',
+    '@madisboard/admin',
   ];
 
   protected deps = Option.Boolean('--deps', {

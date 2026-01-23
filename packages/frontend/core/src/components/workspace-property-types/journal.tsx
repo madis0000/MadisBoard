@@ -4,14 +4,14 @@ import {
   Menu,
   MenuItem,
   PropertyValue,
-} from '@affine/component';
-import { MobileJournalConflictList } from '@affine/core/mobile/pages/workspace/detail/menu/journal-conflicts';
-import type { FilterParams } from '@affine/core/modules/collection-rules';
-import { DocService } from '@affine/core/modules/doc';
-import { JournalService } from '@affine/core/modules/journal';
-import { WorkbenchService } from '@affine/core/modules/workbench';
-import { ViewService } from '@affine/core/modules/workbench/services/view';
-import { i18nTime, useI18n } from '@affine/i18n';
+} from '@madisboard/component';
+import { MobileJournalConflictList } from '@madisboard/core/mobile/pages/workspace/detail/menu/journal-conflicts';
+import type { FilterParams } from '@madisboard/core/modules/collection-rules';
+import { DocService } from '@madisboard/core/modules/doc';
+import { JournalService } from '@madisboard/core/modules/journal';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
+import { ViewService } from '@madisboard/core/modules/workbench/services/view';
+import { i18nTime, useI18n } from '@madisboard/i18n';
 import { TodayIcon } from '@blocksuite/icons/rc';
 import {
   useLiveData,

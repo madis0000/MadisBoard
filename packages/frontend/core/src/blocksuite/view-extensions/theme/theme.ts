@@ -1,5 +1,5 @@
-import { DocService, DocsService } from '@affine/core/modules/doc';
-import { AppThemeService } from '@affine/core/modules/theme';
+import { DocService, DocsService } from '@madisboard/core/modules/doc';
+import { AppThemeService } from '@madisboard/core/modules/theme';
 import type { Container } from '@blocksuite/affine/global/di';
 import { ColorScheme } from '@blocksuite/affine/model';
 import {

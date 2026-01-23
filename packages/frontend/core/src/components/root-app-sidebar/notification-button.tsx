@@ -1,8 +1,8 @@
-import { Menu } from '@affine/component';
-import { MenuItem } from '@affine/core/modules/app-sidebar/views';
-import { NotificationCountService } from '@affine/core/modules/notification';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+import { Menu } from '@madisboard/component';
+import { MenuItem } from '@madisboard/core/modules/app-sidebar/views';
+import { NotificationCountService } from '@madisboard/core/modules/notification';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { NotificationIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useState } from 'react';

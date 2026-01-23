@@ -1,5 +1,5 @@
-import { Toaster } from '@affine/admin/components/ui/sonner';
-import { lazy, ROUTES } from '@affine/routes';
+import { Toaster } from '@madisboard/admin/components/ui/sonner';
+import { lazy, ROUTES } from '@madisboard/routes';
 import { withSentryReactRouterV7Routing } from '@sentry/react';
 import { useEffect } from 'react';
 import {

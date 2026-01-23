@@ -1,16 +1,16 @@
-import { Button, Modal, notify, useConfirmModal } from '@affine/component';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { Upload } from '@affine/core/components/pure/file-upload';
+import { Button, Modal, notify, useConfirmModal } from '@madisboard/component';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { Upload } from '@madisboard/core/components/pure/file-upload';
 import {
   SelfhostLicenseService,
   WorkspaceSubscriptionService,
-} from '@affine/core/modules/cloud';
-import { WorkspacePermissionService } from '@affine/core/modules/permissions';
-import { WorkspaceQuotaService } from '@affine/core/modules/quota';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { copyTextToClipboard } from '@affine/core/utils/clipboard';
-import { UserFriendlyError } from '@affine/error';
-import { Trans, useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/cloud';
+import { WorkspacePermissionService } from '@madisboard/core/modules/permissions';
+import { WorkspaceQuotaService } from '@madisboard/core/modules/quota';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { copyTextToClipboard } from '@madisboard/core/utils/clipboard';
+import { UserFriendlyError } from '@madisboard/error';
+import { Trans, useI18n } from '@madisboard/i18n';
 import { CopyIcon, FileIcon } from '@blocksuite/icons/rc';
 import { useService } from '@toeverything/infra';
 import { useCallback, useEffect, useState } from 'react';

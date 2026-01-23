@@ -1,30 +1,30 @@
-import { Button, Loading, notify, useConfirmModal } from '@affine/component';
+import { Button, Loading, notify, useConfirmModal } from '@madisboard/component';
 import {
   InviteTeamMemberModal,
   type InviteTeamMemberModalProps,
   MemberLimitModal,
-} from '@affine/component/member-components';
-import { SettingRow } from '@affine/component/setting-components';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { Upload } from '@affine/core/components/pure/file-upload';
+} from '@madisboard/component/member-components';
+import { SettingRow } from '@madisboard/component/setting-components';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { Upload } from '@madisboard/core/components/pure/file-upload';
 import {
   ServerService,
   SubscriptionService,
   WorkspaceSubscriptionService,
-} from '@affine/core/modules/cloud';
+} from '@madisboard/core/modules/cloud';
 import {
   WorkspaceMembersService,
   WorkspacePermissionService,
-} from '@affine/core/modules/permissions';
-import { WorkspaceQuotaService } from '@affine/core/modules/quota';
-import { WorkspaceShareSettingService } from '@affine/core/modules/share-setting';
-import { copyTextToClipboard } from '@affine/core/utils/clipboard';
-import { emailRegex } from '@affine/core/utils/email-regex';
-import { UserFriendlyError } from '@affine/error';
-import type { WorkspaceInviteLinkExpireTime } from '@affine/graphql';
-import { ServerDeploymentType, SubscriptionPlan } from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/core/modules/permissions';
+import { WorkspaceQuotaService } from '@madisboard/core/modules/quota';
+import { WorkspaceShareSettingService } from '@madisboard/core/modules/share-setting';
+import { copyTextToClipboard } from '@madisboard/core/utils/clipboard';
+import { emailRegex } from '@madisboard/core/utils/email-regex';
+import { UserFriendlyError } from '@madisboard/error';
+import type { WorkspaceInviteLinkExpireTime } from '@madisboard/graphql';
+import { ServerDeploymentType, SubscriptionPlan } from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { ExportIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { nanoid } from 'nanoid';

@@ -1,5 +1,5 @@
-import { getPreviewThemeExtension } from '@affine/core/blocksuite/view-extensions/theme/preview-theme';
-import { getThemeExtension } from '@affine/core/blocksuite/view-extensions/theme/theme';
+import { getPreviewThemeExtension } from '@madisboard/core/blocksuite/view-extensions/theme/preview-theme';
+import { getThemeExtension } from '@madisboard/core/blocksuite/view-extensions/theme/theme';
 import {
   type ViewExtensionContext,
   ViewExtensionProvider,

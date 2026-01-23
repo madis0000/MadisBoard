@@ -1,9 +1,9 @@
-import { Button } from '@affine/component';
+import { Button } from '@madisboard/component';
 import {
   SettingRow,
   SettingWrapper,
-} from '@affine/component/setting-components';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/component/setting-components';
+import { useI18n } from '@madisboard/i18n';
 
 export const Preferences = () => {
   const t = useI18n();

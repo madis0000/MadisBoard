@@ -1,6 +1,6 @@
-import { SettingHeader } from '@affine/component/setting-components';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
+import { SettingHeader } from '@madisboard/component/setting-components';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
 import { useService } from '@toeverything/infra';
 import { type ReactNode, useCallback, useMemo, useState } from 'react';
 

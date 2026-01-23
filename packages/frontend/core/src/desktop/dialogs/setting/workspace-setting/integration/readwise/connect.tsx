@@ -4,10 +4,10 @@ import {
   Input,
   Modal,
   notify,
-} from '@affine/component';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { IntegrationService } from '@affine/core/modules/integration';
-import { Trans, useI18n } from '@affine/i18n';
+} from '@madisboard/component';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { IntegrationService } from '@madisboard/core/modules/integration';
+import { Trans, useI18n } from '@madisboard/i18n';
 import { ReadwiseLogoDuotoneIcon } from '@blocksuite/icons/rc';
 import { useService } from '@toeverything/infra';
 import clsx from 'clsx';

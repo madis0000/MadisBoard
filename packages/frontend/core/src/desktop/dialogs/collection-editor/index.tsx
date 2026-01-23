@@ -1,11 +1,11 @@
-import { Modal } from '@affine/component';
+import { Modal } from '@madisboard/component';
 import {
   type CollectionInfo,
   CollectionService,
-} from '@affine/core/modules/collection';
-import type { DialogComponentProps } from '@affine/core/modules/dialogs';
-import type { WORKSPACE_DIALOG_SCHEMA } from '@affine/core/modules/dialogs/constant';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/collection';
+import type { DialogComponentProps } from '@madisboard/core/modules/dialogs';
+import type { WORKSPACE_DIALOG_SCHEMA } from '@madisboard/core/modules/dialogs/constant';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback } from 'react';
 

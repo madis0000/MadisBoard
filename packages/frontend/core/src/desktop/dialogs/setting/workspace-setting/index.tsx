@@ -1,10 +1,10 @@
-import { useWorkspaceInfo } from '@affine/core/components/hooks/use-workspace-info';
-import { ServerService } from '@affine/core/modules/cloud';
-import type { SettingTab } from '@affine/core/modules/dialogs/constant';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { EmbeddingSettings } from '@affine/core/modules/workspace-indexer-embedding';
-import { ServerDeploymentType } from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
+import { useWorkspaceInfo } from '@madisboard/core/components/hooks/use-workspace-info';
+import { ServerService } from '@madisboard/core/modules/cloud';
+import type { SettingTab } from '@madisboard/core/modules/dialogs/constant';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { EmbeddingSettings } from '@madisboard/core/modules/workspace-indexer-embedding';
+import { ServerDeploymentType } from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
 import {
   AiEmbeddingIcon,
   CollaborationIcon,

@@ -1,4 +1,4 @@
-import type { I18nString } from '@affine/i18n';
+import type { I18nString } from '@madisboard/i18n';
 
 import {
   type QuickActionProps,

@@ -1,5 +1,5 @@
-import { getFeatureFlagSyncer } from '@affine/core/blocksuite/store-extensions/feature-flag/feature-flag-syncer';
-import { FeatureFlagService } from '@affine/core/modules/feature-flag';
+import { getFeatureFlagSyncer } from '@madisboard/core/blocksuite/store-extensions/feature-flag/feature-flag-syncer';
+import { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
 import {
   type StoreExtensionContext,
   StoreExtensionProvider,

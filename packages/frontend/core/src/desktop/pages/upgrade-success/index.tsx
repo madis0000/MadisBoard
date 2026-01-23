@@ -1,7 +1,7 @@
-import { Button } from '@affine/component';
-import { AuthPageContainer } from '@affine/component/auth-components';
-import { useNavigateHelper } from '@affine/core/components/hooks/use-navigate-helper';
-import { Trans, useI18n } from '@affine/i18n';
+import { Button } from '@madisboard/component';
+import { AuthPageContainer } from '@madisboard/component/auth-components';
+import { useNavigateHelper } from '@madisboard/core/components/hooks/use-navigate-helper';
+import { Trans, useI18n } from '@madisboard/i18n';
 import { useCallback } from 'react';
 import { useSearchParams } from 'react-router-dom';
 

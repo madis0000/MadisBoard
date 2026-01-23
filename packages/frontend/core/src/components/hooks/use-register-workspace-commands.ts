@@ -1,14 +1,14 @@
-import { AppSidebarService } from '@affine/core/modules/app-sidebar';
-import { DesktopApiService } from '@affine/core/modules/desktop-api';
+import { AppSidebarService } from '@madisboard/core/modules/app-sidebar';
+import { DesktopApiService } from '@madisboard/core/modules/desktop-api';
 import {
   GlobalDialogService,
   WorkspaceDialogService,
-} from '@affine/core/modules/dialogs';
-import { I18nService } from '@affine/core/modules/i18n';
-import { UrlService } from '@affine/core/modules/url';
-import { WorkbenchService } from '@affine/core/modules/workbench';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/dialogs';
+import { I18nService } from '@madisboard/core/modules/i18n';
+import { UrlService } from '@madisboard/core/modules/url';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
 import {
   useService,
   useServiceOptional,

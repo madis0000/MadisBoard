@@ -1,4 +1,4 @@
-import { serverConfigQuery, ServerFeature } from '@affine/graphql';
+import { serverConfigQuery, ServerFeature } from '@madisboard/graphql';
 
 import { app, e2e } from '../test';
 

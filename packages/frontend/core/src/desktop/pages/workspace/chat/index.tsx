@@ -1,32 +1,32 @@
-import { observeResize, useConfirmModal } from '@affine/component';
-import { CopilotClient } from '@affine/core/blocksuite/ai';
+import { observeResize, useConfirmModal } from '@madisboard/component';
+import { CopilotClient } from '@madisboard/core/blocksuite/ai';
 import {
   AIChatContent,
   type ChatContextValue,
-} from '@affine/core/blocksuite/ai/components/ai-chat-content';
-import type { ChatStatus } from '@affine/core/blocksuite/ai/components/ai-chat-messages';
-import { AIChatToolbar } from '@affine/core/blocksuite/ai/components/ai-chat-toolbar';
-import type { PromptKey } from '@affine/core/blocksuite/ai/provider/prompt';
-import { getViewManager } from '@affine/core/blocksuite/manager/view';
-import { NotificationServiceImpl } from '@affine/core/blocksuite/view-extensions/editor-view/notification-service';
-import { useAIChatConfig } from '@affine/core/components/hooks/affine/use-ai-chat-config';
-import { useAISpecs } from '@affine/core/components/hooks/affine/use-ai-specs';
-import { useAISubscribe } from '@affine/core/components/hooks/affine/use-ai-subscribe';
+} from '@madisboard/core/blocksuite/ai/components/ai-chat-content';
+import type { ChatStatus } from '@madisboard/core/blocksuite/ai/components/ai-chat-messages';
+import { AIChatToolbar } from '@madisboard/core/blocksuite/ai/components/ai-chat-toolbar';
+import type { PromptKey } from '@madisboard/core/blocksuite/ai/provider/prompt';
+import { getViewManager } from '@madisboard/core/blocksuite/manager/view';
+import { NotificationServiceImpl } from '@madisboard/core/blocksuite/view-extensions/editor-view/notification-service';
+import { useAIChatConfig } from '@madisboard/core/components/hooks/affine/use-ai-chat-config';
+import { useAISpecs } from '@madisboard/core/components/hooks/affine/use-ai-specs';
+import { useAISubscribe } from '@madisboard/core/components/hooks/affine/use-ai-subscribe';
 import {
   AIDraftService,
   AIToolsConfigService,
-} from '@affine/core/modules/ai-button';
-import { AIModelService } from '@affine/core/modules/ai-button/services/models';
+} from '@madisboard/core/modules/ai-button';
+import { AIModelService } from '@madisboard/core/modules/ai-button/services/models';
 import {
   EventSourceService,
   FetchService,
   GraphQLService,
   SubscriptionService,
-} from '@affine/core/modules/cloud';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { FeatureFlagService } from '@affine/core/modules/feature-flag';
-import { PeekViewService } from '@affine/core/modules/peek-view';
-import { AppThemeService } from '@affine/core/modules/theme';
+} from '@madisboard/core/modules/cloud';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
+import { PeekViewService } from '@madisboard/core/modules/peek-view';
+import { AppThemeService } from '@madisboard/core/modules/theme';
 import {
   ViewBody,
   ViewHeader,
@@ -34,8 +34,8 @@ import {
   ViewService,
   ViewTitle,
   WorkbenchService,
-} from '@affine/core/modules/workbench';
-import { WorkspaceService } from '@affine/core/modules/workspace';
+} from '@madisboard/core/modules/workbench';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
 import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
 import { BlockStdScope } from '@blocksuite/affine/std';
 import type { Workspace } from '@blocksuite/affine/store';

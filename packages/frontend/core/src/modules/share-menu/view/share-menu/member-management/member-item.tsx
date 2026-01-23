@@ -7,19 +7,19 @@ import {
   notify,
   Tooltip,
   useConfirmModal,
-} from '@affine/component';
-import { useGuard } from '@affine/core/components/guard';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { DocService } from '@affine/core/modules/doc';
+} from '@madisboard/component';
+import { useGuard } from '@madisboard/core/components/guard';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { DocService } from '@madisboard/core/modules/doc';
 import {
   DocGrantedUsersService,
   type GrantedUser,
   WorkspacePermissionService,
-} from '@affine/core/modules/permissions';
-import { UserFriendlyError } from '@affine/error';
-import { DocRole } from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+} from '@madisboard/core/modules/permissions';
+import { UserFriendlyError } from '@madisboard/error';
+import { DocRole } from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import { useLiveData, useService } from '@toeverything/infra';
 import clsx from 'clsx';
 import { useCallback, useMemo } from 'react';

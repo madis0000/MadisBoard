@@ -4,10 +4,10 @@ import {
   RadioGroup,
   type RadioItem,
   Slider,
-} from '@affine/component';
-import { SettingRow } from '@affine/component/setting-components';
-import { EditorSettingService } from '@affine/core/modules/editor-setting';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/component';
+import { SettingRow } from '@madisboard/component/setting-components';
+import { EditorSettingService } from '@madisboard/core/modules/editor-setting';
+import { useI18n } from '@madisboard/i18n';
 import {
   createEnumMap,
   DefaultTheme,

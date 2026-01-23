@@ -1,4 +1,4 @@
-import type { FeatureFlagService } from '@affine/core/modules/feature-flag';
+import type { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
 import type { Workspace as WorkspaceInterface } from '@blocksuite/affine/store';
 import { Entity, LiveData, yjsGetPath } from '@toeverything/infra';
 import type { Observable } from 'rxjs';

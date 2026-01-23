@@ -1,5 +1,5 @@
 {
-  "name": "@affine/commitlint-config",
+  "name": "@madisboard/commitlint-config",
   "version": "0.26.0",
   "private": true,
   "devDependencies": {

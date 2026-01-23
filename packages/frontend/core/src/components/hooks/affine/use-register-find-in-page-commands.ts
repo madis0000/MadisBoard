@@ -1,9 +1,9 @@
 import {
   PreconditionStrategy,
   registerAffineCommand,
-} from '@affine/core/commands';
-import { FindInPageService } from '@affine/core/modules/find-in-page/services/find-in-page';
-import { track } from '@affine/track';
+} from '@madisboard/core/commands';
+import { FindInPageService } from '@madisboard/core/modules/find-in-page/services/find-in-page';
+import { track } from '@madisboard/track';
 import { useServiceOptional } from '@toeverything/infra';
 import { useCallback, useEffect } from 'react';
 

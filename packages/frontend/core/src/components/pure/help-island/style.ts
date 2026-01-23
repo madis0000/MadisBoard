@@ -1,4 +1,4 @@
-import { displayFlex, positionAbsolute, styled } from '@affine/component';
+import { displayFlex, positionAbsolute, styled } from '@madisboard/component';
 
 export const StyledIsland = styled('div')<{
   spread: boolean;

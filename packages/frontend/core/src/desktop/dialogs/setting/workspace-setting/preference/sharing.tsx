@@ -1,13 +1,13 @@
-import { Switch } from '@affine/component';
+import { Switch } from '@madisboard/component';
 import {
   SettingRow,
   SettingWrapper,
-} from '@affine/component/setting-components';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { WorkspacePermissionService } from '@affine/core/modules/permissions';
-import { WorkspaceShareSettingService } from '@affine/core/modules/share-setting';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/component/setting-components';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { WorkspacePermissionService } from '@madisboard/core/modules/permissions';
+import { WorkspaceShareSettingService } from '@madisboard/core/modules/share-setting';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 
 export const SharingPanel = () => {

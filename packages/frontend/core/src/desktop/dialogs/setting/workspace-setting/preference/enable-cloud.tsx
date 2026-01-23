@@ -1,12 +1,12 @@
-import { SettingRow } from '@affine/component/setting-components';
-import { Button } from '@affine/component/ui/button';
-import { useEnableCloud } from '@affine/core/components/hooks/affine/use-enable-cloud';
+import { SettingRow } from '@madisboard/component/setting-components';
+import { Button } from '@madisboard/component/ui/button';
+import { useEnableCloud } from '@madisboard/core/components/hooks/affine/use-enable-cloud';
 import {
   type Workspace,
   WorkspaceService,
-} from '@affine/core/modules/workspace';
-import { UNTITLED_WORKSPACE_NAME } from '@affine/env/constant';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/workspace';
+import { UNTITLED_WORKSPACE_NAME } from '@madisboard/env/constant';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback } from 'react';
 

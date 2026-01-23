@@ -1,15 +1,15 @@
-import { MenuItem, notify } from '@affine/component';
-import type { NodeOperation } from '@affine/core/desktop/components/navigation-panel';
+import { MenuItem, notify } from '@madisboard/component';
+import type { NodeOperation } from '@madisboard/core/desktop/components/navigation-panel';
 import {
   type Collection,
   CollectionService,
-} from '@affine/core/modules/collection';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { GlobalContextService } from '@affine/core/modules/global-context';
-import { NavigationPanelService } from '@affine/core/modules/navigation-panel';
-import { ShareDocsListService } from '@affine/core/modules/share-doc';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+} from '@madisboard/core/modules/collection';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { GlobalContextService } from '@madisboard/core/modules/global-context';
+import { NavigationPanelService } from '@madisboard/core/modules/navigation-panel';
+import { ShareDocsListService } from '@madisboard/core/modules/share-doc';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import { FilterMinusIcon, ViewLayersIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@toeverything/infra';
 import { useCallback, useEffect, useMemo, useState } from 'react';

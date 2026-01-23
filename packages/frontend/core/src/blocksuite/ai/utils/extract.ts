@@ -1,4 +1,4 @@
-import { WorkspaceImpl } from '@affine/core/modules/workspace/impls/workspace';
+import { WorkspaceImpl } from '@madisboard/core/modules/workspace/impls/workspace';
 import { getSurfaceBlock } from '@blocksuite/affine/blocks/surface';
 import {
   DatabaseBlockModel,

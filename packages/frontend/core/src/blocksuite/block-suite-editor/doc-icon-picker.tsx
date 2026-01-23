@@ -1,6 +1,6 @@
-import { IconEditor, IconRenderer } from '@affine/component';
-import { ExplorerIconService } from '@affine/core/modules/explorer-icon/services/explorer-icon';
-import { useI18n } from '@affine/i18n';
+import { IconEditor, IconRenderer } from '@madisboard/component';
+import { ExplorerIconService } from '@madisboard/core/modules/explorer-icon/services/explorer-icon';
+import { useI18n } from '@madisboard/i18n';
 import { SmileSolidIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 

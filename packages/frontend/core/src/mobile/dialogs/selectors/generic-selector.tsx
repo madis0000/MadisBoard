@@ -4,9 +4,9 @@ import {
   SafeArea,
   Scrollable,
   useThemeColorMeta,
-} from '@affine/component';
-import { PageHeader } from '@affine/core/mobile/components';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/component';
+import { PageHeader } from '@madisboard/core/mobile/components';
+import { useI18n } from '@madisboard/i18n';
 import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import {

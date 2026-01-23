@@ -1,4 +1,4 @@
-import { getCurrentUserProfileQuery } from '@affine/graphql';
+import { getCurrentUserProfileQuery } from '@madisboard/graphql';
 import { Store } from '@toeverything/infra';
 
 import type { GraphQLService } from '../services/graphql';

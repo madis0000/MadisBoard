@@ -1,14 +1,14 @@
-import type { AIToolsConfigService } from '@affine/core/modules/ai-button';
-import type { AIModelService } from '@affine/core/modules/ai-button/services/models';
+import type { AIToolsConfigService } from '@madisboard/core/modules/ai-button';
+import type { AIModelService } from '@madisboard/core/modules/ai-button/services/models';
 import type {
   ServerService,
   SubscriptionService,
-} from '@affine/core/modules/cloud';
+} from '@madisboard/core/modules/cloud';
 import {
   type CopilotChatHistoryFragment,
   ServerDeploymentType,
   SubscriptionStatus,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 import {
   menu,
   popMenu,

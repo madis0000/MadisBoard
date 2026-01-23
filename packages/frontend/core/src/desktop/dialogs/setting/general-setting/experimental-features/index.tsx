@@ -1,12 +1,12 @@
-import { Button, Checkbox, Loading, Switch, Tooltip } from '@affine/component';
-import { SettingHeader } from '@affine/component/setting-components';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
+import { Button, Checkbox, Loading, Switch, Tooltip } from '@madisboard/component';
+import { SettingHeader } from '@madisboard/component/setting-components';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
 import {
   AFFINE_FLAGS,
   FeatureFlagService,
   type Flag,
-} from '@affine/core/modules/feature-flag';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/feature-flag';
+import { useI18n } from '@madisboard/i18n';
 import {
   ArrowRightSmallIcon,
   DiscordIcon,

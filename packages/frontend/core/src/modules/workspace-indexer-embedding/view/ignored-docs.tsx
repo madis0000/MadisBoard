@@ -1,7 +1,7 @@
-import { Loading } from '@affine/component';
-import { DocsService } from '@affine/core/modules/doc';
-import { DocDisplayMetaService } from '@affine/core/modules/doc-display-meta';
-import { i18nTime } from '@affine/i18n';
+import { Loading } from '@madisboard/component';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { DocDisplayMetaService } from '@madisboard/core/modules/doc-display-meta';
+import { i18nTime } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import type React from 'react';
 

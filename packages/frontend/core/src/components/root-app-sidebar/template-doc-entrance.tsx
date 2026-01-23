@@ -1,11 +1,11 @@
-import { Menu, MenuSeparator } from '@affine/component';
-import { MenuItem as SidebarMenuItem } from '@affine/core/modules/app-sidebar/views';
+import { Menu, MenuSeparator } from '@madisboard/component';
+import { MenuItem as SidebarMenuItem } from '@madisboard/core/modules/app-sidebar/views';
 import {
   TemplateListMenuAdd,
   TemplateListMenuContentScrollable,
-} from '@affine/core/modules/template-doc/view/template-list-menu';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+} from '@madisboard/core/modules/template-doc/view/template-list-menu';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import { TemplateIcon } from '@blocksuite/icons/rc';
 import { useCallback, useState } from 'react';
 

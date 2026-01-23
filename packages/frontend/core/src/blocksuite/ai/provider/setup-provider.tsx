@@ -1,6 +1,6 @@
-import { toggleGeneralAIOnboarding } from '@affine/core/components/affine/ai-onboarding/apis';
-import type { AuthAccountInfo, AuthService } from '@affine/core/modules/cloud';
-import type { GlobalDialogService } from '@affine/core/modules/dialogs';
+import { toggleGeneralAIOnboarding } from '@madisboard/core/components/affine/ai-onboarding/apis';
+import type { AuthAccountInfo, AuthService } from '@madisboard/core/modules/cloud';
+import type { GlobalDialogService } from '@madisboard/core/modules/dialogs';
 import {
   type AddContextFileInput,
   ContextCategories,
@@ -9,7 +9,7 @@ import {
   type QueryChatSessionsInput,
   type RequestOptions,
   type UpdateChatSessionInput,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 import { z } from 'zod';
 
 import { AIProvider } from './ai-provider';

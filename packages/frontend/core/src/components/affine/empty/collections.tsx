@@ -1,8 +1,8 @@
-import { usePromptModal } from '@affine/component';
-import { useNavigateHelper } from '@affine/core/components/hooks/use-navigate-helper';
-import { CollectionService } from '@affine/core/modules/collection';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
+import { usePromptModal } from '@madisboard/component';
+import { useNavigateHelper } from '@madisboard/core/components/hooks/use-navigate-helper';
+import { CollectionService } from '@madisboard/core/modules/collection';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
 import { ViewLayersIcon } from '@blocksuite/icons/rc';
 import { useService } from '@toeverything/infra';
 import { useCallback } from 'react';

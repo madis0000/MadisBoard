@@ -1,4 +1,4 @@
-import { ThemedImg, withUnit } from '@affine/component';
+import { ThemedImg, withUnit } from '@madisboard/component';
 import clsx from 'clsx';
 
 import * as styles from './style.css';

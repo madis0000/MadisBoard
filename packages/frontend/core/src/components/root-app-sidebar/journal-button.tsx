@@ -1,8 +1,8 @@
-import { MenuLinkItem } from '@affine/core/modules/app-sidebar/views';
-import { DocDisplayMetaService } from '@affine/core/modules/doc-display-meta';
-import { JournalService } from '@affine/core/modules/journal';
-import { WorkbenchService } from '@affine/core/modules/workbench';
-import { useI18n } from '@affine/i18n';
+import { MenuLinkItem } from '@madisboard/core/modules/app-sidebar/views';
+import { DocDisplayMetaService } from '@madisboard/core/modules/doc-display-meta';
+import { JournalService } from '@madisboard/core/modules/journal';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
+import { useI18n } from '@madisboard/i18n';
 import { TodayIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 

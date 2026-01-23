@@ -168,7 +168,7 @@ export class TestingApp extends ApplyType<INestApplication>() {
     return this.request('patch', path);
   }
 
-  // TODO(@forehalo): directly make proxy for graphql queries defined in `@affine/graphql`
+  // TODO(@forehalo): directly make proxy for graphql queries defined in `@madisboard/graphql`
   // by calling with `app.apis.createWorkspace({ ...variables })`
   async gql<Data = any>(query: string, variables?: any): Promise<Data> {
     const res = await this.POST('/graphql')

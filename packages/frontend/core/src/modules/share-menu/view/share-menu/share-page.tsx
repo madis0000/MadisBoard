@@ -1,10 +1,10 @@
-import { Divider, Skeleton } from '@affine/component';
-import { Button } from '@affine/component/ui/button';
-import { useGuard } from '@affine/core/components/guard';
-import { ServerService } from '@affine/core/modules/cloud';
-import { DocService } from '@affine/core/modules/doc';
-import { ShareInfoService } from '@affine/core/modules/share-doc';
-import { useI18n } from '@affine/i18n';
+import { Divider, Skeleton } from '@madisboard/component';
+import { Button } from '@madisboard/component/ui/button';
+import { useGuard } from '@madisboard/core/components/guard';
+import { ServerService } from '@madisboard/core/modules/cloud';
+import { DocService } from '@madisboard/core/modules/doc';
+import { ShareInfoService } from '@madisboard/core/modules/share-doc';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { Suspense, useEffect } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';

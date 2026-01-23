@@ -1,14 +1,14 @@
-import { Button } from '@affine/component';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { appIconMap } from '@affine/core/utils';
+import { Button } from '@madisboard/component';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { appIconMap } from '@madisboard/core/utils';
 import {
   createStreamEncoder,
   encodeRawBufferToOpus,
   type OpusStreamEncoder,
-} from '@affine/core/utils/opus-encoding';
-import { apis, events } from '@affine/electron-api';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+} from '@madisboard/core/utils/opus-encoding';
+import { apis, events } from '@madisboard/electron-api';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import { useEffect, useMemo, useState } from 'react';
 
 import * as styles from './styles.css';

@@ -1,15 +1,15 @@
-import { notify, Switch } from '@affine/component';
+import { notify, Switch } from '@madisboard/component';
 import {
   SettingHeader,
   SettingRow,
   SettingWrapper,
-} from '@affine/component/setting-components';
+} from '@madisboard/component/setting-components';
 import {
   type UserSettings,
   UserSettingsService,
-} from '@affine/core/modules/cloud';
-import { UserFriendlyError } from '@affine/error';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/cloud';
+import { UserFriendlyError } from '@madisboard/error';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 

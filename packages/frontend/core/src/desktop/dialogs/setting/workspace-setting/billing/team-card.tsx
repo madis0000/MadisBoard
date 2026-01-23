@@ -1,12 +1,12 @@
-import { Button } from '@affine/component';
-import { SettingRow } from '@affine/component/setting-components';
+import { Button } from '@madisboard/component';
+import { SettingRow } from '@madisboard/component/setting-components';
 import {
   SubscriptionService,
   WorkspaceSubscriptionService,
-} from '@affine/core/modules/cloud';
-import { WorkspaceQuotaService } from '@affine/core/modules/quota';
-import { SubscriptionRecurring } from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/cloud';
+import { WorkspaceQuotaService } from '@madisboard/core/modules/quota';
+import { SubscriptionRecurring } from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 

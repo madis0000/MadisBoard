@@ -1,18 +1,18 @@
-import { MenuSeparator } from '@affine/component';
+import { MenuSeparator } from '@madisboard/component';
 import {
   handleInlineAskAIAction,
   pageAIGroups,
-} from '@affine/core/blocksuite/ai';
-import { useEnableAI } from '@affine/core/components/hooks/affine/use-enable-ai';
-import { DocsService } from '@affine/core/modules/doc';
-import { EditorService } from '@affine/core/modules/editor';
-import { TemplateDocService } from '@affine/core/modules/template-doc';
+} from '@madisboard/core/blocksuite/ai';
+import { useEnableAI } from '@madisboard/core/components/hooks/affine/use-enable-ai';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { EditorService } from '@madisboard/core/modules/editor';
+import { TemplateDocService } from '@madisboard/core/modules/template-doc';
 import {
   TemplateListMenu,
   TemplateListMenuAdd,
-} from '@affine/core/modules/template-doc/view/template-list-menu';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+} from '@madisboard/core/modules/template-doc/view/template-list-menu';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import { PageRootBlockComponent } from '@blocksuite/affine/blocks/root';
 import type { Store } from '@blocksuite/affine/store';
 import {

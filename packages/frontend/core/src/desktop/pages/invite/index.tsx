@@ -1,15 +1,15 @@
-import { notify } from '@affine/component';
+import { notify } from '@madisboard/component';
 import {
   AcceptInvitePage,
   ExpiredPage,
   JoinFailedPage,
   RequestToJoinPage,
   SentRequestPage,
-} from '@affine/component/member-components';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { WorkspacesService } from '@affine/core/modules/workspace';
-import { UserFriendlyError } from '@affine/error';
-import { WorkspaceMemberStatus } from '@affine/graphql';
+} from '@madisboard/component/member-components';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { WorkspacesService } from '@madisboard/core/modules/workspace';
+import { UserFriendlyError } from '@madisboard/error';
+import { WorkspaceMemberStatus } from '@madisboard/graphql';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useEffect, useState } from 'react';
 import { Navigate, useParams } from 'react-router-dom';

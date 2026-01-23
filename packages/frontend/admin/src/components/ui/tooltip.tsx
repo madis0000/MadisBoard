@@ -1,4 +1,4 @@
-import { cn } from '@affine/admin/utils';
+import { cn } from '@madisboard/admin/utils';
 import {
   Content,
   Provider as TooltipProvider,

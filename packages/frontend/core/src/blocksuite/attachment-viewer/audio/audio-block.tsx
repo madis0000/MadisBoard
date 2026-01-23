@@ -3,18 +3,18 @@ import {
   Button,
   Tooltip,
   useConfirmModal,
-} from '@affine/component';
-import { AudioPlayer } from '@affine/component/ui/audio-player';
-import { useEnableAI } from '@affine/core/components/hooks/affine/use-enable-ai';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { useSeekTime } from '@affine/core/components/hooks/use-seek-time';
-import { CurrentServerScopeProvider } from '@affine/core/components/providers/current-server-scope';
-import { PublicUserLabel } from '@affine/core/modules/cloud/views/public-user';
-import { GlobalDialogService } from '@affine/core/modules/dialogs';
-import type { AudioAttachmentBlock } from '@affine/core/modules/media/entities/audio-attachment-block';
-import { AudioAttachmentService } from '@affine/core/modules/media/services/audio-attachment';
-import { Trans, useI18n } from '@affine/i18n';
-import track from '@affine/track';
+} from '@madisboard/component';
+import { AudioPlayer } from '@madisboard/component/ui/audio-player';
+import { useEnableAI } from '@madisboard/core/components/hooks/affine/use-enable-ai';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { useSeekTime } from '@madisboard/core/components/hooks/use-seek-time';
+import { CurrentServerScopeProvider } from '@madisboard/core/components/providers/current-server-scope';
+import { PublicUserLabel } from '@madisboard/core/modules/cloud/views/public-user';
+import { GlobalDialogService } from '@madisboard/core/modules/dialogs';
+import type { AudioAttachmentBlock } from '@madisboard/core/modules/media/entities/audio-attachment-block';
+import { AudioAttachmentService } from '@madisboard/core/modules/media/services/audio-attachment';
+import { Trans, useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import type { AttachmentBlockModel } from '@blocksuite/affine/model';
 import { ResetIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';

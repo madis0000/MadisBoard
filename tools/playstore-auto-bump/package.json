@@ -1,5 +1,5 @@
 {
-  "name": "@affine/playstore-auto-bump",
+  "name": "@madisboard/playstore-auto-bump",
   "version": "0.26.0",
   "private": true,
   "type": "module",
@@ -9,9 +9,9 @@
     "bump": "r ./index.ts"
   },
   "dependencies": {
-    "@affine-tools/cli": "workspace:*",
-    "@affine-tools/utils": "workspace:*",
     "@googleapis/androidpublisher": "^31.0.0",
+    "@madisboard-tools/cli": "workspace:*",
+    "@madisboard-tools/utils": "workspace:*",
     "typescript": "^5.7.2"
   },
   "devDependencies": {

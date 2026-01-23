@@ -1,7 +1,7 @@
-import { IconButton, notify } from '@affine/component';
-import { copyTextToClipboard } from '@affine/core/utils/clipboard';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+import { IconButton, notify } from '@madisboard/component';
+import { copyTextToClipboard } from '@madisboard/core/utils/clipboard';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import type { DocMode } from '@blocksuite/affine/model';
 import {
   CloseIcon,

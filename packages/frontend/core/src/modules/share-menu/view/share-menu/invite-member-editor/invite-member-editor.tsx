@@ -6,18 +6,18 @@ import {
   MenuTrigger,
   notify,
   RowInput,
-} from '@affine/component';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
+} from '@madisboard/component';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
 import {
   DocGrantedUsersService,
   type Member,
   MemberSearchService,
-} from '@affine/core/modules/permissions';
-import { UserFriendlyError } from '@affine/error';
-import { DocRole, WorkspaceMemberStatus } from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/core/modules/permissions';
+import { UserFriendlyError } from '@madisboard/error';
+import { DocRole, WorkspaceMemberStatus } from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { ArrowLeftBigIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import clsx from 'clsx';

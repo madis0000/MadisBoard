@@ -1,4 +1,4 @@
-import { WorkspaceService } from '@affine/core/modules/workspace';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
 import { useService } from '@toeverything/infra';
 import { useAtom } from 'jotai';
 import { atomWithStorage } from 'jotai/utils';

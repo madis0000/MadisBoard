@@ -1,10 +1,10 @@
-import { Divider, Tooltip } from '@affine/component';
-import { WorkbenchService } from '@affine/core/modules/workbench';
+import { Divider, Tooltip } from '@madisboard/component';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
 import {
   type WorkspaceMetadata,
   WorkspacesService,
-} from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
 import {
   useLiveData,
   useService,

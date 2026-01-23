@@ -1,4 +1,4 @@
-import { readAllDocsFromRootDoc } from '@affine/reader';
+import { readAllDocsFromRootDoc } from '@madisboard/reader';
 import { omit } from 'lodash-es';
 import {
   filter,

@@ -2,7 +2,7 @@ import {
   OAuthProviderType,
   ServerDeploymentType,
   ServerFeature,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 
 import type { ServerConfig, ServerMetadata } from './types';
 
@@ -16,7 +16,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
           // this is ok for web app, but not for desktop app
           // since we never build desktop app in selfhosted mode, so it's fine
           config: {
-            serverName: 'Affine Selfhost',
+            serverName: 'MadisBoard',
             features: [],
             oauthProviders: [],
             type: ServerDeploymentType.Selfhosted,
@@ -37,7 +37,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
               ? 'http://localhost:8080'
               : location.origin,
             config: {
-              serverName: 'Affine Cloud',
+              serverName: 'MadisBoard Cloud',
               features: [
                 ServerFeature.Indexer,
                 ServerFeature.Copilot,
@@ -66,11 +66,11 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
               id: 'affine-cloud',
               baseUrl: BUILD_CONFIG.isNative
                 ? BUILD_CONFIG.isIOS
-                  ? 'https://apple.getaffineapp.com'
-                  : 'https://app.affine.pro'
+                  ? 'https://madis-labs.com'
+                  : 'https://madis-labs.com'
                 : location.origin,
               config: {
-                serverName: 'Affine Cloud',
+                serverName: 'MadisBoard Cloud',
                 features: [
                   ServerFeature.Indexer,
                   ServerFeature.Copilot,
@@ -99,11 +99,11 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                 id: 'affine-cloud',
                 baseUrl: BUILD_CONFIG.isNative
                   ? BUILD_CONFIG.isIOS
-                    ? 'https://apple.getaffineapp.com'
-                    : 'https://insider.affine.pro'
+                    ? 'https://madis-labs.com'
+                    : 'https://madis-labs.com'
                   : location.origin,
                 config: {
-                  serverName: 'Affine Cloud',
+                  serverName: 'MadisBoard Cloud',
                   features: [
                     ServerFeature.Indexer,
                     ServerFeature.Copilot,
@@ -130,9 +130,9 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
             ? [
                 {
                   id: 'affine-cloud',
-                  baseUrl: 'https://insider.affine.pro',
+                  baseUrl: 'https://madis-labs.com',
                   config: {
-                    serverName: 'Affine Cloud',
+                    serverName: 'MadisBoard Cloud',
                     features: [
                       ServerFeature.Indexer,
                       ServerFeature.Copilot,
@@ -160,10 +160,10 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                   {
                     id: 'affine-cloud',
                     baseUrl: BUILD_CONFIG.isNative
-                      ? 'https://affine.fail'
+                      ? 'https://madis-labs.com'
                       : location.origin,
                     config: {
-                      serverName: 'Affine Cloud',
+                      serverName: 'MadisBoard Cloud',
                       features: [
                         ServerFeature.Indexer,
                         ServerFeature.Copilot,
@@ -196,10 +196,10 @@ export type TelemetryChannel =
   | 'local';
 
 const OFFICIAL_TELEMETRY_ENDPOINTS: Record<TelemetryChannel, string> = {
-  stable: 'https://app.affine.pro',
-  beta: 'https://insider.affine.pro',
-  internal: 'https://insider.affine.pro',
-  canary: 'https://affine.fail',
+  stable: 'https://madis-labs.com',
+  beta: 'https://madis-labs.com',
+  internal: 'https://madis-labs.com',
+  canary: 'https://madis-labs.com',
   local: 'http://localhost:8080',
 };
 

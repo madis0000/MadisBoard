@@ -3,8 +3,8 @@ import {
   PropertyCollapsibleSection,
   PropertyName,
   PropertyRoot,
-} from '@affine/component';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/component';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { type ReactNode, useMemo } from 'react';
 

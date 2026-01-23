@@ -1,5 +1,5 @@
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import track from '@affine/track';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import track from '@madisboard/track';
 import type { Container } from '@blocksuite/affine/global/di';
 import {
   FileSizeLimitProvider,

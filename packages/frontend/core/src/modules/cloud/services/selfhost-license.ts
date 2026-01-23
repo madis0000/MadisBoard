@@ -1,4 +1,4 @@
-import type { License } from '@affine/graphql';
+import type { License } from '@madisboard/graphql';
 import {
   catchErrorInto,
   effect,

@@ -1,12 +1,12 @@
-import type { ConfirmModalProps, ElementOrFactory } from '@affine/component';
+import type { ConfirmModalProps, ElementOrFactory } from '@madisboard/component';
 import {
   AffinePageReference,
   AffineSharedPageReference,
-} from '@affine/core/components/affine/reference-link';
-import { DocService, DocsService } from '@affine/core/modules/doc';
-import { EditorService } from '@affine/core/modules/editor';
-import { toDocSearchParams } from '@affine/core/modules/navigation';
-import { WorkspaceService } from '@affine/core/modules/workspace';
+} from '@madisboard/core/components/affine/reference-link';
+import { DocService, DocsService } from '@madisboard/core/modules/doc';
+import { EditorService } from '@madisboard/core/modules/editor';
+import { toDocSearchParams } from '@madisboard/core/modules/navigation';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
 import {
   type ViewExtensionContext,
   ViewExtensionProvider,

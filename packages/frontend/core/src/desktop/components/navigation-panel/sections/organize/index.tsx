@@ -3,15 +3,15 @@ import {
   type DropTargetOptions,
   IconButton,
   toast,
-} from '@affine/component';
-import { NavigationPanelService } from '@affine/core/modules/navigation-panel';
+} from '@madisboard/component';
+import { NavigationPanelService } from '@madisboard/core/modules/navigation-panel';
 import {
   type FolderNode,
   OrganizeService,
-} from '@affine/core/modules/organize';
-import type { AffineDNDData } from '@affine/core/types/dnd';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/core/modules/organize';
+import type { AffineDNDData } from '@madisboard/core/types/dnd';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { AddOrganizeIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@toeverything/infra';
 import { useCallback, useEffect, useMemo, useState } from 'react';

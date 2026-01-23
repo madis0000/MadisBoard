@@ -1,11 +1,11 @@
-import { useThemeColorV2, Wrapper } from '@affine/component';
-import { EmptyDocs } from '@affine/core/components/affine/empty';
+import { useThemeColorV2, Wrapper } from '@madisboard/component';
+import { EmptyDocs } from '@madisboard/core/components/affine/empty';
 import {
   createDocExplorerContext,
   DocExplorerContext,
-} from '@affine/core/components/explorer/context';
-import { DocsExplorer } from '@affine/core/components/explorer/docs-view/docs-list';
-import { CollectionRulesService } from '@affine/core/modules/collection-rules';
+} from '@madisboard/core/components/explorer/context';
+import { DocsExplorer } from '@madisboard/core/components/explorer/docs-view/docs-list';
+import { CollectionRulesService } from '@madisboard/core/modules/collection-rules';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useEffect, useState } from 'react';
 

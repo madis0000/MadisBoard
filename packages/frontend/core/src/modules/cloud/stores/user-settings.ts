@@ -3,7 +3,7 @@ import {
   getCurrentUserProfileQuery,
   type UpdateUserSettingsInput,
   updateUserSettingsMutation,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 import { Store } from '@toeverything/infra';
 
 import type { GraphQLService } from '../services/graphql';

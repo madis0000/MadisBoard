@@ -1,9 +1,9 @@
-import { Button, Tooltip } from '@affine/component';
-import { SettingRow } from '@affine/component/setting-components';
-import { AffineErrorBoundary } from '@affine/core/components/affine/affine-error-boundary';
-import { useWorkspaceInfo } from '@affine/core/components/hooks/use-workspace-info';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
+import { Button, Tooltip } from '@madisboard/component';
+import { SettingRow } from '@madisboard/component/setting-components';
+import { AffineErrorBoundary } from '@madisboard/core/components/affine/affine-error-boundary';
+import { useWorkspaceInfo } from '@madisboard/core/components/hooks/use-workspace-info';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
 import { useService } from '@toeverything/infra';
 import type { ReactElement } from 'react';
 

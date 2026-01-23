@@ -1,13 +1,13 @@
-import { IconButton, Skeleton } from '@affine/component';
-import { useCatchEventCallback } from '@affine/core/components/hooks/use-catch-event-hook';
-import { PagePreview } from '@affine/core/components/page-list/page-content-preview';
-import { IsFavoriteIcon } from '@affine/core/components/pure/icons';
-import { DocDisplayMetaService } from '@affine/core/modules/doc-display-meta';
-import { CompatibleFavoriteItemsAdapter } from '@affine/core/modules/favorite';
+import { IconButton, Skeleton } from '@madisboard/component';
+import { useCatchEventCallback } from '@madisboard/core/components/hooks/use-catch-event-hook';
+import { PagePreview } from '@madisboard/core/components/page-list/page-content-preview';
+import { IsFavoriteIcon } from '@madisboard/core/components/pure/icons';
+import { DocDisplayMetaService } from '@madisboard/core/modules/doc-display-meta';
+import { CompatibleFavoriteItemsAdapter } from '@madisboard/core/modules/favorite';
 import {
   WorkbenchLink,
   type WorkbenchLinkProps,
-} from '@affine/core/modules/workbench';
+} from '@madisboard/core/modules/workbench';
 import type { DocMeta } from '@blocksuite/affine/store';
 import { useLiveData, useService } from '@toeverything/infra';
 import clsx from 'clsx';

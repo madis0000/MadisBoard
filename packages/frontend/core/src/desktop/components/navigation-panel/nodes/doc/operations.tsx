@@ -4,20 +4,20 @@ import {
   MenuSeparator,
   toast,
   useConfirmModal,
-} from '@affine/component';
-import { usePageHelper } from '@affine/core/blocksuite/block-suite-page-list/utils';
-import { Guard } from '@affine/core/components/guard';
-import { useAppSettingHelper } from '@affine/core/components/hooks/affine/use-app-setting-helper';
-import { useBlockSuiteMetaHelper } from '@affine/core/components/hooks/affine/use-block-suite-meta-helper';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { IsFavoriteIcon } from '@affine/core/components/pure/icons';
-import { DocsService } from '@affine/core/modules/doc';
-import { CompatibleFavoriteItemsAdapter } from '@affine/core/modules/favorite';
-import { GuardService } from '@affine/core/modules/permissions';
-import { WorkbenchService } from '@affine/core/modules/workbench';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/component';
+import { usePageHelper } from '@madisboard/core/blocksuite/block-suite-page-list/utils';
+import { Guard } from '@madisboard/core/components/guard';
+import { useAppSettingHelper } from '@madisboard/core/components/hooks/affine/use-app-setting-helper';
+import { useBlockSuiteMetaHelper } from '@madisboard/core/components/hooks/affine/use-block-suite-meta-helper';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { IsFavoriteIcon } from '@madisboard/core/components/pure/icons';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { CompatibleFavoriteItemsAdapter } from '@madisboard/core/modules/favorite';
+import { GuardService } from '@madisboard/core/modules/permissions';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import {
   DeleteIcon,
   DuplicateIcon,

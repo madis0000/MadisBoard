@@ -1,5 +1,5 @@
-import { type CommentChangeAction, DocMode } from '@affine/graphql';
-import { track } from '@affine/track';
+import { type CommentChangeAction, DocMode } from '@madisboard/graphql';
+import { track } from '@madisboard/track';
 import { InlineCommentManager } from '@blocksuite/affine/inlines/comment';
 import type {
   BaseSelection,

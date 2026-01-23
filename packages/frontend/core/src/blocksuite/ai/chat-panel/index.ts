@@ -1,22 +1,22 @@
 import type {
   AIDraftService,
   AIToolsConfigService,
-} from '@affine/core/modules/ai-button';
-import type { AIModelService } from '@affine/core/modules/ai-button/services/models';
+} from '@madisboard/core/modules/ai-button';
+import type { AIModelService } from '@madisboard/core/modules/ai-button/services/models';
 import type {
   ServerService,
   SubscriptionService,
-} from '@affine/core/modules/cloud';
-import type { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import type { FeatureFlagService } from '@affine/core/modules/feature-flag';
-import type { PeekViewService } from '@affine/core/modules/peek-view';
-import type { AppThemeService } from '@affine/core/modules/theme';
-import type { WorkbenchService } from '@affine/core/modules/workbench';
+} from '@madisboard/core/modules/cloud';
+import type { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import type { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
+import type { PeekViewService } from '@madisboard/core/modules/peek-view';
+import type { AppThemeService } from '@madisboard/core/modules/theme';
+import type { WorkbenchService } from '@madisboard/core/modules/workbench';
 import type {
   ContextEmbedStatus,
   CopilotChatHistoryFragment,
   UpdateChatSessionInput,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 import { SignalWatcher, WithDisposable } from '@blocksuite/affine/global/lit';
 import { type NotificationService } from '@blocksuite/affine/shared/services';
 import type { EditorHost } from '@blocksuite/affine/std';

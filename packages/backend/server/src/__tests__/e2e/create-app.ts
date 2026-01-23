@@ -1,6 +1,6 @@
 import assert from 'node:assert';
 
-import { gqlFetcherFactory } from '@affine/graphql';
+import { gqlFetcherFactory } from '@madisboard/graphql';
 import { INestApplication, ModuleMetadata } from '@nestjs/common';
 import { NestApplication } from '@nestjs/core';
 import { Test, TestingModuleBuilder } from '@nestjs/testing';

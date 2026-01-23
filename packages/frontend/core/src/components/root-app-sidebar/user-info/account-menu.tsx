@@ -1,8 +1,8 @@
-import { MenuItem } from '@affine/component';
-import { ServerService, UserFeatureService } from '@affine/core/modules/cloud';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+import { MenuItem } from '@madisboard/component';
+import { ServerService, UserFeatureService } from '@madisboard/core/modules/cloud';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { AccountIcon, AdminIcon, SignOutIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useEffect } from 'react';

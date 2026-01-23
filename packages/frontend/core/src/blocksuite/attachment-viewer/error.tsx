@@ -1,5 +1,5 @@
-import { Button } from '@affine/component';
-import { useI18n } from '@affine/i18n';
+import { Button } from '@madisboard/component';
+import { useI18n } from '@madisboard/i18n';
 import type { AttachmentBlockModel } from '@blocksuite/affine/model';
 import { ArrowDownBigIcon } from '@blocksuite/icons/rc';
 import clsx from 'clsx';

@@ -1,5 +1,5 @@
-import { Switch } from '@affine/admin/components/ui/switch';
-import { cn } from '@affine/admin/utils';
+import { Switch } from '@madisboard/admin/components/ui/switch';
+import { cn } from '@madisboard/admin/utils';
 import * as ScrollAreaPrimitive from '@radix-ui/react-scroll-area';
 import { useState } from 'react';
 

@@ -1,8 +1,8 @@
 import {
   PreconditionStrategy,
   registerAffineCommand,
-} from '@affine/core/commands';
-import { track } from '@affine/track';
+} from '@madisboard/core/commands';
+import { track } from '@madisboard/track';
 import { useService } from '@toeverything/infra';
 import { useEffect } from 'react';
 

@@ -1,7 +1,7 @@
-import { toast } from '@affine/component';
-import type { TagMeta } from '@affine/core/components/page-list';
-import type { CollectionMeta } from '@affine/core/modules/collection';
-import track, { type EventArgs } from '@affine/track';
+import { toast } from '@madisboard/component';
+import type { TagMeta } from '@madisboard/core/components/page-list';
+import type { CollectionMeta } from '@madisboard/core/modules/collection';
+import track, { type EventArgs } from '@madisboard/track';
 import { SignalWatcher, WithDisposable } from '@blocksuite/affine/global/lit';
 import { scrollbarStyle } from '@blocksuite/affine/shared/styles';
 import { unsafeCSSVar, unsafeCSSVarV2 } from '@blocksuite/affine/shared/theme';

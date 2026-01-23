@@ -1,7 +1,7 @@
-import { Button } from '@affine/admin/components/ui/button';
-import { Input } from '@affine/admin/components/ui/input';
-import { Label } from '@affine/admin/components/ui/label';
-import { Separator } from '@affine/admin/components/ui/separator';
+import { Button } from '@madisboard/admin/components/ui/button';
+import { Input } from '@madisboard/admin/components/ui/input';
+import { Label } from '@madisboard/admin/components/ui/label';
+import { Separator } from '@madisboard/admin/components/ui/separator';
 import { useState } from 'react';
 
 export function Keys() {

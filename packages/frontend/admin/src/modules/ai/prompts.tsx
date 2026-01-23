@@ -1,6 +1,6 @@
-import { Button } from '@affine/admin/components/ui/button';
-import { Separator } from '@affine/admin/components/ui/separator';
-import type { CopilotPromptMessageRole } from '@affine/graphql';
+import { Button } from '@madisboard/admin/components/ui/button';
+import { Separator } from '@madisboard/admin/components/ui/separator';
+import type { CopilotPromptMessageRole } from '@madisboard/graphql';
 import { useCallback, useState } from 'react';
 
 import { DiscardChanges } from '../../components/shared/discard-changes';

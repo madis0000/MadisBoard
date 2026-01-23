@@ -1,17 +1,17 @@
-import { Button, notify } from '@affine/component';
+import { Button, notify } from '@madisboard/component';
 import {
   AuthContainer,
   AuthContent,
   AuthFooter,
   AuthHeader,
   AuthInput,
-} from '@affine/component/auth-components';
-import { OAuth } from '@affine/core/components/affine/auth/oauth';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { AuthService, ServerService } from '@affine/core/modules/cloud';
-import type { AuthSessionStatus } from '@affine/core/modules/cloud/entities/session';
-import { ServerDeploymentType } from '@affine/graphql';
-import { Trans, useI18n } from '@affine/i18n';
+} from '@madisboard/component/auth-components';
+import { OAuth } from '@madisboard/core/components/affine/auth/oauth';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { AuthService, ServerService } from '@madisboard/core/modules/cloud';
+import type { AuthSessionStatus } from '@madisboard/core/modules/cloud/entities/session';
+import { ServerDeploymentType } from '@madisboard/graphql';
+import { Trans, useI18n } from '@madisboard/i18n';
 import {
   ArrowRightBigIcon,
   LocalWorkspaceIcon,

@@ -1,7 +1,7 @@
-import { Button } from '@affine/component';
-import { AuthService, SubscriptionService } from '@affine/core/modules/cloud';
-import { SubscriptionPlan, SubscriptionRecurring } from '@affine/graphql';
-import { Trans, useI18n } from '@affine/i18n';
+import { Button } from '@madisboard/component';
+import { AuthService, SubscriptionService } from '@madisboard/core/modules/cloud';
+import { SubscriptionPlan, SubscriptionRecurring } from '@madisboard/graphql';
+import { Trans, useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 
 import { SignUpAction, Upgrade } from '../plan-card';

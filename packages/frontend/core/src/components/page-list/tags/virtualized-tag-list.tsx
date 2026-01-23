@@ -1,6 +1,6 @@
-import type { Tag } from '@affine/core/modules/tag';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { Trans } from '@affine/i18n';
+import type { Tag } from '@madisboard/core/modules/tag';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { Trans } from '@madisboard/i18n';
 import { useService } from '@toeverything/infra';
 import { useCallback, useMemo, useRef, useState } from 'react';
 

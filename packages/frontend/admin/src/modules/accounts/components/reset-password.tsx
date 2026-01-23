@@ -1,4 +1,4 @@
-import { Button } from '@affine/admin/components/ui/button';
+import { Button } from '@madisboard/admin/components/ui/button';
 import {
   Dialog,
   DialogContent,
@@ -6,8 +6,8 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@affine/admin/components/ui/dialog';
-import { Input } from '@affine/admin/components/ui/input';
+} from '@madisboard/admin/components/ui/dialog';
+import { Input } from '@madisboard/admin/components/ui/input';
 import { CopyIcon } from 'lucide-react';
 
 export const ResetPasswordDialog = ({

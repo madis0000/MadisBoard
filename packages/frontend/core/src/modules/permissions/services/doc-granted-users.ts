@@ -1,4 +1,4 @@
-import { DocRole, type GetPageGrantedUsersListQuery } from '@affine/graphql';
+import { DocRole, type GetPageGrantedUsersListQuery } from '@madisboard/graphql';
 import {
   catchErrorInto,
   effect,

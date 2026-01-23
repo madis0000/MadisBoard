@@ -1,14 +1,14 @@
-import { Avatar, IconButton, Loading, Menu, notify } from '@affine/component';
-import { Pagination } from '@affine/component/setting-components';
-import { type AuthAccountInfo, AuthService } from '@affine/core/modules/cloud';
+import { Avatar, IconButton, Loading, Menu, notify } from '@madisboard/component';
+import { Pagination } from '@madisboard/component/setting-components';
+import { type AuthAccountInfo, AuthService } from '@madisboard/core/modules/cloud';
 import {
   type Member,
   WorkspaceMembersService,
-} from '@affine/core/modules/permissions';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { UserFriendlyError } from '@affine/error';
-import { Permission, WorkspaceMemberStatus } from '@affine/graphql';
-import { type I18nString, useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/permissions';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { UserFriendlyError } from '@madisboard/error';
+import { Permission, WorkspaceMemberStatus } from '@madisboard/graphql';
+import { type I18nString, useI18n } from '@madisboard/i18n';
 import { MoreVerticalIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import clsx from 'clsx';

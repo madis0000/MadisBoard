@@ -1,4 +1,4 @@
-import type { WorkspaceServerService } from '@affine/core/modules/cloud';
+import type { WorkspaceServerService } from '@madisboard/core/modules/cloud';
 import {
   type DocRole,
   getPageGrantedUsersListQuery,
@@ -9,7 +9,7 @@ import {
   type UpdateDocDefaultRoleInput,
   updateDocDefaultRoleMutation,
   updateDocUserRoleMutation,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 import { Store } from '@toeverything/infra';
 
 export class DocGrantedUsersStore extends Store {

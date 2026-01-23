@@ -5,12 +5,12 @@ import {
   templateToString,
   useConfirmModal,
   useDisposable,
-} from '@affine/component';
-import { Pagination } from '@affine/component/setting-components';
-import { BlobManagementService } from '@affine/core/modules/blob-management/services';
-import { useI18n } from '@affine/i18n';
-import type { ListedBlobRecord } from '@affine/nbstore';
-import track from '@affine/track';
+} from '@madisboard/component';
+import { Pagination } from '@madisboard/component/setting-components';
+import { BlobManagementService } from '@madisboard/core/modules/blob-management/services';
+import { useI18n } from '@madisboard/i18n';
+import type { ListedBlobRecord } from '@madisboard/nbstore';
+import track from '@madisboard/track';
 import { getAttachmentFileIcon } from '@blocksuite/affine/components/icons';
 import { DeleteIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';

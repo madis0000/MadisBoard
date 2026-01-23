@@ -1,5 +1,5 @@
 {
-  "name": "@affine/copilot-result",
+  "name": "@madisboard/copilot-result",
   "version": "0.26.0",
   "type": "module",
   "main": "index.js",

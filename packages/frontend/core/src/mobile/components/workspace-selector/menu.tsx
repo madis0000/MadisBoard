@@ -1,21 +1,21 @@
-import { Divider, IconButton, Menu, MenuItem } from '@affine/component';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { useNavigateHelper } from '@affine/core/components/hooks/use-navigate-helper';
-import { useWorkspaceInfo } from '@affine/core/components/hooks/use-workspace-info';
-import { WorkspaceAvatar } from '@affine/core/components/workspace-avatar';
+import { Divider, IconButton, Menu, MenuItem } from '@madisboard/component';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { useNavigateHelper } from '@madisboard/core/components/hooks/use-navigate-helper';
+import { useWorkspaceInfo } from '@madisboard/core/components/hooks/use-workspace-info';
+import { WorkspaceAvatar } from '@madisboard/core/components/workspace-avatar';
 import {
   type AuthAccountInfo,
   AuthService,
   type Server,
   ServersService,
-} from '@affine/core/modules/cloud';
-import { GlobalDialogService } from '@affine/core/modules/dialogs';
-import { GlobalContextService } from '@affine/core/modules/global-context';
+} from '@madisboard/core/modules/cloud';
+import { GlobalDialogService } from '@madisboard/core/modules/dialogs';
+import { GlobalContextService } from '@madisboard/core/modules/global-context';
 import {
   type WorkspaceMetadata,
   WorkspacesService,
-} from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
 import {
   AccountIcon,
   CloseIcon,

@@ -1,4 +1,4 @@
-import { DocSummaryService } from '@affine/core/modules/doc-summary';
+import { DocSummaryService } from '@madisboard/core/modules/doc-summary';
 import { LiveData, useLiveData, useService } from '@toeverything/infra';
 import { type ReactNode, useMemo } from 'react';
 

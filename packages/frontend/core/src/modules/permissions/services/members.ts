@@ -1,7 +1,7 @@
 import type {
   Permission,
   WorkspaceInviteLinkExpireTime,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 import { Service } from '@toeverything/infra';
 
 import type { WorkspaceService } from '../../workspace';

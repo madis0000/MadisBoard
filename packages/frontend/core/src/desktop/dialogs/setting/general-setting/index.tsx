@@ -1,8 +1,8 @@
-import { UserFeatureService } from '@affine/core/modules/cloud/services/user-feature';
-import type { SettingTab } from '@affine/core/modules/dialogs/constant';
-import { FeatureFlagService } from '@affine/core/modules/feature-flag';
-import { MeetingSettingsService } from '@affine/core/modules/media/services/meeting-settings';
-import { useI18n } from '@affine/i18n';
+import { UserFeatureService } from '@madisboard/core/modules/cloud/services/user-feature';
+import type { SettingTab } from '@madisboard/core/modules/dialogs/constant';
+import { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
+import { MeetingSettingsService } from '@madisboard/core/modules/media/services/meeting-settings';
+import { useI18n } from '@madisboard/i18n';
 import {
   AppearanceIcon,
   ExperimentIcon,

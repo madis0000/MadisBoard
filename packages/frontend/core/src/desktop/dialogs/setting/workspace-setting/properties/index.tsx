@@ -1,12 +1,12 @@
-import { Button, Menu } from '@affine/component';
-import { SettingHeader } from '@affine/component/setting-components';
-import { useWorkspaceInfo } from '@affine/core/components/hooks/use-workspace-info';
-import { WorkspacePropertyManager } from '@affine/core/components/properties/manager';
-import { CreatePropertyMenuItems } from '@affine/core/components/properties/menu/create-doc-property';
-import type { DocCustomPropertyInfo } from '@affine/core/modules/db';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { Trans, useI18n } from '@affine/i18n';
-import track from '@affine/track';
+import { Button, Menu } from '@madisboard/component';
+import { SettingHeader } from '@madisboard/component/setting-components';
+import { useWorkspaceInfo } from '@madisboard/core/components/hooks/use-workspace-info';
+import { WorkspacePropertyManager } from '@madisboard/core/components/properties/manager';
+import { CreatePropertyMenuItems } from '@madisboard/core/components/properties/menu/create-doc-property';
+import type { DocCustomPropertyInfo } from '@madisboard/core/modules/db';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { Trans, useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import { FrameworkScope, useService } from '@toeverything/infra';
 import { useCallback } from 'react';
 

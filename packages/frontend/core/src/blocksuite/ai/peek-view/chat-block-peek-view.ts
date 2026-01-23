@@ -1,18 +1,18 @@
 import type {
   AIDraftService,
   AIToolsConfigService,
-} from '@affine/core/modules/ai-button';
-import type { AIModelService } from '@affine/core/modules/ai-button/services/models';
+} from '@madisboard/core/modules/ai-button';
+import type { AIModelService } from '@madisboard/core/modules/ai-button/services/models';
 import type {
   ServerService,
   SubscriptionService,
-} from '@affine/core/modules/cloud';
-import type { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import type { FeatureFlagService } from '@affine/core/modules/feature-flag';
+} from '@madisboard/core/modules/cloud';
+import type { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import type { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
 import type {
   ContextEmbedStatus,
   CopilotChatHistoryFragment,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 import {
   CanvasElementType,
   EdgelessCRUDIdentifier,

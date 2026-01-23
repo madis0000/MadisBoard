@@ -1,5 +1,5 @@
-import { Input } from '@affine/admin/components/ui/input';
-import { Label } from '@affine/admin/components/ui/label';
+import { Input } from '@madisboard/admin/components/ui/input';
+import { Label } from '@madisboard/admin/components/ui/label';
 import { useCallback } from 'react';
 
 type CreateAdminProps = {

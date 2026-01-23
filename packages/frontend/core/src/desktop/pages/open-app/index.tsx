@@ -1,13 +1,13 @@
-import { useNavigateHelper } from '@affine/core/components/hooks/use-navigate-helper';
-import { GraphQLService } from '@affine/core/modules/cloud';
-import { OpenInAppPage } from '@affine/core/modules/open-in-app/views/open-in-app-page';
+import { useNavigateHelper } from '@madisboard/core/components/hooks/use-navigate-helper';
+import { GraphQLService } from '@madisboard/core/modules/cloud';
+import { OpenInAppPage } from '@madisboard/core/modules/open-in-app/views/open-in-app-page';
 import {
   appSchemaUrl,
   appSchemes,
   channelToScheme,
-} from '@affine/core/utils/channel';
-import type { GetCurrentUserQuery } from '@affine/graphql';
-import { getCurrentUserQuery } from '@affine/graphql';
+} from '@madisboard/core/utils/channel';
+import type { GetCurrentUserQuery } from '@madisboard/graphql';
+import { getCurrentUserQuery } from '@madisboard/graphql';
 import { useService } from '@toeverything/infra';
 import { useCallback, useEffect, useState } from 'react';
 import { useParams, useSearchParams } from 'react-router-dom';

@@ -1,29 +1,29 @@
 // eslint-disable-next-line @typescript-eslint/no-restricted-imports
 import 'katex/dist/katex.min.css';
 
-import { useConfirmModal, useLitPortalFactory } from '@affine/component';
+import { useConfirmModal, useLitPortalFactory } from '@madisboard/component';
 import {
   type EdgelessEditor,
   LitDocEditor,
   LitDocTitle,
   LitEdgelessEditor,
   type PageEditor,
-} from '@affine/core/blocksuite/editors';
-import { getViewManager } from '@affine/core/blocksuite/manager/view';
-import { useEnableAI } from '@affine/core/components/hooks/affine/use-enable-ai';
-import { ServerService } from '@affine/core/modules/cloud';
-import type { DocCustomPropertyInfo } from '@affine/core/modules/db';
+} from '@madisboard/core/blocksuite/editors';
+import { getViewManager } from '@madisboard/core/blocksuite/manager/view';
+import { useEnableAI } from '@madisboard/core/components/hooks/affine/use-enable-ai';
+import { ServerService } from '@madisboard/core/modules/cloud';
+import type { DocCustomPropertyInfo } from '@madisboard/core/modules/db';
 import type {
   DatabaseRow,
   DatabaseValueCell,
-} from '@affine/core/modules/doc-info/types';
-import { EditorSettingService } from '@affine/core/modules/editor-setting';
-import { FeatureFlagService } from '@affine/core/modules/feature-flag';
-import { JournalService } from '@affine/core/modules/journal';
-import { useInsidePeekView } from '@affine/core/modules/peek-view';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { ServerFeature } from '@affine/graphql';
-import track from '@affine/track';
+} from '@madisboard/core/modules/doc-info/types';
+import { EditorSettingService } from '@madisboard/core/modules/editor-setting';
+import { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
+import { JournalService } from '@madisboard/core/modules/journal';
+import { useInsidePeekView } from '@madisboard/core/modules/peek-view';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { ServerFeature } from '@madisboard/graphql';
+import track from '@madisboard/track';
 import type { DocTitle } from '@blocksuite/affine/fragments/doc-title';
 import type { DocMode } from '@blocksuite/affine/model';
 import type { Store } from '@blocksuite/affine/store';

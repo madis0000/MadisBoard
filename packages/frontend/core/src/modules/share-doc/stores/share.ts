@@ -1,9 +1,9 @@
-import type { PublicDocMode } from '@affine/graphql';
+import type { PublicDocMode } from '@madisboard/graphql';
 import {
   getWorkspacePageByIdQuery,
   publishPageMutation,
   revokePublicPageMutation,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 import { Store } from '@toeverything/infra';
 
 import type { WorkspaceServerService } from '../../cloud';

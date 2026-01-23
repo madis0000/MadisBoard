@@ -4,19 +4,19 @@ import {
   Masonry,
   type MasonryGroup,
   Tooltip,
-} from '@affine/component';
+} from '@madisboard/component';
 import {
   createDocExplorerContext,
   DocExplorerContext,
-} from '@affine/core/components/explorer/context';
-import { DocListItemComponent } from '@affine/core/components/explorer/docs-view/docs-list';
-import { Filters } from '@affine/core/components/filter';
-import { AffineShapeIcon } from '@affine/core/components/page-list';
-import type { CollectionInfo } from '@affine/core/modules/collection';
-import { CollectionRulesService } from '@affine/core/modules/collection-rules';
-import { DocsService } from '@affine/core/modules/doc';
-import { DocDisplayMetaService } from '@affine/core/modules/doc-display-meta';
-import { Trans, useI18n } from '@affine/i18n';
+} from '@madisboard/core/components/explorer/context';
+import { DocListItemComponent } from '@madisboard/core/components/explorer/docs-view/docs-list';
+import { Filters } from '@madisboard/core/components/filter';
+import { AffineShapeIcon } from '@madisboard/core/components/page-list';
+import type { CollectionInfo } from '@madisboard/core/modules/collection';
+import { CollectionRulesService } from '@madisboard/core/modules/collection-rules';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { DocDisplayMetaService } from '@madisboard/core/modules/doc-display-meta';
+import { Trans, useI18n } from '@madisboard/i18n';
 import {
   CloseIcon,
   EdgelessIcon,

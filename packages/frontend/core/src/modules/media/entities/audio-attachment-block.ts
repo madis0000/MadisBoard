@@ -1,12 +1,12 @@
 import {
   TranscriptionBlockFlavour,
   type TranscriptionBlockModel,
-} from '@affine/core/blocksuite/ai/blocks/transcription-block/model';
-import { insertFromMarkdown } from '@affine/core/blocksuite/utils';
-import { encodeAudioBlobToOpusSlices } from '@affine/core/utils/opus-encoding';
-import { DebugLogger } from '@affine/debug';
-import { AiJobStatus } from '@affine/graphql';
-import track from '@affine/track';
+} from '@madisboard/core/blocksuite/ai/blocks/transcription-block/model';
+import { insertFromMarkdown } from '@madisboard/core/blocksuite/utils';
+import { encodeAudioBlobToOpusSlices } from '@madisboard/core/utils/opus-encoding';
+import { DebugLogger } from '@madisboard/debug';
+import { AiJobStatus } from '@madisboard/graphql';
+import track from '@madisboard/track';
 import type { AttachmentBlockModel } from '@blocksuite/affine/model';
 import type { AffineTextAttributes } from '@blocksuite/affine/shared/types';
 import { type DeltaInsert, Text } from '@blocksuite/affine/store';

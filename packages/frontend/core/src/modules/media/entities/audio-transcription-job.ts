@@ -1,8 +1,8 @@
-import { shallowEqual } from '@affine/component';
-import type { TranscriptionBlockProps } from '@affine/core/blocksuite/ai/blocks/transcription-block/model';
-import { DebugLogger } from '@affine/debug';
-import { UserFriendlyError } from '@affine/error';
-import { AiJobStatus } from '@affine/graphql';
+import { shallowEqual } from '@madisboard/component';
+import type { TranscriptionBlockProps } from '@madisboard/core/blocksuite/ai/blocks/transcription-block/model';
+import { DebugLogger } from '@madisboard/debug';
+import { UserFriendlyError } from '@madisboard/error';
+import { AiJobStatus } from '@madisboard/graphql';
 import { Entity, LiveData } from '@toeverything/infra';
 
 import type { DefaultServerService, WorkspaceServerService } from '../../cloud';

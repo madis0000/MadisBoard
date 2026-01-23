@@ -1,16 +1,16 @@
-import { Loading, toast, Tooltip } from '@affine/component';
-import { usePageHelper } from '@affine/core/blocksuite/block-suite-page-list/utils';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { DocsService } from '@affine/core/modules/doc';
+import { Loading, toast, Tooltip } from '@madisboard/component';
+import { usePageHelper } from '@madisboard/core/blocksuite/block-suite-page-list/utils';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { DocsService } from '@madisboard/core/modules/doc';
 import {
   type CalendarEvent,
   IntegrationService,
-} from '@affine/core/modules/integration';
-import { JournalService } from '@affine/core/modules/journal';
-import { GuardService } from '@affine/core/modules/permissions';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+} from '@madisboard/core/modules/integration';
+import { JournalService } from '@madisboard/core/modules/journal';
+import { GuardService } from '@madisboard/core/modules/permissions';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import { FullDayIcon, PeriodIcon, PlusIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { cssVarV2 } from '@toeverything/theme/v2';

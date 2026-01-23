@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<component type="desktop-application">
+  <id>madisboard</id>
+  <name>MadisBoard</name>
+  <summary>Personal knowledge management and project planning platform</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT AND LicenseRef-proprietary=https://github.com/madis0000/MadisBoard/blob/main-madisboard/LICENSE</project_license>
+  <url type="homepage">https://madis-labs.com</url>
+  <url type="bugtracker">https://github.com/madis0000/MadisBoard/issues</url>
+  <url type="vcs-browser">https://github.com/madis0000/MadisBoard</url>
+  <developer id="com.madisboard.app">
+    <name>MadisTrader</name>
+  </developer>
+  <content_rating type="oars-1.1"/>
+  <categories>
+    <category>Office</category>
+  </categories>
+  <keywords>
+    <keyword>notes</keyword>
+    <keyword>canvas</keyword>
+    <keyword>knowledge</keyword>
+    <keyword>planning</keyword>
+  </keywords>
+  <branding>
+    <color type="primary">#58a6ff</color>
+  </branding>
+  <recommends>
+    <display_length compare="ge">800</display_length>
+    <internet>always</internet>
+  </recommends>
+  <provides>
+    <mediatype>x-scheme-handler/madisboard</mediatype>
+  </provides>
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>tablet</control>
+    <control>touch</control>
+  </supports>
+  <description>
+    <p>Your Ideas, Connected.</p>
+    <p>MadisBoard is a personal knowledge management platform with docs, whiteboards, and databases for organizing ideas and connecting projects.</p>
+    <p>Features</p>
+    <ul>
+      <li>Write your way to better productivity. Build up your content like blocks and let your ideas run wild.</li>
+      <li>Draw and visualise with ease and creativity. Visualise your creativity with others.</li>
+      <li>Plan, track, and collaborate efficiently. Stay on top of your workload.</li>
+      <li>AI partner helps you write, draw and plan smarter.</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">madisboard.desktop</launchable>
+  <releases>
+    <release version="0.26.0" date="2026-01-23">
+      <url>https://github.com/madis0000/MadisBoard/releases/tag/v0.26.0-beta.8</url>
+    </release>
+  </releases>
+</component>

@@ -1,5 +1,5 @@
-import { DebugLogger } from '@affine/debug';
-import { UserFriendlyError } from '@affine/error';
+import { DebugLogger } from '@madisboard/debug';
+import { UserFriendlyError } from '@madisboard/error';
 import { fromPromise, Service } from '@toeverything/infra';
 
 import type { ServerService } from './server';

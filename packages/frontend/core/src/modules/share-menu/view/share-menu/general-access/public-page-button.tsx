@@ -1,10 +1,10 @@
-import { Menu, MenuItem, MenuTrigger, notify } from '@affine/component';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { ShareInfoService } from '@affine/core/modules/share-doc';
-import { UserFriendlyError } from '@affine/error';
-import { PublicDocMode } from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+import { Menu, MenuItem, MenuTrigger, notify } from '@madisboard/component';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { ShareInfoService } from '@madisboard/core/modules/share-doc';
+import { UserFriendlyError } from '@madisboard/error';
+import { PublicDocMode } from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import {
   LockIcon,
   SingleSelectCheckSolidIcon,

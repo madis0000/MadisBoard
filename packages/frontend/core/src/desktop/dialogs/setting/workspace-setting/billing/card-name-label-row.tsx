@@ -1,5 +1,5 @@
-import { SubscriptionStatus } from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
+import { SubscriptionStatus } from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
 import {
   InformationFillDuotoneIcon,
   SingleSelectCheckSolidIcon,

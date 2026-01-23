@@ -1,4 +1,4 @@
-import { NavigationGestureService } from '@affine/core/mobile/modules/navigation-gesture';
+import { NavigationGestureService } from '@madisboard/core/mobile/modules/navigation-gesture';
 import { onMenuOpen } from '@blocksuite/affine/components/context-menu';
 import { useService } from '@toeverything/infra';
 import { type PropsWithChildren, useCallback, useEffect, useRef } from 'react';

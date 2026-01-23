@@ -1,9 +1,9 @@
-import { AffineContext } from '@affine/core/components/context';
-import { WindowsAppControls } from '@affine/core/components/pure/header/windows-app-controls';
-import { AppContainer } from '@affine/core/desktop/components/app-container';
-import { router } from '@affine/core/desktop/router';
-import { I18nProvider } from '@affine/core/modules/i18n';
-import createEmotionCache from '@affine/core/utils/create-emotion-cache';
+import { AffineContext } from '@madisboard/core/components/context';
+import { WindowsAppControls } from '@madisboard/core/components/pure/header/windows-app-controls';
+import { AppContainer } from '@madisboard/core/desktop/components/app-container';
+import { router } from '@madisboard/core/desktop/router';
+import { I18nProvider } from '@madisboard/core/modules/i18n';
+import createEmotionCache from '@madisboard/core/utils/create-emotion-cache';
 import { CacheProvider } from '@emotion/react';
 import { FrameworkRoot, getCurrentStore } from '@toeverything/infra';
 import { Suspense } from 'react';

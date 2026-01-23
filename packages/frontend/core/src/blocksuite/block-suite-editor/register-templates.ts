@@ -1,5 +1,5 @@
-import { builtInTemplates as builtInEdgelessTemplates } from '@affine/templates/edgeless';
-import { builtInTemplates as builtInStickersTemplates } from '@affine/templates/stickers';
+import { builtInTemplates as builtInEdgelessTemplates } from '@madisboard/templates/edgeless';
+import { builtInTemplates as builtInStickersTemplates } from '@madisboard/templates/stickers';
 import {
   EdgelessTemplatePanel,
   type TemplateManager,

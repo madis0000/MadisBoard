@@ -7,8 +7,8 @@
   },
   "devDependencies": {
     "@affine-test/kit": "workspace:*",
-    "@affine-tools/cli": "workspace:*",
-    "@affine-tools/utils": "workspace:*",
+    "@madisboard-tools/cli": "workspace:*",
+    "@madisboard-tools/utils": "workspace:*",
     "@playwright/test": "=1.52.0",
     "webpack": "^5.102.1"
   },

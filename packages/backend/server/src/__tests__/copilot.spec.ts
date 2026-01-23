@@ -1,7 +1,7 @@
 import { randomUUID } from 'node:crypto';
 import { Readable } from 'node:stream';
 
-import { ProjectRoot } from '@affine-tools/utils/path';
+import { ProjectRoot } from '@madisboard-tools/utils/path';
 import { PrismaClient } from '@prisma/client';
 import type { TestFn } from 'ava';
 import ava from 'ava';

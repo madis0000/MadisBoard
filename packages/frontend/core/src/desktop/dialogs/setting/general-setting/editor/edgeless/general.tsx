@@ -1,8 +1,8 @@
-import { Menu, MenuItem, MenuTrigger, Switch } from '@affine/component';
-import { SettingRow } from '@affine/component/setting-components';
-import { EditorSettingService } from '@affine/core/modules/editor-setting';
-import type { EdgelessDefaultTheme } from '@affine/core/modules/editor-setting/schema';
-import { useI18n } from '@affine/i18n';
+import { Menu, MenuItem, MenuTrigger, Switch } from '@madisboard/component';
+import { SettingRow } from '@madisboard/component/setting-components';
+import { EditorSettingService } from '@madisboard/core/modules/editor-setting';
+import type { EdgelessDefaultTheme } from '@madisboard/core/modules/editor-setting/schema';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useMemo } from 'react';
 

@@ -1,6 +1,6 @@
-import type { SettingTab } from '@affine/core/modules/dialogs/constant';
-import { toDocSearchParams } from '@affine/core/modules/navigation';
-import { getOpenUrlInDesktopAppLink } from '@affine/core/modules/open-in-app';
+import type { SettingTab } from '@madisboard/core/modules/dialogs/constant';
+import { toDocSearchParams } from '@madisboard/core/modules/navigation';
+import { getOpenUrlInDesktopAppLink } from '@madisboard/core/modules/open-in-app';
 import type { DocMode } from '@blocksuite/affine/model';
 import { nanoid } from 'nanoid';
 import { createContext, useCallback, useContext, useMemo } from 'react';

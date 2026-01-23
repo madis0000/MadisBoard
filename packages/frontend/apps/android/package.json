@@ -1,7 +1,7 @@
 {
-  "name": "@affine/android",
+  "name": "@madisboard/android",
   "version": "0.26.0",
-  "description": "AFFiNE Desktop Web application",
+  "description": "MadisBoard Web Application",
   "private": true,
   "scripts": {
     "build": "affine bundle",
@@ -11,12 +11,6 @@
     "studio": "cap open android"
   },
   "dependencies": {
-    "@affine/component": "workspace:*",
-    "@affine/core": "workspace:*",
-    "@affine/env": "workspace:*",
-    "@affine/i18n": "workspace:*",
-    "@affine/nbstore": "workspace:*",
-    "@affine/track": "workspace:*",
     "@blocksuite/affine": "workspace:*",
     "@blocksuite/icons": "^2.2.17",
     "@capacitor/android": "^7.0.0",
@@ -25,6 +19,12 @@
     "@capacitor/keyboard": "^7.0.0",
     "@capacitor/status-bar": "^7.0.0",
     "@capgo/inappbrowser": "^7.1.0",
+    "@madisboard/component": "workspace:*",
+    "@madisboard/core": "workspace:*",
+    "@madisboard/env": "workspace:*",
+    "@madisboard/i18n": "workspace:*",
+    "@madisboard/nbstore": "workspace:*",
+    "@madisboard/track": "workspace:*",
     "@sentry/react": "^9.47.1",
     "@toeverything/infra": "workspace:*",
     "async-call-rpc": "^6.4.2",

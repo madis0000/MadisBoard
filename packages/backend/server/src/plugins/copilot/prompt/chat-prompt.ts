@@ -1,4 +1,4 @@
-import { type Tokenizer } from '@affine/server-native';
+import { type Tokenizer } from '@madisboard/server-native';
 import { Logger } from '@nestjs/common';
 import { AiPrompt } from '@prisma/client';
 import Mustache from 'mustache';

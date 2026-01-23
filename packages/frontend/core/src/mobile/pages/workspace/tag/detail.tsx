@@ -1,7 +1,7 @@
-import { useThemeColorV2 } from '@affine/component';
-import { PageNotFound } from '@affine/core/desktop/pages/404';
-import { GlobalContextService } from '@affine/core/modules/global-context';
-import { TagService } from '@affine/core/modules/tag';
+import { useThemeColorV2 } from '@madisboard/component';
+import { PageNotFound } from '@madisboard/core/desktop/pages/404';
+import { GlobalContextService } from '@madisboard/core/modules/global-context';
+import { TagService } from '@madisboard/core/modules/tag';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';

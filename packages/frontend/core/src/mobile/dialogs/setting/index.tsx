@@ -1,9 +1,9 @@
-import { AuthService } from '@affine/core/modules/cloud';
+import { AuthService } from '@madisboard/core/modules/cloud';
 import type {
   DialogComponentProps,
   WORKSPACE_DIALOG_SCHEMA,
-} from '@affine/core/modules/dialogs';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/dialogs';
+import { useI18n } from '@madisboard/i18n';
 import { useService } from '@toeverything/infra';
 import { useEffect } from 'react';
 

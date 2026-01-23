@@ -1,29 +1,29 @@
-import { Scrollable, uniReactRoot } from '@affine/component';
-import type { AffineEditorContainer } from '@affine/core/blocksuite/block-suite-editor';
-import { EditorOutlineViewer } from '@affine/core/blocksuite/outline-viewer';
-import { useActiveBlocksuiteEditor } from '@affine/core/components/hooks/use-block-suite-editor';
-import { useNavigateHelper } from '@affine/core/components/hooks/use-navigate-helper';
-import { PageDetailEditor } from '@affine/core/components/page-detail-editor';
-import { AppContainer } from '@affine/core/desktop/components/app-container';
-import { AuthService, ServerService } from '@affine/core/modules/cloud';
-import { type Doc, DocsService } from '@affine/core/modules/doc';
+import { Scrollable, uniReactRoot } from '@madisboard/component';
+import type { AffineEditorContainer } from '@madisboard/core/blocksuite/block-suite-editor';
+import { EditorOutlineViewer } from '@madisboard/core/blocksuite/outline-viewer';
+import { useActiveBlocksuiteEditor } from '@madisboard/core/components/hooks/use-block-suite-editor';
+import { useNavigateHelper } from '@madisboard/core/components/hooks/use-navigate-helper';
+import { PageDetailEditor } from '@madisboard/core/components/page-detail-editor';
+import { AppContainer } from '@madisboard/core/desktop/components/app-container';
+import { AuthService, ServerService } from '@madisboard/core/modules/cloud';
+import { type Doc, DocsService } from '@madisboard/core/modules/doc';
 import {
   type Editor,
   type EditorSelector,
   EditorService,
   EditorsService,
-} from '@affine/core/modules/editor';
-import { PeekViewManagerModal } from '@affine/core/modules/peek-view';
+} from '@madisboard/core/modules/editor';
+import { PeekViewManagerModal } from '@madisboard/core/modules/peek-view';
 import {
   ViewIcon,
   ViewTitle,
   WorkbenchService,
-} from '@affine/core/modules/workbench';
+} from '@madisboard/core/modules/workbench';
 import {
   type Workspace,
   WorkspacesService,
-} from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
 import { DisposableGroup } from '@blocksuite/affine/global/disposable';
 import { RefNodeSlotsProvider } from '@blocksuite/affine/inlines/reference';
 import { type DocMode, DocModes } from '@blocksuite/affine/model';

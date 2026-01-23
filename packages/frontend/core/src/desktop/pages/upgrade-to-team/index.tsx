@@ -10,22 +10,22 @@ import {
   Modal,
   notify,
   Scrollable,
-} from '@affine/component';
-import { AuthPageContainer } from '@affine/component/auth-components';
-import { useSignOut } from '@affine/core/components/hooks/affine/use-sign-out';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { useNavigateHelper } from '@affine/core/components/hooks/use-navigate-helper';
-import { useWorkspaceInfo } from '@affine/core/components/hooks/use-workspace-info';
-import { PureWorkspaceCard } from '@affine/core/components/workspace-selector/workspace-card';
-import { AuthService } from '@affine/core/modules/cloud';
+} from '@madisboard/component';
+import { AuthPageContainer } from '@madisboard/component/auth-components';
+import { useSignOut } from '@madisboard/core/components/hooks/affine/use-sign-out';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { useNavigateHelper } from '@madisboard/core/components/hooks/use-navigate-helper';
+import { useWorkspaceInfo } from '@madisboard/core/components/hooks/use-workspace-info';
+import { PureWorkspaceCard } from '@madisboard/core/components/workspace-selector/workspace-card';
+import { AuthService } from '@madisboard/core/modules/cloud';
 import {
   type WorkspaceMetadata,
   WorkspacesService,
-} from '@affine/core/modules/workspace';
-import { buildShowcaseWorkspace } from '@affine/core/utils/first-app-data';
-import { UNTITLED_WORKSPACE_NAME } from '@affine/env/constant';
-import { SubscriptionPlan, SubscriptionRecurring } from '@affine/graphql';
-import { type I18nString, Trans, useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/workspace';
+import { buildShowcaseWorkspace } from '@madisboard/core/utils/first-app-data';
+import { UNTITLED_WORKSPACE_NAME } from '@madisboard/env/constant';
+import { SubscriptionPlan, SubscriptionRecurring } from '@madisboard/graphql';
+import { type I18nString, Trans, useI18n } from '@madisboard/i18n';
 import { DoneIcon, NewPageIcon, SignOutIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useEffect, useMemo, useState } from 'react';

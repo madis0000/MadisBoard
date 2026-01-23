@@ -1,10 +1,10 @@
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
 import {
   SubscriptionService,
   UserQuotaService,
-} from '@affine/core/modules/cloud';
-import { UrlService } from '@affine/core/modules/url';
-import type { CreateCheckoutSessionInput } from '@affine/graphql';
+} from '@madisboard/core/modules/cloud';
+import { UrlService } from '@madisboard/core/modules/url';
+import type { CreateCheckoutSessionInput } from '@madisboard/graphql';
 import { useService } from '@toeverything/infra';
 import { nanoid } from 'nanoid';
 import {

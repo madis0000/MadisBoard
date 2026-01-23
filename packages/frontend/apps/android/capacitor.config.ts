@@ -12,8 +12,8 @@ interface AppConfig {
 }
 
 const config: CapacitorConfig & AppConfig = {
-  appId: 'app.affine.pro',
-  appName: 'AFFiNE',
+  appId: 'com.madisboard.app',
+  appName: 'MadisBoard',
   webDir: 'dist',
   affineVersion: packageJson.version,
   android: {

@@ -2,9 +2,9 @@ import {
   RadioGroup,
   type RadioItem,
   useMobileMenuController,
-} from '@affine/component';
-import { EditorService } from '@affine/core/modules/editor';
-import track from '@affine/track';
+} from '@madisboard/component';
+import { EditorService } from '@madisboard/core/modules/editor';
+import track from '@madisboard/track';
 import type { DocMode } from '@blocksuite/affine/model';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback } from 'react';

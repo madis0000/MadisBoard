@@ -1,8 +1,8 @@
-import { RadioGroup, type RadioItem } from '@affine/component';
-import type { AllPageFilterOption } from '@affine/core/components/atoms';
-import { allPageFilterSelectAtom } from '@affine/core/components/atoms';
-import { WorkbenchService } from '@affine/core/modules/workbench';
-import { useI18n } from '@affine/i18n';
+import { RadioGroup, type RadioItem } from '@madisboard/component';
+import type { AllPageFilterOption } from '@madisboard/core/components/atoms';
+import { allPageFilterSelectAtom } from '@madisboard/core/components/atoms';
+import { WorkbenchService } from '@madisboard/core/modules/workbench';
+import { useI18n } from '@madisboard/i18n';
 import { useService } from '@toeverything/infra';
 import { useAtom } from 'jotai';
 import { useCallback, useEffect, useMemo, useState } from 'react';

@@ -3,7 +3,7 @@ import {
   disableUserMutation,
   getCurrentUserQuery,
   getWorkspaceQuery,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 
 import { app, e2e, Mockers } from '../test';
 

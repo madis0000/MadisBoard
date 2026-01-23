@@ -1,4 +1,4 @@
-import { AppThemeService } from '@affine/core/modules/theme';
+import { AppThemeService } from '@madisboard/core/modules/theme';
 import { ColorScheme } from '@blocksuite/affine/model';
 import {
   type ThemeExtension,

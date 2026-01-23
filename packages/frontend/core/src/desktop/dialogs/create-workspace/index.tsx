@@ -1,19 +1,19 @@
-import { Button, ConfirmModal, notify, RowInput } from '@affine/component';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
+import { Button, ConfirmModal, notify, RowInput } from '@madisboard/component';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
 import {
   AuthService,
   type Server,
   ServersService,
-} from '@affine/core/modules/cloud';
+} from '@madisboard/core/modules/cloud';
 import {
   type DialogComponentProps,
   type GLOBAL_DIALOG_SCHEMA,
   GlobalDialogService,
-} from '@affine/core/modules/dialogs';
-import { WorkspacesService } from '@affine/core/modules/workspace';
-import { buildShowcaseWorkspace } from '@affine/core/utils/first-app-data';
-import { useI18n } from '@affine/i18n';
-import track from '@affine/track';
+} from '@madisboard/core/modules/dialogs';
+import { WorkspacesService } from '@madisboard/core/modules/workspace';
+import { buildShowcaseWorkspace } from '@madisboard/core/utils/first-app-data';
+import { useI18n } from '@madisboard/i18n';
+import track from '@madisboard/track';
 import { FrameworkScope, useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useState } from 'react';
 

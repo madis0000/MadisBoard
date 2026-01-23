@@ -12,27 +12,27 @@ import {
   Slider,
   Switch,
   useConfirmModal,
-} from '@affine/component';
+} from '@madisboard/component';
 import {
   SettingRow,
   SettingWrapper,
-} from '@affine/component/setting-components';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { ServerService } from '@affine/core/modules/cloud';
-import { DesktopApiService } from '@affine/core/modules/desktop-api';
+} from '@madisboard/component/setting-components';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { ServerService } from '@madisboard/core/modules/cloud';
+import { DesktopApiService } from '@madisboard/core/modules/desktop-api';
 import {
   type EditorSettingSchema,
   EditorSettingService,
   type FontFamily,
   fontStyleOptions,
-} from '@affine/core/modules/editor-setting';
-import { SpellCheckSettingService } from '@affine/core/modules/editor-setting/services/spell-check-setting';
-import { FeatureFlagService } from '@affine/core/modules/feature-flag';
+} from '@madisboard/core/modules/editor-setting';
+import { SpellCheckSettingService } from '@madisboard/core/modules/editor-setting/services/spell-check-setting';
+import { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
 import {
   type FontData,
   SystemFontFamilyService,
-} from '@affine/core/modules/system-font-family';
-import { Trans, useI18n } from '@affine/i18n';
+} from '@madisboard/core/modules/system-font-family';
+import { Trans, useI18n } from '@madisboard/i18n';
 import { DoneIcon, SearchIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@toeverything/infra';
 import clsx from 'clsx';

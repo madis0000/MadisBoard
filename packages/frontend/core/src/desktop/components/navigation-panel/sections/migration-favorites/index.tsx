@@ -1,8 +1,8 @@
-import { IconButton, useConfirmModal } from '@affine/component';
-import { DocsService } from '@affine/core/modules/doc';
-import { MigrationFavoriteItemsAdapter } from '@affine/core/modules/favorite';
-import { Trans, useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+import { IconButton, useConfirmModal } from '@madisboard/component';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { MigrationFavoriteItemsAdapter } from '@madisboard/core/modules/favorite';
+import { Trans, useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { BroomIcon, HelpIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useServices } from '@toeverything/infra';
 import { useCallback, useMemo } from 'react';

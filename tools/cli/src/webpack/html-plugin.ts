@@ -1,7 +1,7 @@
 import { execSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 
-import { Path, ProjectRoot } from '@affine-tools/utils/path';
+import { Path, ProjectRoot } from '@madisboard-tools/utils/path';
 import { Repository } from '@napi-rs/simple-git';
 import HTMLPlugin from 'html-webpack-plugin';
 import { once } from 'lodash-es';
@@ -9,7 +9,6 @@ import type { Compiler, WebpackPluginInstance } from 'webpack';
 import webpack from 'webpack';
 
 export const getPublicPath = (BUILD_CONFIG: BUILD_CONFIG_TYPE) => {
-  const { BUILD_TYPE } = process.env;
   if (typeof process.env.PUBLIC_PATH === 'string') {
     return process.env.PUBLIC_PATH;
   }
@@ -23,17 +22,11 @@ export const getPublicPath = (BUILD_CONFIG: BUILD_CONFIG_TYPE) => {
     return '/';
   }
 
-  switch (BUILD_TYPE) {
-    case 'stable':
-      return 'https://prod.affineassets.com/';
-    case 'beta':
-      return 'https://beta.affineassets.com/';
-    default:
-      return 'https://dev.affineassets.com/';
-  }
+  // Self-hosted: always serve assets from same origin
+  return '/';
 };
 
-const DESCRIPTION = `There can be more than Notion and Miro. AFFiNE is a next-gen knowledge base that brings planning, sorting and creating all together.`;
+const DESCRIPTION = `MadisBoard is a personal knowledge management platform for organizing ideas, connecting projects, and planning across all your work.`;
 
 const gitShortHash = once(() => {
   const { GITHUB_SHA } = process.env;

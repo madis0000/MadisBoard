@@ -1,5 +1,5 @@
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { Trans } from '@affine/i18n';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { Trans } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useMemo, useRef, useState } from 'react';
 

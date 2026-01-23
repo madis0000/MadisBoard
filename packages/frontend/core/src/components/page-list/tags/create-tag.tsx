@@ -1,6 +1,6 @@
-import { Button, Input, Menu, toast } from '@affine/component';
-import { TagService } from '@affine/core/modules/tag';
-import { useI18n } from '@affine/i18n';
+import { Button, Input, Menu, toast } from '@madisboard/component';
+import { TagService } from '@madisboard/core/modules/tag';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 import clsx from 'clsx';
 import type { MouseEvent } from 'react';

@@ -1,10 +1,10 @@
-import { Modal } from '@affine/component';
-import { SignInPanel, type SignInStep } from '@affine/core/components/sign-in';
-import type { AuthSessionStatus } from '@affine/core/modules/cloud/entities/session';
+import { Modal } from '@madisboard/component';
+import { SignInPanel, type SignInStep } from '@madisboard/core/components/sign-in';
+import type { AuthSessionStatus } from '@madisboard/core/modules/cloud/entities/session';
 import type {
   DialogComponentProps,
   GLOBAL_DIALOG_SCHEMA,
-} from '@affine/core/modules/dialogs';
+} from '@madisboard/core/modules/dialogs';
 import { useCallback } from 'react';
 export const SignInDialog = ({
   close,

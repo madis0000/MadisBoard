@@ -1,20 +1,20 @@
-import { DNDContext } from '@affine/component';
-import { AffineOtherPageLayout } from '@affine/component/affine-other-page-layout';
-import { workbenchRoutes } from '@affine/core/desktop/workbench-router';
+import { DNDContext } from '@madisboard/component';
+import { AffineOtherPageLayout } from '@madisboard/component/affine-other-page-layout';
+import { workbenchRoutes } from '@madisboard/core/desktop/workbench-router';
 import {
   DefaultServerService,
   ServersService,
-} from '@affine/core/modules/cloud';
-import { GlobalDialogService } from '@affine/core/modules/dialogs';
-import { DndService } from '@affine/core/modules/dnd/services';
-import { GlobalContextService } from '@affine/core/modules/global-context';
-import { OpenInAppGuard } from '@affine/core/modules/open-in-app';
+} from '@madisboard/core/modules/cloud';
+import { GlobalDialogService } from '@madisboard/core/modules/dialogs';
+import { DndService } from '@madisboard/core/modules/dnd/services';
+import { GlobalContextService } from '@madisboard/core/modules/global-context';
+import { OpenInAppGuard } from '@madisboard/core/modules/open-in-app';
 import {
   getAFFiNEWorkspaceSchema,
   type Workspace,
   type WorkspaceMetadata,
   WorkspacesService,
-} from '@affine/core/modules/workspace';
+} from '@madisboard/core/modules/workspace';
 import { ZipTransformer } from '@blocksuite/affine/widgets/linked-doc';
 import {
   FrameworkScope,

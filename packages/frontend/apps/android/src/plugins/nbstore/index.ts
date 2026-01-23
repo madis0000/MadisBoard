@@ -1,7 +1,7 @@
 import {
   base64ToUint8Array,
   uint8ArrayToBase64,
-} from '@affine/core/modules/workspace-engine';
+} from '@madisboard/core/modules/workspace-engine';
 import {
   type BlobRecord,
   type CrawlResult,
@@ -10,8 +10,8 @@ import {
   type DocRecord,
   type ListedBlobRecord,
   parseUniversalId,
-} from '@affine/nbstore';
-import { type NativeDBApis } from '@affine/nbstore/sqlite';
+} from '@madisboard/nbstore';
+import { type NativeDBApis } from '@madisboard/nbstore/sqlite';
 import { registerPlugin } from '@capacitor/core';
 
 import type { NbStorePlugin } from './definitions';

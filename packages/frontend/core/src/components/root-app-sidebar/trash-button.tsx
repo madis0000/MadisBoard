@@ -3,14 +3,14 @@ import {
   toast,
   useConfirmModal,
   useDropTarget,
-} from '@affine/component';
-import { MenuLinkItem } from '@affine/core/modules/app-sidebar/views';
-import { DocsService } from '@affine/core/modules/doc';
-import { GlobalContextService } from '@affine/core/modules/global-context';
-import { GuardService } from '@affine/core/modules/permissions';
-import type { AffineDNDData } from '@affine/core/types/dnd';
-import { UserFriendlyError } from '@affine/error';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/component';
+import { MenuLinkItem } from '@madisboard/core/modules/app-sidebar/views';
+import { DocsService } from '@madisboard/core/modules/doc';
+import { GlobalContextService } from '@madisboard/core/modules/global-context';
+import { GuardService } from '@madisboard/core/modules/permissions';
+import type { AffineDNDData } from '@madisboard/core/types/dnd';
+import { UserFriendlyError } from '@madisboard/error';
+import { useI18n } from '@madisboard/i18n';
 import { useLiveData, useService } from '@toeverything/infra';
 
 export const TrashButton = () => {

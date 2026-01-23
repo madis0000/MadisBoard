@@ -1,5 +1,5 @@
 {
-  "name": "@affine/reader",
+  "name": "@madisboard/reader",
   "type": "module",
   "version": "0.26.0",
   "private": true,

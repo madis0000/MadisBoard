@@ -2,12 +2,12 @@ import {
   SettingHeader,
   SettingRow,
   SettingWrapper,
-} from '@affine/component/setting-components';
-import { useWorkspaceInfo } from '@affine/core/components/hooks/use-workspace-info';
-import { WorkspaceServerService } from '@affine/core/modules/cloud';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { UNTITLED_WORKSPACE_NAME } from '@affine/env/constant';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/component/setting-components';
+import { useWorkspaceInfo } from '@madisboard/core/components/hooks/use-workspace-info';
+import { WorkspaceServerService } from '@madisboard/core/modules/cloud';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { UNTITLED_WORKSPACE_NAME } from '@madisboard/env/constant';
+import { useI18n } from '@madisboard/i18n';
 import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { FrameworkScope, useService } from '@toeverything/infra';
 import { useCallback } from 'react';

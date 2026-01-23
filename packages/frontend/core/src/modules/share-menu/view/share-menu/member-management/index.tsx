@@ -1,7 +1,7 @@
-import { Avatar, Skeleton, Tooltip } from '@affine/component';
-import { DocGrantedUsersService } from '@affine/core/modules/permissions';
-import { DocRole } from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
+import { Avatar, Skeleton, Tooltip } from '@madisboard/component';
+import { DocGrantedUsersService } from '@madisboard/core/modules/permissions';
+import { DocRole } from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
 import { ArrowRightSmallIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import { cssVarV2 } from '@toeverything/theme/v2';

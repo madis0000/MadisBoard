@@ -3,7 +3,7 @@ import {
   AffineCommandRegistry,
   type CommandCategory,
   PreconditionStrategy,
-} from '@affine/core/commands';
+} from '@madisboard/core/commands';
 import type { DocMode } from '@blocksuite/affine/model';
 import { Entity, LiveData } from '@toeverything/infra';
 import Fuse from 'fuse.js';

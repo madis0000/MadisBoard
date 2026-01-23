@@ -1,20 +1,20 @@
-import { AffineContext } from '@affine/core/components/context';
-import { AppContainer } from '@affine/core/desktop/components/app-container';
-import { router } from '@affine/core/desktop/router';
-import { configureCommonModules } from '@affine/core/modules';
-import { I18nProvider } from '@affine/core/modules/i18n';
-import { LifecycleService } from '@affine/core/modules/lifecycle';
+import { AffineContext } from '@madisboard/core/components/context';
+import { AppContainer } from '@madisboard/core/desktop/components/app-container';
+import { router } from '@madisboard/core/desktop/router';
+import { configureCommonModules } from '@madisboard/core/modules';
+import { I18nProvider } from '@madisboard/core/modules/i18n';
+import { LifecycleService } from '@madisboard/core/modules/lifecycle';
 import {
   configureLocalStorageStateStorageImpls,
   NbstoreProvider,
-} from '@affine/core/modules/storage';
-import { PopupWindowProvider } from '@affine/core/modules/url';
-import { configureBrowserWorkbenchModule } from '@affine/core/modules/workbench';
-import { configureBrowserWorkspaceFlavours } from '@affine/core/modules/workspace-engine';
-import createEmotionCache from '@affine/core/utils/create-emotion-cache';
-import { getWorkerUrl } from '@affine/env/worker';
-import { StoreManagerClient } from '@affine/nbstore/worker/client';
-import { setTelemetryTransport } from '@affine/track';
+} from '@madisboard/core/modules/storage';
+import { PopupWindowProvider } from '@madisboard/core/modules/url';
+import { configureBrowserWorkbenchModule } from '@madisboard/core/modules/workbench';
+import { configureBrowserWorkspaceFlavours } from '@madisboard/core/modules/workspace-engine';
+import createEmotionCache from '@madisboard/core/utils/create-emotion-cache';
+import { getWorkerUrl } from '@madisboard/env/worker';
+import { StoreManagerClient } from '@madisboard/nbstore/worker/client';
+import { setTelemetryTransport } from '@madisboard/track';
 import { CacheProvider } from '@emotion/react';
 import { Framework, FrameworkRoot, getCurrentStore } from '@toeverything/infra';
 import { OpClient } from '@toeverything/infra/op';

@@ -1,4 +1,4 @@
-import type { CopilotChatHistoryFragment } from '@affine/graphql';
+import type { CopilotChatHistoryFragment } from '@madisboard/graphql';
 import type { ImageSelection } from '@blocksuite/affine/shared/selection';
 import type {
   BlockSelection,

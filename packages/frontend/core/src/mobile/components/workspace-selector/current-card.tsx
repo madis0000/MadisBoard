@@ -1,8 +1,8 @@
-import { Avatar } from '@affine/component';
-import { useWorkspaceInfo } from '@affine/core/components/hooks/use-workspace-info';
-import { WorkspaceAvatar } from '@affine/core/components/workspace-avatar';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { UNTITLED_WORKSPACE_NAME } from '@affine/env/constant';
+import { Avatar } from '@madisboard/component';
+import { useWorkspaceInfo } from '@madisboard/core/components/hooks/use-workspace-info';
+import { WorkspaceAvatar } from '@madisboard/core/components/workspace-avatar';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { UNTITLED_WORKSPACE_NAME } from '@madisboard/env/constant';
 import { ArrowDownSmallIcon } from '@blocksuite/icons/rc';
 import { useServiceOptional } from '@toeverything/infra';
 import clsx from 'clsx';

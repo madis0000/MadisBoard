@@ -1,10 +1,10 @@
-import { notify } from '@affine/component';
-import { type Notification } from '@affine/component/ui/notification';
-import { SubscriptionService } from '@affine/core/modules/cloud';
-import { WorkspaceDialogService } from '@affine/core/modules/dialogs';
-import { EditorService } from '@affine/core/modules/editor';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+import { notify } from '@madisboard/component';
+import { type Notification } from '@madisboard/component/ui/notification';
+import { SubscriptionService } from '@madisboard/core/modules/cloud';
+import { WorkspaceDialogService } from '@madisboard/core/modules/dialogs';
+import { EditorService } from '@madisboard/core/modules/editor';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { AiIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@toeverything/infra';
 import { cssVar } from '@toeverything/theme';

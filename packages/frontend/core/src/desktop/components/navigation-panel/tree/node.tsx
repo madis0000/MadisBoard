@@ -12,15 +12,15 @@ import {
   MenuItem,
   useDraggable,
   useDropTarget,
-} from '@affine/component';
-import { Guard } from '@affine/core/components/guard';
-import { AppSidebarService } from '@affine/core/modules/app-sidebar';
-import { ExplorerIconService } from '@affine/core/modules/explorer-icon/services/explorer-icon';
-import type { ExplorerType } from '@affine/core/modules/explorer-icon/store/explorer-icon';
-import type { DocPermissionActions } from '@affine/core/modules/permissions';
-import { WorkbenchLink } from '@affine/core/modules/workbench';
-import type { AffineDNDData } from '@affine/core/types/dnd';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/component';
+import { Guard } from '@madisboard/core/components/guard';
+import { AppSidebarService } from '@madisboard/core/modules/app-sidebar';
+import { ExplorerIconService } from '@madisboard/core/modules/explorer-icon/services/explorer-icon';
+import type { ExplorerType } from '@madisboard/core/modules/explorer-icon/store/explorer-icon';
+import type { DocPermissionActions } from '@madisboard/core/modules/permissions';
+import { WorkbenchLink } from '@madisboard/core/modules/workbench';
+import type { AffineDNDData } from '@madisboard/core/types/dnd';
+import { useI18n } from '@madisboard/i18n';
 import {
   ArrowDownSmallIcon,
   EditIcon,

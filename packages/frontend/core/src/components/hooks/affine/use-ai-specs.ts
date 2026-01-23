@@ -1,7 +1,7 @@
-import { useConfirmModal, useLitPortalFactory } from '@affine/component';
-import { getViewManager } from '@affine/core/blocksuite/manager/view';
-import { FeatureFlagService } from '@affine/core/modules/feature-flag';
-import { WorkspaceService } from '@affine/core/modules/workspace';
+import { useConfirmModal, useLitPortalFactory } from '@madisboard/component';
+import { getViewManager } from '@madisboard/core/blocksuite/manager/view';
+import { FeatureFlagService } from '@madisboard/core/modules/feature-flag';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
 import { useFramework, useLiveData, useServices } from '@toeverything/infra';
 import { useMemo } from 'react';
 

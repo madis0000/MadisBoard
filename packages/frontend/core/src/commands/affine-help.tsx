@@ -1,5 +1,5 @@
-import type { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+import type { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { ContactWithUsIcon, NewIcon } from '@blocksuite/icons/rc';
 
 import type { WorkspaceDialogService } from '../modules/dialogs';

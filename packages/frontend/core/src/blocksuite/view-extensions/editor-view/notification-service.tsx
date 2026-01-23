@@ -7,7 +7,7 @@ import {
   type ToastOptions,
   toReactNode,
   type useConfirmModal,
-} from '@affine/component';
+} from '@madisboard/component';
 import {
   NotificationExtension,
   type NotificationService,

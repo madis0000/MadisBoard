@@ -1,19 +1,19 @@
-import { FlexWrapper, Input, notify } from '@affine/component';
+import { FlexWrapper, Input, notify } from '@madisboard/component';
 import {
   SettingHeader,
   SettingRow,
   SettingWrapper,
-} from '@affine/component/setting-components';
-import { Avatar } from '@affine/component/ui/avatar';
-import { Button } from '@affine/component/ui/button';
-import { useSignOut } from '@affine/core/components/hooks/affine/use-sign-out';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { useCatchEventCallback } from '@affine/core/components/hooks/use-catch-event-hook';
-import { Upload } from '@affine/core/components/pure/file-upload';
-import { GlobalDialogService } from '@affine/core/modules/dialogs';
-import { SubscriptionPlan } from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/component/setting-components';
+import { Avatar } from '@madisboard/component/ui/avatar';
+import { Button } from '@madisboard/component/ui/button';
+import { useSignOut } from '@madisboard/core/components/hooks/affine/use-sign-out';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { useCatchEventCallback } from '@madisboard/core/components/hooks/use-catch-event-hook';
+import { Upload } from '@madisboard/core/components/pure/file-upload';
+import { GlobalDialogService } from '@madisboard/core/modules/dialogs';
+import { SubscriptionPlan } from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { ArrowRightSmallIcon, CameraIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService, useServices } from '@toeverything/infra';
 import { useCallback, useEffect, useState } from 'react';

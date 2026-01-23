@@ -1,5 +1,5 @@
-import { UserFriendlyError } from '@affine/error';
-import { gqlFetcherFactory } from '@affine/graphql';
+import { UserFriendlyError } from '@madisboard/error';
+import { gqlFetcherFactory } from '@madisboard/graphql';
 
 import { DummyConnection } from '../../connection';
 

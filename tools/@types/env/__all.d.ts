@@ -1,4 +1,4 @@
-import '@affine/env/constant';
+import '@madisboard/env/constant';
 import '@blocksuite/affine/global/types'
 
 declare module '@blocksuite/affine/store' {

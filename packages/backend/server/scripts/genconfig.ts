@@ -3,8 +3,8 @@ import '../src/prelude';
 import '../src/app.module';
 
 import fs from 'node:fs';
-import { ProjectRoot } from '@affine-tools/utils/path';
-import { Package } from '@affine-tools/utils/workspace';
+import { ProjectRoot } from '@madisboard-tools/utils/path';
+import { Package } from '@madisboard-tools/utils/workspace';
 import {
   getDescriptors as getAllDescriptors,
   ConfigDescriptor,
@@ -104,7 +104,7 @@ function main() {
     ProjectRoot.join('.docker', 'selfhost', 'schema.json').toString()
   );
   generateAdminConfigJson(
-    new Package('@affine/admin').join('src/config.json').toString()
+    new Package('@madisboard/admin').join('src/config.json').toString()
   );
 }
 

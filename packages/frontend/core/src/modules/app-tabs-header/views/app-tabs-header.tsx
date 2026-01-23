@@ -6,12 +6,12 @@ import {
   Loading,
   useDraggable,
   useDropTarget,
-} from '@affine/component';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { useCatchEventCallback } from '@affine/core/components/hooks/use-catch-event-hook';
-import type { AffineDNDData } from '@affine/core/types/dnd';
-import { useI18n } from '@affine/i18n';
-import { track } from '@affine/track';
+} from '@madisboard/component';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { useCatchEventCallback } from '@madisboard/core/components/hooks/use-catch-event-hook';
+import type { AffineDNDData } from '@madisboard/core/types/dnd';
+import { useI18n } from '@madisboard/i18n';
+import { track } from '@madisboard/track';
 import { CloseIcon, PlusIcon, RightSidebarIcon } from '@blocksuite/icons/rc';
 import {
   useLiveData,

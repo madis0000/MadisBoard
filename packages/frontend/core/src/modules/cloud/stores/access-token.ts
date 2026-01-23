@@ -3,7 +3,7 @@ import {
   type ListUserAccessTokensQuery,
   listUserAccessTokensQuery,
   revokeUserAccessTokenMutation,
-} from '@affine/graphql';
+} from '@madisboard/graphql';
 import { Store } from '@toeverything/infra';
 
 import type { GraphQLService } from '../services/graphql';

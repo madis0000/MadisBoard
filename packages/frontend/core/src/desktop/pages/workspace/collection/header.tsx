@@ -1,9 +1,9 @@
-import { FlexWrapper } from '@affine/component';
-import { ExplorerDisplayMenuButton } from '@affine/core/components/explorer/display-menu';
-import { ViewToggle } from '@affine/core/components/explorer/display-menu/view-toggle';
-import { ExplorerNavigation } from '@affine/core/components/explorer/header/navigation';
-import type { ExplorerDisplayPreference } from '@affine/core/components/explorer/types';
-import { Header } from '@affine/core/components/pure/header';
+import { FlexWrapper } from '@madisboard/component';
+import { ExplorerDisplayMenuButton } from '@madisboard/core/components/explorer/display-menu';
+import { ViewToggle } from '@madisboard/core/components/explorer/display-menu/view-toggle';
+import { ExplorerNavigation } from '@madisboard/core/components/explorer/header/navigation';
+import type { ExplorerDisplayPreference } from '@madisboard/core/components/explorer/types';
+import { Header } from '@madisboard/core/components/pure/header';
 
 export const CollectionDetailHeader = ({
   displayPreference,

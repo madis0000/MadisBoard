@@ -1,4 +1,4 @@
-import { AdminWorkspaceSort, FeatureType } from '@affine/graphql';
+import { AdminWorkspaceSort, FeatureType } from '@madisboard/graphql';
 import { useState } from 'react';
 
 import { Header } from '../header';

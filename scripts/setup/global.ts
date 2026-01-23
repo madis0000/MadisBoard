@@ -1,8 +1,8 @@
-import { setupGlobal } from '@affine/env/global';
-import { getBuildConfig } from '@affine-tools/utils/build-config';
-import { Package } from '@affine-tools/utils/workspace';
+import { setupGlobal } from '@madisboard/env/global';
+import { getBuildConfig } from '@madisboard-tools/utils/build-config';
+import { Package } from '@madisboard-tools/utils/workspace';
 
-globalThis.BUILD_CONFIG = getBuildConfig(new Package('@affine/web'), {
+globalThis.BUILD_CONFIG = getBuildConfig(new Package('@madisboard/web'), {
   mode: 'development',
   channel: 'canary',
 });

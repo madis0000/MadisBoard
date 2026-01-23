@@ -1,8 +1,8 @@
-import { Checkbox, useDraggable } from '@affine/component';
-import { WorkbenchLink } from '@affine/core/modules/workbench';
-import type { AffineDNDData } from '@affine/core/types/dnd';
-import { stopPropagation } from '@affine/core/utils';
-import { useI18n } from '@affine/i18n';
+import { Checkbox, useDraggable } from '@madisboard/component';
+import { WorkbenchLink } from '@madisboard/core/modules/workbench';
+import type { AffineDNDData } from '@madisboard/core/types/dnd';
+import { stopPropagation } from '@madisboard/core/utils';
+import { useI18n } from '@madisboard/i18n';
 import type { ForwardedRef, PropsWithChildren } from 'react';
 import { forwardRef, useCallback, useMemo } from 'react';
 

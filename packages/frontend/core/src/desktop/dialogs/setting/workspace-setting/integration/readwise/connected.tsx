@@ -1,7 +1,7 @@
-import { Button, Modal } from '@affine/component';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { IntegrationService } from '@affine/core/modules/integration';
-import { useI18n } from '@affine/i18n';
+import { Button, Modal } from '@madisboard/component';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { IntegrationService } from '@madisboard/core/modules/integration';
+import { useI18n } from '@madisboard/i18n';
 import { useService } from '@toeverything/infra';
 import { useCallback, useState } from 'react';
 

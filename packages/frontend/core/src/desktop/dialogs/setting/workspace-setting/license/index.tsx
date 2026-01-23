@@ -1,27 +1,27 @@
-import { Button, notify } from '@affine/component';
+import { Button, notify } from '@madisboard/component';
 import {
   SettingHeader,
   SettingRow,
-} from '@affine/component/setting-components';
-import { getUpgradeQuestionnaireLink } from '@affine/core/components/hooks/affine/use-subscription-notify';
-import { useAsyncCallback } from '@affine/core/components/hooks/affine-async-hooks';
-import { useMutation } from '@affine/core/components/hooks/use-mutation';
+} from '@madisboard/component/setting-components';
+import { getUpgradeQuestionnaireLink } from '@madisboard/core/components/hooks/affine/use-subscription-notify';
+import { useAsyncCallback } from '@madisboard/core/components/hooks/affine-async-hooks';
+import { useMutation } from '@madisboard/core/components/hooks/use-mutation';
 import {
   AuthService,
   SelfhostLicenseService,
   WorkspaceSubscriptionService,
-} from '@affine/core/modules/cloud';
-import { WorkspacePermissionService } from '@affine/core/modules/permissions';
-import { UrlService } from '@affine/core/modules/url';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { UserFriendlyError } from '@affine/error';
+} from '@madisboard/core/modules/cloud';
+import { WorkspacePermissionService } from '@madisboard/core/modules/permissions';
+import { UrlService } from '@madisboard/core/modules/url';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { UserFriendlyError } from '@madisboard/error';
 import {
   createSelfhostCustomerPortalMutation,
   SubscriptionPlan,
   SubscriptionRecurring,
   SubscriptionVariant,
-} from '@affine/graphql';
-import { useI18n } from '@affine/i18n';
+} from '@madisboard/graphql';
+import { useI18n } from '@madisboard/i18n';
 import { FrameworkScope, useLiveData, useService } from '@toeverything/infra';
 import { useCallback, useEffect, useState } from 'react';
 

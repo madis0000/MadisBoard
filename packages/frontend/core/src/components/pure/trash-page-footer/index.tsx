@@ -1,8 +1,8 @@
-import { Button } from '@affine/component/ui/button';
-import { ConfirmModal } from '@affine/component/ui/modal';
-import { DocService } from '@affine/core/modules/doc';
-import { WorkspaceService } from '@affine/core/modules/workspace';
-import { useI18n } from '@affine/i18n';
+import { Button } from '@madisboard/component/ui/button';
+import { ConfirmModal } from '@madisboard/component/ui/modal';
+import { DocService } from '@madisboard/core/modules/doc';
+import { WorkspaceService } from '@madisboard/core/modules/workspace';
+import { useI18n } from '@madisboard/i18n';
 import { DeleteIcon, ResetIcon } from '@blocksuite/icons/rc';
 import { useService } from '@toeverything/infra';
 import { useCallback, useState } from 'react';

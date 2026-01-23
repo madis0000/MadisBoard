@@ -1,10 +1,10 @@
-import { notify } from '@affine/component';
-import { AffineOtherPageLayout } from '@affine/component/affine-other-page-layout';
-import { SignInPageContainer } from '@affine/component/auth-components';
-import { SignInPanel } from '@affine/core/components/sign-in';
-import { SignInBackgroundArts } from '@affine/core/components/sign-in/background-arts';
-import type { AuthSessionStatus } from '@affine/core/modules/cloud/entities/session';
-import { useI18n } from '@affine/i18n';
+import { notify } from '@madisboard/component';
+import { AffineOtherPageLayout } from '@madisboard/component/affine-other-page-layout';
+import { SignInPageContainer } from '@madisboard/component/auth-components';
+import { SignInPanel } from '@madisboard/core/components/sign-in';
+import { SignInBackgroundArts } from '@madisboard/core/components/sign-in/background-arts';
+import type { AuthSessionStatus } from '@madisboard/core/modules/cloud/entities/session';
+import { useI18n } from '@madisboard/i18n';
 import { useCallback, useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 
