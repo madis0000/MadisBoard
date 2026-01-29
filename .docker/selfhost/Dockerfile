@@ -51,9 +51,9 @@ RUN NODE_OPTIONS=--max-old-space-size=4096 yarn affine build -p @madisboard/web
 # Build admin panel
 RUN yarn affine build -p @madisboard/admin
 
-# Now get production-only dependencies for the server
-# This matches what CI does: focus on server workspace with --production
-RUN yarn workspaces focus @madisboard/server --production
+# Install server dependencies (include all deps, not just production,
+# as NestJS dynamically loads some packages at runtime)
+RUN yarn workspaces focus @madisboard/server
 
 # Generate Prisma client
 RUN cd packages/backend/server && npx prisma generate
