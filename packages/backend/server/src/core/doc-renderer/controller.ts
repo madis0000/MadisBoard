@@ -55,8 +55,10 @@ export class DocRendererController {
     private readonly config: Config
   ) {
     this.webAssets = this.readHtmlAssets(join(env.projectRoot, 'static'));
+    // Mobile assets are optional for self-hosted deployments
     this.mobileAssets = this.readHtmlAssets(
-      join(env.projectRoot, 'static/mobile')
+      join(env.projectRoot, 'static/mobile'),
+      true
     );
   }
 
@@ -218,7 +220,7 @@ export class DocRendererController {
   /**
    * Should only be called at startup time
    */
-  private readHtmlAssets(path: string): HtmlAssets {
+  private readHtmlAssets(path: string, optional = false): HtmlAssets {
     const manifestPath = join(path, 'assets-manifest.json');
 
     try {
@@ -234,7 +236,7 @@ export class DocRendererController {
 
       return assets;
     } catch (e) {
-      if (env.prod) {
+      if (env.prod && !optional) {
         throw e;
       } else {
         return defaultAssets;
