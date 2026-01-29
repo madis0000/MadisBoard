@@ -51,9 +51,9 @@ RUN NODE_OPTIONS=--max-old-space-size=4096 yarn affine build -p @madisboard/web
 # Build admin panel
 RUN yarn affine build -p @madisboard/admin
 
-# Install server dependencies (include all deps, not just production,
-# as NestJS dynamically loads some packages at runtime)
-RUN yarn workspaces focus @madisboard/server
+# Note: We keep the full node_modules from yarn install above
+# rather than using 'yarn workspaces focus' which can miss dynamically
+# loaded dependencies required by NestJS at runtime
 
 # Generate Prisma client
 RUN cd packages/backend/server && npx prisma generate
