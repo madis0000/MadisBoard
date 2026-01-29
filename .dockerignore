@@ -12,21 +12,21 @@ node_modules
 .git
 .gitmodules
 
-# Desktop/mobile apps - not needed for selfhost
-packages/frontend/apps/electron
-packages/frontend/apps/electron-renderer
+# Desktop/mobile apps - exclude src but keep package.json for workspace resolution
+packages/frontend/apps/electron/src
+packages/frontend/apps/electron/resources
+packages/frontend/apps/electron/scripts
+packages/frontend/apps/electron-renderer/src
 packages/frontend/apps/ios
 packages/frontend/apps/android
-packages/frontend/apps/mobile
+packages/frontend/apps/mobile/src
 
-# BlockSuite heavy directories
+# BlockSuite heavy directories (keep package.json files)
 blocksuite/node_modules
-blocksuite/.git
 blocksuite/**/dist
 blocksuite/**/out
 blocksuite/playground
 blocksuite/examples
-blocksuite/tests
 
 # Tests and dev tools
 **/__tests__
@@ -44,15 +44,6 @@ e2e
 **/*.mp4
 **/*.gif
 **/screenshots
-**/*.woff
-**/*.woff2
-**/*.ttf
-**/*.eot
-
-# Development and documentation
-docs
-*.md
-!README.md
 
 # Cache and temp files
 .cache
