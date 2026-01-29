@@ -31,12 +31,14 @@ function extractTokenFromHeader(authorization: string) {
 
 @Injectable()
 export class AuthService implements OnApplicationBootstrap {
-  readonly cookieOptions: CookieOptions = {
-    sameSite: 'lax',
-    httpOnly: true,
-    path: '/',
-    secure: this.config.server.https,
-  };
+  get cookieOptions(): CookieOptions {
+    return {
+      sameSite: 'lax',
+      httpOnly: true,
+      path: '/',
+      secure: this.config.server.https,
+    };
+  }
   static readonly sessionCookieName = 'affine_session';
   static readonly userCookieName = 'affine_user_id';
 
