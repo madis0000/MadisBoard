@@ -1,0 +1,3 @@
+# Keep SSH keys private - never commit
+madisboard_deploy
+*.pem

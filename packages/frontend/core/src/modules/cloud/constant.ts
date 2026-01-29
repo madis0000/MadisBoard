@@ -66,8 +66,8 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
               id: 'affine-cloud',
               baseUrl: BUILD_CONFIG.isNative
                 ? BUILD_CONFIG.isIOS
-                  ? 'https://madis-labs.com'
-                  : 'https://madis-labs.com'
+                  ? 'http://localhost:3020'
+                  : 'http://localhost:3020'
                 : location.origin,
               config: {
                 serverName: 'MadisBoard Cloud',
@@ -99,8 +99,8 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                 id: 'affine-cloud',
                 baseUrl: BUILD_CONFIG.isNative
                   ? BUILD_CONFIG.isIOS
-                    ? 'https://madis-labs.com'
-                    : 'https://madis-labs.com'
+                    ? 'http://localhost:3020'
+                    : 'http://localhost:3020'
                   : location.origin,
                 config: {
                   serverName: 'MadisBoard Cloud',
@@ -130,7 +130,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
             ? [
                 {
                   id: 'affine-cloud',
-                  baseUrl: 'https://madis-labs.com',
+                  baseUrl: 'http://localhost:3020',
                   config: {
                     serverName: 'MadisBoard Cloud',
                     features: [
@@ -160,7 +160,7 @@ export const BUILD_IN_SERVERS: (ServerMetadata & { config: ServerConfig })[] =
                   {
                     id: 'affine-cloud',
                     baseUrl: BUILD_CONFIG.isNative
-                      ? 'https://madis-labs.com'
+                      ? 'http://localhost:3020'
                       : location.origin,
                     config: {
                       serverName: 'MadisBoard Cloud',
@@ -196,11 +196,11 @@ export type TelemetryChannel =
   | 'local';
 
 const OFFICIAL_TELEMETRY_ENDPOINTS: Record<TelemetryChannel, string> = {
-  stable: 'https://madis-labs.com',
-  beta: 'https://madis-labs.com',
-  internal: 'https://madis-labs.com',
-  canary: 'https://madis-labs.com',
-  local: 'http://localhost:8080',
+  stable: 'http://localhost:3020',
+  beta: 'http://localhost:3020',
+  internal: 'http://localhost:3020',
+  canary: 'http://localhost:3020',
+  local: 'http://localhost:3020',
 };
 
 export function getOfficialTelemetryEndpoint(

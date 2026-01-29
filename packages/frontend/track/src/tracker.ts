@@ -21,7 +21,7 @@ const SESSION_NUMBER_CURRENT_KEY = 'affine_telemetry_session_number_current';
 const LAST_ACTIVITY_KEY = 'affine_telemetry_last_activity_ms';
 const SESSION_TIMEOUT_MS = 30 * 60 * 1000;
 
-let enabled = true;
+let enabled = false; // Telemetry disabled for MadisBoard
 const clientStorage = localStorageSafe();
 const hasClientId = clientStorage?.getItem(CLIENT_ID_KEY);
 let clientId = readPersistentId(CLIENT_ID_KEY, clientStorage);

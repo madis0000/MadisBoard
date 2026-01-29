@@ -1,0 +1,72 @@
+# Dependencies (reinstalled inside container)
+node_modules
+.yarn/cache
+.yarn/install-state.gz
+
+# Build outputs (rebuilt inside container)
+**/dist
+**/out
+**/.next
+
+# Git history (not needed for build)
+.git
+.gitmodules
+
+# Desktop/mobile apps - not needed for selfhost
+packages/frontend/apps/electron
+packages/frontend/apps/electron-renderer
+packages/frontend/apps/ios
+packages/frontend/apps/android
+packages/frontend/apps/mobile
+
+# BlockSuite heavy directories
+blocksuite/node_modules
+blocksuite/.git
+blocksuite/**/dist
+blocksuite/**/out
+blocksuite/playground
+blocksuite/examples
+blocksuite/tests
+
+# Tests and dev tools
+**/__tests__
+**/*.test.*
+**/*.spec.*
+**/*.e2e.*
+.devcontainer
+tests
+e2e
+
+# CI/CD (not needed in build)
+.github
+
+# Large binary assets
+**/*.mp4
+**/*.gif
+**/screenshots
+**/*.woff
+**/*.woff2
+**/*.ttf
+**/*.eot
+
+# Development and documentation
+docs
+*.md
+!README.md
+
+# Cache and temp files
+.cache
+.turbo
+.parcel-cache
+*.log
+*.tsbuildinfo
+
+# IDE and editor files
+.idea
+.vscode
+*.swp
+*.swo
+
+# Claude and other tools
+.claude
+nul

@@ -24,10 +24,10 @@ function isPathInWhiteList(filepath: string) {
 }
 
 const apiBaseByBuildType: Record<typeof buildType, string> = {
-  stable: 'https://app.affine.pro',
-  beta: 'https://insider.affine.pro',
-  internal: 'https://insider.affine.pro',
-  canary: 'https://affine.fail',
+  stable: 'http://localhost:3020',
+  beta: 'http://localhost:3020',
+  internal: 'http://localhost:3020',
+  canary: 'http://localhost:3020',
 };
 
 function resolveApiBaseUrl() {
@@ -80,7 +80,7 @@ async function handleFileRequest(request: Request) {
     /\.(woff2?|ttf|otf)$/i.test(urlObject.pathname.split('?')[0] ?? '');
 
   // Redirect to webpack dev server if available
-  if (isDev && devServerBase && !isAbsolutePath && !isFontRequest) {
+  if (isDev && devServerBase && !isAbsolutePath) {
     return proxyRequest(request, urlObject, devServerBase, {
       bypassCustomProtocolHandlers: false,
     });

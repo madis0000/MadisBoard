@@ -1,0 +1,85 @@
+# MadisBoard Local Development - Docker Desktop
+# Uses shared infrastructure (postgres, redis) from Docker Desktop
+#
+# USAGE:
+#   docker compose -f .docker/selfhost/docker-compose.affine.yml up -d
+#
+# ACCESS:
+#   http://localhost:3020
+
+services:
+  # Database initialization (creates DB + pgvector extension)
+  madisboard-db-init:
+    image: timescale/timescaledb:latest-pg15
+    container_name: madisboard-db-init
+    entrypoint: ['sh', '-c']
+    command:
+      - |
+        until pg_isready -h shared-postgres -U postgres; do
+          echo "Waiting for postgres..."
+          sleep 2
+        done
+        PGPASSWORD=postgres psql -h shared-postgres -U postgres -tc "SELECT 1 FROM pg_database WHERE datname = 'madisboard'" | grep -q 1 || \
+          PGPASSWORD=postgres psql -h shared-postgres -U postgres -c "CREATE DATABASE madisboard;"
+        PGPASSWORD=postgres psql -h shared-postgres -U postgres -d madisboard -c "CREATE EXTENSION IF NOT EXISTS vector;"
+        echo "Database ready."
+    networks:
+      - shared-infra-network
+    restart: "no"
+
+  # Database migration (runs once before app starts)
+  madisboard-migration:
+    image: ghcr.io/madis0000/madisboard:latest
+    container_name: madisboard-migration
+    command: ['sh', '-c', 'node ./scripts/self-host-predeploy.js']
+    volumes:
+      - madisboard_storage:/root/.affine/storage
+      - madisboard_config:/root/.affine/config
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://postgres:postgres@shared-postgres:5432/madisboard
+      - REDIS_SERVER_HOST=shared-redis
+      - AFFINE_INDEXER_ENABLED=false
+      - AFFINE_SERVER_NAME=MadisBoard
+    networks:
+      - shared-infra-network
+    depends_on:
+      madisboard-db-init:
+        condition: service_completed_successfully
+    restart: "no"
+
+  # MadisBoard application server
+  madisboard:
+    image: ghcr.io/madis0000/madisboard:latest
+    container_name: madisboard-server
+    ports:
+      - '3020:3010'
+    volumes:
+      - madisboard_storage:/root/.affine/storage
+      - madisboard_config:/root/.affine/config
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://postgres:postgres@shared-postgres:5432/madisboard
+      - REDIS_SERVER_HOST=shared-redis
+      - AFFINE_SERVER_HOST=0.0.0.0
+      - AFFINE_SERVER_PORT=3010
+      - AFFINE_SERVER_HTTPS=false
+      - AFFINE_SERVER_EXTERNAL_URL=http://localhost:3020
+      - AFFINE_SERVER_NAME=MadisBoard
+      - AFFINE_INDEXER_ENABLED=false
+      - TELEMETRY_ENABLE=false
+    networks:
+      - shared-infra-network
+    depends_on:
+      madisboard-migration:
+        condition: service_completed_successfully
+    restart: unless-stopped
+
+volumes:
+  madisboard_storage:
+  madisboard_config:
+
+networks:
+  shared-infra-network:
+    external: true
+    name: shared-infra-network

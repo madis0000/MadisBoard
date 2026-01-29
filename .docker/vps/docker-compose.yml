@@ -1,0 +1,115 @@
+# MadisBoard VPS Production Deployment
+# Uses shared infrastructure: PostgreSQL, Redis, Traefik
+#
+# PREREQUISITES:
+#   - shared-postgres container running
+#   - shared-redis container running
+#   - shared-traefik container running
+#   - shared-infra-network exists
+#
+# USAGE:
+#   docker compose up -d
+#
+# ACCESS:
+#   https://board.madis-labs.com
+
+services:
+  # Database initialization (creates DB + pgvector extension)
+  madisboard-db-init:
+    image: postgres:16-alpine
+    container_name: madisboard-db-init
+    entrypoint: ['sh', '-c']
+    command:
+      - |
+        until pg_isready -h shared-postgres -U postgres; do
+          echo "Waiting for postgres..."
+          sleep 2
+        done
+        PGPASSWORD=$${DB_PASSWORD} psql -h shared-postgres -U postgres -tc "SELECT 1 FROM pg_database WHERE datname = 'madisboard'" | grep -q 1 || \
+          PGPASSWORD=$${DB_PASSWORD} psql -h shared-postgres -U postgres -c "CREATE DATABASE madisboard;"
+        PGPASSWORD=$${DB_PASSWORD} psql -h shared-postgres -U postgres -d madisboard -c "CREATE EXTENSION IF NOT EXISTS vector;" || true
+        echo "Database ready."
+    environment:
+      - DB_PASSWORD=${DB_PASSWORD:-postgres}
+    networks:
+      - shared-infra-network
+    restart: "no"
+
+  # Database migration (runs once before app starts)
+  madisboard-migration:
+    image: ghcr.io/madis0000/madisboard:latest
+    container_name: madisboard-migration
+    command: ['sh', '-c', 'node ./scripts/self-host-predeploy.js']
+    volumes:
+      - madisboard_storage:/root/.affine/storage
+      - madisboard_config:/root/.affine/config
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://postgres:${DB_PASSWORD:-postgres}@shared-postgres:5432/madisboard
+      - REDIS_SERVER_HOST=shared-redis
+      - REDIS_SERVER_PASSWORD=${REDIS_PASSWORD:-}
+      - AFFINE_SERVER_NAME=MadisBoard
+      - AFFINE_INDEXER_ENABLED=false
+    networks:
+      - shared-infra-network
+    depends_on:
+      madisboard-db-init:
+        condition: service_completed_successfully
+    restart: "no"
+
+  # MadisBoard Application Server
+  madisboard:
+    image: ghcr.io/madis0000/madisboard:latest
+    container_name: madisboard-server
+    volumes:
+      - madisboard_storage:/root/.affine/storage
+      - madisboard_config:/root/.affine/config
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://postgres:${DB_PASSWORD:-postgres}@shared-postgres:5432/madisboard
+      - REDIS_SERVER_HOST=shared-redis
+      - REDIS_SERVER_PASSWORD=${REDIS_PASSWORD:-}
+      - AFFINE_SERVER_HOST=0.0.0.0
+      - AFFINE_SERVER_PORT=3010
+      - AFFINE_SERVER_HTTPS=true
+      - AFFINE_SERVER_EXTERNAL_URL=https://board.madis-labs.com
+      - AFFINE_SERVER_NAME=MadisBoard
+      - AFFINE_INDEXER_ENABLED=false
+      - TELEMETRY_ENABLE=false
+      # Email (optional)
+      - MAILER_HOST=${MAILER_HOST:-}
+      - MAILER_PORT=${MAILER_PORT:-587}
+      - MAILER_USER=${MAILER_USER:-}
+      - MAILER_PASSWORD=${MAILER_PASSWORD:-}
+      - MAILER_SENDER=${MAILER_SENDER:-}
+    networks:
+      - shared-infra-network
+    labels:
+      # Traefik configuration
+      - "traefik.enable=true"
+      - "traefik.docker.network=shared-infra-network"
+      - "traefik.http.routers.madisboard.rule=Host(`board.madis-labs.com`)"
+      - "traefik.http.routers.madisboard.entrypoints=websecure"
+      - "traefik.http.routers.madisboard.tls=true"
+      - "traefik.http.routers.madisboard.tls.certresolver=letsencrypt"
+      - "traefik.http.services.madisboard.loadbalancer.server.port=3010"
+      # HTTP to HTTPS redirect
+      - "traefik.http.routers.madisboard-http.rule=Host(`board.madis-labs.com`)"
+      - "traefik.http.routers.madisboard-http.entrypoints=web"
+      - "traefik.http.routers.madisboard-http.middlewares=redirect-to-https"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+    depends_on:
+      madisboard-migration:
+        condition: service_completed_successfully
+    restart: unless-stopped
+
+volumes:
+  madisboard_storage:
+    name: madisboard_storage
+  madisboard_config:
+    name: madisboard_config
+
+networks:
+  shared-infra-network:
+    external: true
+    name: shared-infra-network

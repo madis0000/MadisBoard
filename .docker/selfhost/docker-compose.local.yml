@@ -1,0 +1,115 @@
+# MadisBoard Local Development - Docker Desktop
+#
+# Uses shared infrastructure (postgres, redis, traefik) from:
+#   MadisTrader/infrastructure/docker-compose.infra.yml
+#
+# USAGE:
+#   1. Ensure shared infrastructure is running:
+#      cd C:\WorkSpace\MadisTrader\infrastructure
+#      docker-compose -f docker-compose.infra.yml up -d
+#
+#   2. Build and start MadisBoard:
+#      cd C:\WorkSpace\MadisBoard\.docker\selfhost
+#      docker-compose -f docker-compose.local.yml up -d --build
+#
+#   3. Access at: http://localhost:3020
+
+services:
+  # Database migration (runs once before app starts)
+  madisboard-migration:
+    image: madisboard:local
+    container_name: madisboard-migration
+    entrypoint: ['sh', '-c']
+    command:
+      - |
+        # Generate private key for JWT auth if not exists
+        mkdir -p /root/.affine/config
+        if [ ! -f /root/.affine/config/private.key ]; then
+          node -e "
+            const { generateKeyPairSync } = require('crypto');
+            const fs = require('fs');
+            const key = generateKeyPairSync('ec', { namedCurve: 'prime256v1' })
+              .privateKey.export({ type: 'sec1', format: 'pem' });
+            fs.writeFileSync('/root/.affine/config/private.key', key);
+            console.log('Generated private key');
+          "
+        fi
+        # Run database migrations
+        npx prisma migrate deploy --schema ./schema.prisma
+        echo "Migration complete"
+    volumes:
+      - madisboard_storage:/root/.affine/storage
+      - madisboard_config:/root/.affine/config
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://postgres:postgres@shared-postgres:5432/madisboard
+      - REDIS_SERVER_HOST=shared-redis
+      - AFFINE_INDEXER_ENABLED=false
+    networks:
+      - shared-infra-network
+    depends_on:
+      madisboard-db-init:
+        condition: service_completed_successfully
+    restart: "no"
+
+  # Database initialization (creates DB + pgvector extension)
+  madisboard-db-init:
+    image: timescale/timescaledb:latest-pg15
+    container_name: madisboard-db-init
+    entrypoint: ['sh', '-c']
+    command:
+      - |
+        until pg_isready -h shared-postgres -U postgres; do
+          echo "Waiting for postgres..."
+          sleep 2
+        done
+        PGPASSWORD=postgres psql -h shared-postgres -U postgres -tc "SELECT 1 FROM pg_database WHERE datname = 'madisboard'" | grep -q 1 || \
+          PGPASSWORD=postgres psql -h shared-postgres -U postgres -c "CREATE DATABASE madisboard;"
+        PGPASSWORD=postgres psql -h shared-postgres -U postgres -d madisboard -c "CREATE EXTENSION IF NOT EXISTS vector;"
+        echo "Database ready."
+    networks:
+      - shared-infra-network
+    restart: "no"
+
+  # MadisBoard application server
+  madisboard:
+    image: madisboard:local
+    build:
+      context: ../..
+      dockerfile: .docker/selfhost/Dockerfile
+    container_name: madisboard-server
+    ports:
+      - '3020:3010'
+    volumes:
+      - madisboard_storage:/root/.affine/storage
+      - madisboard_config:/root/.affine/config
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://postgres:postgres@shared-postgres:5432/madisboard
+      - REDIS_SERVER_HOST=shared-redis
+      - AFFINE_SERVER_HOST=localhost
+      - AFFINE_SERVER_PORT=3010
+      - AFFINE_SERVER_HTTPS=false
+      - AFFINE_SERVER_EXTERNAL_URL=http://localhost:3020
+      - AFFINE_INDEXER_ENABLED=false
+    networks:
+      - shared-infra-network
+    depends_on:
+      madisboard-migration:
+        condition: service_completed_successfully
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.madisboard.rule=Host(`board.madis-labs.com`)"
+      - "traefik.http.routers.madisboard.entrypoints=websecure"
+      - "traefik.http.routers.madisboard.tls.certresolver=letsencrypt"
+      - "traefik.http.services.madisboard.loadbalancer.server.port=3010"
+    restart: unless-stopped
+
+volumes:
+  madisboard_storage:
+  madisboard_config:
+
+networks:
+  shared-infra-network:
+    external: true
+    name: shared-infra-network
