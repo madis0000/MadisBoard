@@ -79,6 +79,22 @@ export function createHTMLTargetConfig(
     name: entry['index'],
     dependencies: deps,
     context: ProjectRoot.value,
+    // Enable filesystem cache for faster rebuilds
+    cache: {
+      type: 'filesystem',
+      buildDependencies: {
+        config: [import.meta.url],
+      },
+      cacheDirectory: ProjectRoot.join(
+        'node_modules',
+        '.cache',
+        'webpack',
+        pkg.name.replace(/[/@]/g, '_')
+      ).value,
+      compression: 'gzip',
+      maxAge: 1000 * 60 * 60 * 24 * 7, // 1 week
+      maxMemoryGenerations: IN_CI ? 0 : Infinity,
+    },
     experiments: {
       topLevelAwait: true,
       outputModule: false,
@@ -117,6 +133,10 @@ export function createHTMLTargetConfig(
           '@preact',
           'signals-core'
         ).value,
+        react: ProjectRoot.join('node_modules', 'react').value,
+        'react-dom': ProjectRoot.join('node_modules', 'react-dom').value,
+        jotai: ProjectRoot.join('node_modules', 'jotai').value,
+        'jotai-effect': ProjectRoot.join('node_modules', 'jotai-effect').value,
       },
     },
     //#endregion
@@ -335,10 +355,10 @@ export function createHTMLTargetConfig(
       runtimeChunk: { name: 'runtime' },
       splitChunks: {
         chunks: 'all',
-        minSize: 1,
+        minSize: 20000, // 20KB minimum chunk size for better bundling
         minChunks: 1,
-        maxInitialRequests: Number.MAX_SAFE_INTEGER,
-        maxAsyncRequests: Number.MAX_SAFE_INTEGER,
+        maxInitialRequests: 30, // Limit initial requests for better load performance
+        maxAsyncRequests: 30,
         cacheGroups: productionCacheGroups,
       },
     },
@@ -384,6 +404,21 @@ export function createWorkerTargetConfig(
   return {
     name: entry,
     context: ProjectRoot.value,
+    cache: {
+      type: 'filesystem',
+      buildDependencies: {
+        config: [import.meta.url],
+      },
+      cacheDirectory: ProjectRoot.join(
+        'node_modules',
+        '.cache',
+        'webpack',
+        `${pkg.name.replace(/[/@]/g, '_')}_worker_${workerName}`
+      ).value,
+      compression: 'gzip',
+      maxAge: 1000 * 60 * 60 * 24 * 7, // 1 week
+      maxMemoryGenerations: IN_CI ? 0 : Infinity,
+    },
     experiments: {
       topLevelAwait: true,
       outputModule: false,
@@ -514,6 +549,21 @@ export function createNodeTargetConfig(
   return {
     name: entry,
     context: ProjectRoot.value,
+    cache: {
+      type: 'filesystem',
+      buildDependencies: {
+        config: [import.meta.url],
+      },
+      cacheDirectory: ProjectRoot.join(
+        'node_modules',
+        '.cache',
+        'webpack',
+        `${pkg.name.replace(/[/@]/g, '_')}_node`
+      ).value,
+      compression: 'gzip',
+      maxAge: 1000 * 60 * 60 * 24 * 7, // 1 week
+      maxMemoryGenerations: IN_CI ? 0 : Infinity,
+    },
     experiments: {
       topLevelAwait: true,
       outputModule: pkg.packageJson.type === 'module',
@@ -585,6 +635,7 @@ export function createNodeTargetConfig(
               transform: {
                 legacyDecorator: true,
                 decoratorMetadata: true,
+                useDefineForClassFields: false,
                 react: { runtime: 'automatic' },
               },
             },

@@ -1,7 +1,8 @@
-import { rmSync } from 'node:fs';
+import { existsSync, rmSync } from 'node:fs';
 import { cpus } from 'node:os';
 
 import { Logger } from '@madisboard-tools/utils/logger';
+import { ProjectRoot } from '@madisboard-tools/utils/path';
 import { Package } from '@madisboard-tools/utils/workspace';
 import { merge } from 'lodash-es';
 import webpack from 'webpack';
@@ -107,6 +108,11 @@ const httpProxyMiddlewareLogLevel = IN_CI ? 'silent' : 'error';
 const defaultDevServerConfig: DevServerConfiguration = {
   host: '0.0.0.0',
   allowedHosts: 'all',
+  headers: {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+    'Access-Control-Allow-Headers': '*',
+  },
   hot: false,
   liveReload: true,
   compress: !process.env.CI,
@@ -117,7 +123,7 @@ const defaultDevServerConfig: DevServerConfiguration = {
     // see: https://webpack.js.org/configuration/dev-server/#websocketurl
     // must be an explicit ws/wss URL because custom protocols (e.g. assets://)
     // cannot be used to construct WebSocket endpoints in Electron
-    webSocketURL: 'ws://0.0.0.0:8080/ws',
+    webSocketURL: 'ws://localhost:8080/ws',
   },
   historyApiFallback: {
     rewrites: [
@@ -162,22 +168,44 @@ export class BundleCommand extends PackageCommand {
     description: 'Run in Development mode',
   });
 
+  clean = Option.Boolean('--clean,-c', false, {
+    description: 'Clean output and cache before building',
+  });
+
   async execute() {
     const pkg = this.workspace.getPackage(this.package);
 
     if (this.dev) {
       await BundleCommand.dev(pkg);
     } else {
-      await BundleCommand.build(pkg);
+      await BundleCommand.build(pkg, { clean: this.clean });
     }
   }
 
-  static async build(pkg: Package) {
+  static async build(pkg: Package, options?: { clean?: boolean }) {
     process.env.NODE_ENV = 'production';
     const logger = new Logger('bundle');
     logger.info(`Packing package ${pkg.name}...`);
-    logger.info('Cleaning old output...');
-    rmSync(pkg.distPath.value, { recursive: true, force: true });
+
+    const cacheDir = ProjectRoot.join(
+      'node_modules',
+      '.cache',
+      'webpack',
+      pkg.name.replace(/[/@]/g, '_')
+    ).value;
+
+    if (options?.clean) {
+      logger.info('Cleaning output and cache (--clean flag)...');
+      rmSync(pkg.distPath.value, { recursive: true, force: true });
+      rmSync(cacheDir, { recursive: true, force: true });
+    } else {
+      // Only clean output directory, preserve webpack cache for faster rebuilds
+      logger.info('Cleaning output directory (cache preserved)...');
+      rmSync(pkg.distPath.value, { recursive: true, force: true });
+      if (existsSync(cacheDir)) {
+        logger.info('Using cached build artifacts for faster compilation...');
+      }
+    }
 
     const config = getBundleConfigs(pkg);
     config.parallelism = cpus().length;

@@ -85,6 +85,7 @@
     "prettier": "^3.7.4",
     "semver": "^7.7.3",
     "serve": "^14.2.4",
+    "tsx": "^4.21.0",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.0",
     "unplugin-swc": "^1.5.9",

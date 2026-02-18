@@ -5,19 +5,22 @@ import type { CommonPackageJsonContent } from './types';
 import { PackageList, type PackageName, yarnList } from './yarn';
 
 class CircularDependenciesError extends Error {
-  constructor(public currentName: string) {
+  currentName: string;
+  constructor(currentName: string) {
     super('Circular dependencies error');
+    this.currentName = currentName;
   }
 }
 
 class ForbiddenPackageRefError extends Error {
-  constructor(
-    public currentName: string,
-    public refName: string
-  ) {
+  currentName: string;
+  refName: string;
+  constructor(currentName: string, refName: string) {
     super(
       `Public package cannot reference private package. Found '${refName}' in dependencies of '${currentName}'`
     );
+    this.currentName = currentName;
+    this.refName = refName;
   }
 }
 

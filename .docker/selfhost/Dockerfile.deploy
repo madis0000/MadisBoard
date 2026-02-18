@@ -1,0 +1,72 @@
+# Deployment Dockerfile for MadisBoard
+# Uses pre-built JS artifacts from host, only builds native module in Linux
+
+# ============================================
+# Stage 1: Build native module only
+# ============================================
+FROM node:22-bookworm AS native-builder
+
+WORKDIR /app
+
+# Install Rust toolchain
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain 1.92.0
+ENV PATH="/root/.cargo/bin:$PATH"
+
+# Enable corepack for yarn 4
+RUN corepack enable
+
+# Copy only what's needed for native module build
+COPY package.json yarn.lock .yarnrc.yml ./
+COPY .yarn .yarn
+COPY packages/backend/native/package.json packages/backend/native/
+COPY packages/backend/native/Cargo.toml packages/backend/native/Cargo.lock packages/backend/native/build.rs packages/backend/native/
+COPY packages/backend/native/src packages/backend/native/src
+
+# Install minimal dependencies for native build
+RUN yarn workspaces focus @madisboard/server-native
+
+# Build the native module
+RUN cd packages/backend/native && \
+    /app/node_modules/.bin/napi build --release --strip --no-const-enum && \
+    ls -la *.node
+
+# ============================================
+# Stage 2: Runtime with pre-built artifacts
+# ============================================
+FROM node:22-bookworm-slim AS runner
+
+WORKDIR /app
+
+# Install minimal runtime dependencies
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends openssl libjemalloc2 && \
+    rm -rf /var/lib/apt/lists/*
+
+# Enable jemalloc for better memory management
+ENV LD_PRELOAD=libjemalloc.so.2
+
+# Copy native module from builder
+COPY --from=native-builder /app/packages/backend/native/server-native.node ./dist/
+
+# Copy pre-built server bundle (from host build)
+COPY packages/backend/server/dist ./dist
+COPY packages/backend/server/scripts ./scripts
+COPY packages/backend/server/schema.prisma ./schema.prisma
+COPY packages/backend/server/migrations ./migrations
+COPY packages/backend/server/package.json ./package.json
+
+# Copy pre-built frontend assets
+COPY packages/frontend/apps/web/dist ./static
+COPY packages/frontend/admin/dist ./static/admin
+
+# Copy node_modules for runtime (production only needed)
+COPY packages/backend/server/node_modules ./node_modules
+
+# Set environment defaults
+ENV NODE_ENV=production
+ENV AFFINE_SERVER_PORT=3010
+ENV AFFINE_INDEXER_ENABLED=false
+
+EXPOSE 3010
+
+CMD ["node", "./dist/main.js"]
