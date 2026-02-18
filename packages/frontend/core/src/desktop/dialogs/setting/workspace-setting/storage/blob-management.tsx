@@ -15,6 +15,7 @@ import { getAttachmentFileIcon } from '@blocksuite/affine/components/icons';
 import { DeleteIcon } from '@blocksuite/icons/rc';
 import { useLiveData, useService } from '@toeverything/infra';
 import bytes from 'bytes';
+import DOMPurify from 'dompurify';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 import * as styles from './style.css';
@@ -46,7 +47,11 @@ const BlobPreview = ({ blobRecord }: { blobRecord: ListedBlobRecord }) => {
 
     const { url, type, mime } = data;
 
-    const icon = templateToString(getAttachmentFileIcon(type));
+    // Sanitize SVG icon output to prevent XSS via crafted MIME types
+    const icon = DOMPurify.sanitize(
+      templateToString(getAttachmentFileIcon(type)),
+      { USE_PROFILES: { svg: true, svgFilters: true } }
+    );
 
     if (error) {
       return (

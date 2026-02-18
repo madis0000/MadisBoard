@@ -7,13 +7,47 @@ import { UserFriendlyError } from '../error';
 // Use it via this way: `private readonly logger = new Logger(MyService.name)`
 @Injectable()
 export class AFFiNELogger extends ConsoleLogger {
+  private readonly useJsonFormat: boolean;
+
+  constructor() {
+    super();
+    // Use structured JSON logging in production for better log aggregation
+    this.useJsonFormat = env.prod;
+  }
+
   override stringifyMessage(message: unknown, logLevel: LogLevel) {
+    if (this.useJsonFormat) {
+      return this.formatJsonMessage(message, logLevel);
+    }
+
     const messageString = super.stringifyMessage(message, logLevel);
     const requestId = AFFiNELogger.getRequestId();
     if (!requestId) {
       return messageString;
     }
     return `<${requestId}> ${messageString}`;
+  }
+
+  private formatJsonMessage(message: unknown, logLevel: LogLevel): string {
+    const requestId = AFFiNELogger.getRequestId();
+    const logEntry: Record<string, unknown> = {
+      timestamp: new Date().toISOString(),
+      level: logLevel,
+      message: typeof message === 'string' ? message : JSON.stringify(message),
+      service: 'affine-server',
+      version: env.version,
+      deployment: env.DEPLOYMENT_TYPE,
+    };
+
+    if (requestId) {
+      logEntry.requestId = requestId;
+    }
+
+    if (this.context) {
+      logEntry.context = this.context;
+    }
+
+    return JSON.stringify(logEntry);
   }
 
   static getRequestId(): string | undefined {
@@ -53,6 +87,40 @@ export class AFFiNELogger extends ConsoleLogger {
     stackOrError?: Error | string | unknown,
     context?: string
   ) {
+    if (this.useJsonFormat) {
+      const requestId = AFFiNELogger.getRequestId();
+      const logEntry: Record<string, unknown> = {
+        timestamp: new Date().toISOString(),
+        level: 'error',
+        message: typeof message === 'string' ? message : JSON.stringify(message),
+        service: 'affine-server',
+        version: env.version,
+        deployment: env.DEPLOYMENT_TYPE,
+        context: context || this.context,
+      };
+
+      if (requestId) {
+        logEntry.requestId = requestId;
+      }
+
+      if (stackOrError instanceof Error) {
+        logEntry.error = {
+          name: stackOrError.name,
+          message: stackOrError.message,
+          stack: AFFiNELogger.formatStack(stackOrError),
+        };
+        if (stackOrError instanceof UserFriendlyError) {
+          logEntry.errorCode = stackOrError.code;
+          logEntry.errorStatus = stackOrError.status;
+        }
+      } else if (stackOrError) {
+        logEntry.stack = stackOrError;
+      }
+
+      // Write directly to stderr in structured mode
+      process.stderr.write(JSON.stringify(logEntry) + '\n');
+      return;
+    }
     super.error(message, AFFiNELogger.formatStack(stackOrError), context);
   }
 }

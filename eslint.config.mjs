@@ -5,6 +5,7 @@ import eslint from '@eslint/js';
 import tsParser from '@typescript-eslint/parser';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import importX from 'eslint-plugin-import-x';
+import jsxA11y from 'eslint-plugin-jsx-a11y';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
@@ -55,6 +56,7 @@ export default tseslint.config(
       '@typescript-eslint': tseslint.plugin,
       react,
       'react-hooks': reactHooks,
+      'jsx-a11y': jsxA11y,
       sonarjs,
       'import-x': importX,
       'simple-import-sort': simpleImportSort,
@@ -210,6 +212,26 @@ export default tseslint.config(
 
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
+
+      // Accessibility rules (jsx-a11y) — warn for now, escalate to error incrementally
+      'jsx-a11y/alt-text': 'warn',
+      'jsx-a11y/anchor-has-content': 'warn',
+      'jsx-a11y/anchor-is-valid': 'warn',
+      'jsx-a11y/aria-props': 'warn',
+      'jsx-a11y/aria-role': 'warn',
+      'jsx-a11y/aria-unsupported-elements': 'warn',
+      'jsx-a11y/click-events-have-key-events': 'warn',
+      'jsx-a11y/heading-has-content': 'warn',
+      'jsx-a11y/html-has-lang': 'warn',
+      'jsx-a11y/img-redundant-alt': 'warn',
+      'jsx-a11y/interactive-supports-focus': 'warn',
+      'jsx-a11y/label-has-associated-control': 'warn',
+      'jsx-a11y/no-access-key': 'warn',
+      'jsx-a11y/no-autofocus': 'warn',
+      'jsx-a11y/no-noninteractive-element-interactions': 'warn',
+      'jsx-a11y/no-static-element-interactions': 'warn',
+      'jsx-a11y/role-has-required-aria-props': 'warn',
+      'jsx-a11y/tabindex-no-positive': 'warn',
     },
   },
   {

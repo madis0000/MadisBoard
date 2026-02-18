@@ -121,6 +121,26 @@ class ListedBlob {
   createdAt!: string;
 }
 
+// Blocked MIME types that could execute code when served in a browser context.
+// These are blocked to prevent stored XSS via file uploads.
+const BLOCKED_MIME_TYPES = new Set([
+  'text/html',
+  'application/xhtml+xml',
+  'application/x-httpd-php',
+  'application/x-sh',
+  'application/x-csh',
+  'text/x-server-parsed-html',
+]);
+
+// MIME type prefixes that are considered potentially dangerous
+const BLOCKED_MIME_PREFIXES = ['application/x-ms', 'application/hta'];
+
+function isBlockedMimeType(mime: string): boolean {
+  const normalized = mime.toLowerCase().trim();
+  if (BLOCKED_MIME_TYPES.has(normalized)) return true;
+  return BLOCKED_MIME_PREFIXES.some(prefix => normalized.startsWith(prefix));
+}
+
 @UseGuards(CloudThrottlerGuard)
 @Resolver(() => WorkspaceType)
 export class WorkspaceBlobResolver {
@@ -220,6 +240,14 @@ export class WorkspaceBlobResolver {
 
     let record = await this.models.blob.get(workspaceId, key);
     mime = mime || 'application/octet-stream';
+
+    // Validate MIME type to prevent upload of executable content
+    if (isBlockedMimeType(mime)) {
+      throw new BlobInvalid(
+        `MIME type "${mime}" is not allowed. HTML and executable file types are blocked for security.`
+      );
+    }
+
     if (record) {
       if (record.size !== size) {
         throw new BlobInvalid('Blob size mismatch');

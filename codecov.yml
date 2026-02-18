@@ -1,5 +1,37 @@
 coverage:
-  # coverage decreases are allowed
   status:
-    project: false
-    patch: false
+    project:
+      default:
+        target: 60%
+        threshold: 2%
+        if_ci_failed: error
+    patch:
+      default:
+        target: 70%
+        threshold: 5%
+        if_ci_failed: error
+  # Critical paths require higher coverage
+  flags:
+    auth:
+      paths:
+        - packages/backend/server/src/core/auth/
+      statuses:
+        - type: project
+          target: 80%
+    permissions:
+      paths:
+        - packages/backend/server/src/core/permission/
+      statuses:
+        - type: project
+          target: 80%
+    copilot:
+      paths:
+        - packages/backend/server/src/plugins/copilot/
+      statuses:
+        - type: project
+          target: 65%
+
+comment:
+  layout: "reach,diff,flags"
+  behavior: default
+  require_changes: false

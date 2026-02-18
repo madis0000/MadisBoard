@@ -36,6 +36,7 @@ import { DocStorageModule } from './core/doc';
 import { DocRendererModule } from './core/doc-renderer';
 import { DocServiceModule } from './core/doc-service';
 import { FeatureModule } from './core/features';
+import { HealthModule } from './core/health';
 import { MailModule } from './core/mail';
 import { MonitorModule } from './core/monitor';
 import { NotificationModule } from './core/notification';
@@ -157,6 +158,9 @@ export function buildAppModule(env: Env) {
   factor
     // basic
     .use(...FunctionalityModules)
+
+    // health probes — always enabled for all server flavors
+    .use(HealthModule)
 
     // enable indexer module on graphql server and doc service
     .useIf(() => env.flavors.graphql || env.flavors.doc, IndexerModule)

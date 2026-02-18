@@ -7,7 +7,8 @@ import {
   SelectValue,
 } from '@affine/admin/components/ui/select';
 import { Switch } from '@affine/admin/components/ui/switch';
-import { useCallback } from 'react';
+import DOMPurify from 'dompurify';
+import { useCallback, useMemo } from 'react';
 
 import { Textarea } from '../../components/ui/textarea';
 
@@ -127,6 +128,12 @@ export const ConfigRow = ({
     [field, onChange]
   );
 
+  // Sanitize HTML to prevent XSS via config descriptions
+  const sanitizedDesc = useMemo(
+    () => DOMPurify.sanitize(desc, { ALLOWED_TAGS: ['a', 'br', 'b', 'i', 'em', 'strong', 'code'], ALLOWED_ATTR: ['href', 'target', 'rel'] }),
+    [desc]
+  );
+
   return (
     <div
       className={`flex justify-between flex-grow space-y-[10px]
@@ -134,7 +141,7 @@ export const ConfigRow = ({
     >
       <div
         className="text-base font-bold flex-3"
-        dangerouslySetInnerHTML={{ __html: desc }}
+        dangerouslySetInnerHTML={{ __html: sanitizedDesc }}
       />
       <div className="flex flex-col items-end relative flex-1">
         <Input
